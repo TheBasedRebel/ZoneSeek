@@ -77,27 +77,27 @@ public class ItemsHelper{
 		EnumArmorMaterial InfectedArmorMaterial = EnumHelper.addArmorMaterial("Infected Armor", 33, new int[] {2, 6, 6, 5}, 16);
 		
 		//Item Loading
-		ApophylliteCrystal = new ItemCrystal(IDsHelper.ApophylliteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("ApophylliteCrystal");
-		AxiniteCrystal = new ItemCrystal(IDsHelper.AxiniteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("AxiniteCrystal");
+		ApophylliteCrystal = new ItemCrystal(IDsHelper.ApophylliteCrystalID, "ApophylliteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("ApophylliteCrystal");
+		AxiniteCrystal = new ItemCrystal(IDsHelper.AxiniteCrystalID, "AxiniteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("AxiniteCrystal");
 		Banana = new ItemBanana(IDsHelper.BananaID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Banana");
-		BetafiteCrystal = new ItemCrystal(IDsHelper.BetafiteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("BetafiteCrystal");
+		BetafiteCrystal = new ItemCrystal(IDsHelper.BetafiteCrystalID, "BetafiteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("BetafiteCrystal");
 		BookOfInfection = new ItemBookOfInfecteion(IDsHelper.BookOfInfectionID).setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("BookOfInfectione");
-		BrochantiteCrystal = new ItemCrystal(IDsHelper.BrochantiteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("BrochantiteCrystal");
+		BrochantiteCrystal = new ItemCrystal(IDsHelper.BrochantiteCrystalID, "BrochantiteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("BrochantiteCrystal");
 		CoconutChunk = new ItemCoconutChunk(IDsHelper.CoconutChunkID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("CoconutChunk");
 		CompactedScaleFragment = new ItemMisc(IDsHelper.CompactedScaleFragmentID).setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("CompactedScaleFragment");
 		CompactedScalePlate = new ItemMisc(IDsHelper.CompactedScalePlateID).setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("CompactedScalePlate");
-		DolomiteCrystal = new ItemCrystal(IDsHelper.DolomiteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("DolomiteCrystal");
+		DolomiteCrystal = new ItemCrystal(IDsHelper.DolomiteCrystalID, "DolomiteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("DolomiteCrystal");
 		DragonFruit = new ItemDragonFruit(IDsHelper.DragonFruitID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("DragonFruit");
-		FotiteCrystal = new ItemCrystal(IDsHelper.FotiteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("FotiteCrystal");
+		FotiteCrystal = new ItemCrystal(IDsHelper.FotiteCrystalID, "FotiteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("FotiteCrystal");
 		FuzzleChop = new ItemFuzzleChop(IDsHelper.FuzzleChopID, 2, 5.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("FuzzleChop");
-		HeterogeniteCrystal = new ItemCrystal(IDsHelper.HeterogeniteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("HeterogeniteCrystal");
+		HeterogeniteCrystal = new ItemCrystal(IDsHelper.HeterogeniteCrystalID, "HeterogeniteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("HeterogeniteCrystal");
 		InfectedArrow = new ItemInfectedArrow(IDsHelper.InfectedArrowID).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("InfectedArrow");
 		InfectedAxe = new ItemInfectedAxe(IDsHelper.InfectedAxeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedAxe");
 		InfectedBattleAxe = new ItemBattleAxe(IDsHelper.InfectedBattleAxeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("InfectedBattleAxe");
 		InfectedBoots = new ItemInfectedArmor(IDsHelper.InfectedBootsID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedboots").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedBoots");
 		InfectedBow = new ItemInfectedBow(IDsHelper.InfectedBowID).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("InfectedBow");
 		InfectedChestplate = new ItemInfectedArmor(IDsHelper.InfectedChestplateID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedchestplate").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedChestplate");
-		InfectedGem = new ItemMisc(IDsHelper.InfectedGemID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("InfectedGem");
+		InfectedGem = new ItemMisc(IDsHelper.InfectedGemID, "InfectedGem").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("InfectedGem");
 		InfectedHelmet = new ItemInfectedArmor(IDsHelper.InfectedHelmetID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedhelmet").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedHelmet");
 		InfectedHoe = new ItemInfectedHoe(IDsHelper.InfectedHoeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedHoe");
 		InfectedLeggings = new ItemInfectedArmor(IDsHelper.InfectedLeggingsID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedleggings").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedLeggings");
@@ -110,9 +110,9 @@ public class ItemsHelper{
 		InfectedStick = new ItemMisc(IDsHelper.InfectedStickID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("InfectedStick");
 		InfectedStone = new ItemMisc(IDsHelper.InfectedStoneID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("InfectedStone");
 		InfectedSword = new ItemInfectedSword(IDsHelper.InfectedSwordID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("InfectedSword");
-		KasoliteCrystal = new ItemCrystal(IDsHelper.KasoliteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("KasoliteCrystal");
+		KasoliteCrystal = new ItemCrystal(IDsHelper.KasoliteCrystalID, "KasoliteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("KasoliteCrystal");
 		LagoonScale = new ItemMisc(IDsHelper.LagoonScaleID).setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("LagoonScale");
-		LazuriteCrystal = new ItemCrystal(IDsHelper.LazuriteCrystalID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LazuriteCrystal");
+		LazuriteCrystal = new ItemCrystal(IDsHelper.LazuriteCrystalID, "LazuriteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LazuriteCrystal");
 		ObsidianStick = new ItemMisc(IDsHelper.ObsidianStickID).setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("ObsidianStick");
 		Pear = new ItemPear(IDsHelper.PearID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Pear");
 		PincerScale = new ItemMisc(IDsHelper.PincerScaleID).setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("PincerScale");
