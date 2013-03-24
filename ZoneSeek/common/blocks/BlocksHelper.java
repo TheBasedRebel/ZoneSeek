@@ -277,6 +277,21 @@ public class BlocksHelper {
 		LanguageRegistry.addName(LagoonStairs, "Lagoon Stairs");
 		LanguageRegistry.addName(SludgeStairs, "Sludge Stairs");
 		LanguageRegistry.addName(GraniteStairs, "Granite Stairs");
+		LanguageRegistry.addName(LagoonTallGrass, "Lagoon Tall Grass");
+		LanguageRegistry.addName(LagoonVines, "Lagoon Vines");
+		LanguageRegistry.addName(LagoonGrass, "Lagoon Grass");
+		LanguageRegistry.addName(LagoonDirt, "Lagoon Dirt");
+		LanguageRegistry.addName(SludgeTallGrass, "Sludge Tall Grass");
+		LanguageRegistry.addName(InfectedBlock, "Infected Block");
+		LanguageRegistry.addName(InfetcedBrick, "Infected Brick");
+		LanguageRegistry.addName(InfectedLamp, "Infected Lamp");
+		LanguageRegistry.addName(InfectedOre, "Infected Ore");
+		LanguageRegistry.addName(LagoonLeaf, "Lagoon Leaf");
+		LanguageRegistry.addName(LagoonLog, "Lagoon Log");
+		LanguageRegistry.addName(LagoonPlanks, "Lagoon Planks");
+		
+		
+		
 	}
 
 }
