@@ -21,13 +21,13 @@ public class ItemInfectedArmor extends ItemArmor implements IArmorTextureProvide
 	}
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void func_94581_a(IconRegister iconRegister)
+	public void registerIcons(IconRegister iconRegister)
 	{
 		makeIcons(iconRegister);
 	}
 	public void makeIcons(IconRegister iconRegister)
 	{
-		icon = iconRegister.func_94245_a("zoneseek:"+n);
+		icon = iconRegister.registerIcon("zoneseek:"+n);
 	}
 	@SideOnly(Side.CLIENT)
 	public Icon getIconFromDamage(int i)
