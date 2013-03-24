@@ -18,7 +18,7 @@ public class BlockWood extends Block{
 	}
 
 	public void registerIcons(IconRegister reg){
-		this.blockIcon = registerIcon("zoneseek:" + this.getTextureName());
+		this.blockIcon = reg.registerIcon("zoneseek:" + this.getTextureName());
 	}
 
 }
