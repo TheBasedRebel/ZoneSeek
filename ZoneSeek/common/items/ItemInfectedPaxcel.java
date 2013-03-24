@@ -13,9 +13,9 @@ public class ItemInfectedPaxcel extends ItemPaxcel{
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void func_94581_a(IconRegister par1IconRegister)
+	public void updateIcons(IconRegister par1IconRegister)
 	{
-		this.iconIndex = par1IconRegister.func_94245_a("zoneseek:infectedpaxcel");
+		this.iconIndex = par1IconRegister.registerIcon("zoneseek:infectedpaxcel");
 	}
 
 }

@@ -21,7 +21,7 @@ public class ItemInfectedArmor extends ItemArmor implements IArmorTextureProvide
 	}
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister iconRegister)
+	public void updateIcons(IconRegister iconRegister)
 	{
 		makeIcons(iconRegister);
 	}
