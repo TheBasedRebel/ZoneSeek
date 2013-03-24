@@ -19,9 +19,9 @@ public class ItemInfectedProd extends ItemSword{
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void func_94581_a(IconRegister par1IconRegister)
+	public void updateIcons(IconRegister par1IconRegister)
 	{
-		this.iconIndex = par1IconRegister.func_94245_a("zoneseek:infectedprod");
+		this.iconIndex = par1IconRegister.registerIcon("zoneseek:infectedprod");
 	}
 	
 	public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving)
