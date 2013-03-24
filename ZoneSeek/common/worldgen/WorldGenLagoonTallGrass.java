@@ -43,7 +43,7 @@ public class WorldGenLagoonTallGrass extends WorldGenerator
 
             if (par1World.getBlockId(j1, k1, l1) == BlocksHelper.LagoonGrass.blockID)
             {
-            	par1World.func_94575_c(j1, k1 + 1, l1, BlocksHelper.LagoonTallGrass.blockID);
+            	par1World.setBlock(j1, k1 + 1, l1, BlocksHelper.LagoonTallGrass.blockID);
             }
         }
 

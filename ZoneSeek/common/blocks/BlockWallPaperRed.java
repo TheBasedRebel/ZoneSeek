@@ -2,21 +2,53 @@ package ZoneSeek.common.blocks;
 
 import java.util.Random;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.util.Icon;
 
 public class BlockWallPaperRed extends Block{
+	@SideOnly(Side.CLIENT)
+	protected Icon topIcon;
+	@SideOnly(Side.CLIENT)
+	protected Icon sideIcon;
+	@SideOnly(Side.CLIENT)
+	protected Icon bottomIcon;
 
 public BlockWallPaperRed(int ID) {
 	super(ID, Material.wood);
 
 	}
 @Override
-public void func_94332_a(IconRegister par1IconRegister)
+@SideOnly(Side.CLIENT)
+public void registerIcons(IconRegister par1IconRegister)
 {
-         this.field_94336_cN = par1IconRegister.func_94245_a("zoneseek:wpred");
+         this.blockIcon = par1IconRegister.registerIcon("zoneseek:wpred");
+     	this.topIcon  = par1IconRegister.registerIcon("zoneseek:wpredtop");
+    	this.sideIcon = par1IconRegister.registerIcon("zoneseek:wpred");
+    	this.bottomIcon = par1IconRegister.registerIcon("zoneseek:wpredtop");
+}
+
+@Override
+@SideOnly(Side.CLIENT)
+public Icon getBlockTextureFromSideAndMetadata(int side, int metadata)
+{
+	if (side == 1)
+	{
+		return this.topIcon;
+	}
+	if (side == 0)
+	{
+		return this.bottomIcon;
+	}
+	else
+	{
+		return this.sideIcon;
+	}
 }
 
 }

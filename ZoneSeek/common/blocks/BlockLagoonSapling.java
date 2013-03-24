@@ -1,6 +1,5 @@
 package ZoneSeek.common.blocks;
 
-import ZoneSeek.common.worldgen.WorldGenLagoonTree;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import java.util.List;
@@ -23,7 +22,7 @@ import net.minecraftforge.event.terraingen.TerrainGen;
 
 public class BlockLagoonSapling extends BlockFlower
 {
-    public static final String[] LagoonWOOD_TYPES = new String[] {"Lagoon"};
+    public static final String[] LagoonWOOD_TYPES = new String[] {"lagoon"};
     private static final String[] field_94370_b = new String[] {"sapling_lagoon"};
     @SideOnly(Side.CLIENT)
     private Icon[] field_94371_c;
@@ -122,16 +121,16 @@ public class BlockLagoonSapling extends BlockFlower
             {
                 j1 = 0;
                 i1 = 0;
-                object = new WorldGenLagoonTree(true, 15, 0, 0);
+                object = new WorldGenTrees(true, 4 + par5Random.nextInt(7), 3, 3, false);
             }
         }
         else
         {
-            object = new WorldGenLagoonTree(true, 15, 0, 0);
+            object = new WorldGenTrees(true);
 
             if (par5Random.nextInt(10) == 0)
             {
-                object = new WorldGenLagoonTree(true, 15, 0, 0);
+                object = new WorldGenBigTree(true);
             }
         }
 
@@ -187,16 +186,24 @@ public class BlockLagoonSapling extends BlockFlower
     public void getSubBlocks(int par1, CreativeTabs par2CreativeTabs, List par3List)
     {
         par3List.add(new ItemStack(par1, 1, 0));
+        par3List.add(new ItemStack(par1, 1, 1));
+        par3List.add(new ItemStack(par1, 1, 2));
+        par3List.add(new ItemStack(par1, 1, 3));
     }
 
     @SideOnly(Side.CLIENT)
-    public void func_94332_a(IconRegister par1IconRegister)
+
+    /**
+     * When this method is called, your block should register all the icons it needs with the given IconRegister. This
+     * is the only chance you get to register icons.
+     */
+    public void registerIcons(IconRegister par1IconRegister)
     {
         this.field_94371_c = new Icon[field_94370_b.length];
 
         for (int i = 0; i < this.field_94371_c.length; ++i)
         {
-            this.field_94371_c[i] = par1IconRegister.registerIcon("zoneseek:lagoonsap");
+            this.field_94371_c[i] = par1IconRegister.registerIcon("zoneseek:lagoonsapling");
         }
     }
 }
