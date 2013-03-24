@@ -14,9 +14,9 @@ public class ItemPlum extends ItemFood{
 	}
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void func_94581_a(IconRegister par1IconRegister)
+	public void updateIcons(IconRegister par1IconRegister)
 	{
-		this.iconIndex = par1IconRegister.func_94245_a("zoneseek:plum");
+		this.iconIndex = par1IconRegister.registerIcon("zoneseek:plum");
 	}
 
 }
