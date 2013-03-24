@@ -27,11 +27,11 @@ public class ItemInfectedBow extends ItemBow {
 		this.setMaxDamage(384);
 		this.setCreativeTab(CreativeTabs.tabCombat);
 	}
-	public void func_94581_a(IconRegister iconRegister) {
-		iconIndex = iconRegister.func_94245_a("zoneseek:infectedbow");
-		icostage1inf = iconRegister.func_94245_a("zoneseek:stage1inf");
-		icostage2inf = iconRegister.func_94245_a("zoneseek:stage2inf");
-		icostage3inf = iconRegister.func_94245_a("zoneseek:stage3inf");
+	public void updateIcons(IconRegister iconRegister) {
+		iconIndex = iconRegister.registerIcon("zoneseek:infectedbow");
+		icostage1inf = iconRegister.registerIcon("zoneseek:stage1inf");
+		icostage2inf = iconRegister.registerIcon("zoneseek:stage2inf");
+		icostage3inf = iconRegister.registerIcon("zoneseek:stage3inf");
 	}
 
 	/**
