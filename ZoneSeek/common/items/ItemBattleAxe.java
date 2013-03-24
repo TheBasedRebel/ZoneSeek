@@ -19,9 +19,9 @@ public class ItemBattleAxe extends ItemSword{
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void func_94581_a(IconRegister par1IconRegister)
+	public void registerIcons(IconRegister par1IconRegister)
 	{
-		this.iconIndex = par1IconRegister.func_94245_a("zoneseek:infectedbattleaxe");
+		this.iconIndex = par1IconRegister.registerIcon("zoneseek:infectedbattleaxe");
 	}
 	
 	public boolean hitEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving, EntityLiving par3EntityLiving)
