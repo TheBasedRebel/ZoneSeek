@@ -23,7 +23,7 @@ public class ItemInfectedArrow extends Item{
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister par1IconRegister)
+	public void updateIcons(IconRegister par1IconRegister)
 	{
 		this.iconIndex = par1IconRegister.registerIcon("zoneseek:infectedarrow");
 	}
