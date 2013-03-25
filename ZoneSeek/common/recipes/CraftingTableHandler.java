@@ -198,6 +198,9 @@ public class CraftingTableHandler {
 			
 		});
 		
+		//New Recipes
+
+		
 	}
 
 }
