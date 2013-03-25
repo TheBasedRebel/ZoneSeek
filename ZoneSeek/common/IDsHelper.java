@@ -112,6 +112,7 @@ public class IDsHelper {
 	public static int InfectedSwordID;
 	public static int KasoliteCrystalID;
 	public static int LagoonScaleID;
+	public static int LagoonStickID;
 	public static int LazuriteCrystalID;
 	public static int ObsidianStickID;
 	public static int PearID;
@@ -243,7 +244,7 @@ public class IDsHelper {
 		TaintedLeatherID = config.get(itemids, "Tainted Leather ID", 1046).getInt();
 		TaintedPageID = config.get(itemids, "Tainted Page ID", 1047).getInt();
 		InfectedLeggingsID = config.get(itemids, "Infected Leggings ID", 1049).getInt();
-		
+		LagoonStickID = config.get(itemids, "Lagoon Stick ID", 1050).getInt();
 		
 	}
 	

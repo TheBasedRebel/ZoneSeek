@@ -54,6 +54,7 @@ public class ItemsHelper{
 	public static Item InfectedSword;
 	public static Item KasoliteCrystal;
 	public static Item LagoonScale;
+	public static Item LagoonStick;
 	public static Item LazuriteCrystal;
 	public static Item ObsidianStick;
 	public static Item Pear;
@@ -114,6 +115,7 @@ public class ItemsHelper{
 		LagoonScale = new ItemMisc(IDsHelper.LagoonScaleID, "LagoonScale").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("LagoonScale");
 		LazuriteCrystal = new ItemCrystal(IDsHelper.LazuriteCrystalID, "LazuriteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LazuriteCrystal");
 		ObsidianStick = new ItemMisc(IDsHelper.ObsidianStickID, "ObsidianStick").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("ObsidianStick");
+		LagoonStick = new ItemMisc(IDsHelper.LagoonStickID, "LagoonStick").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LagoonStick");
 		Pear = new ItemPear(IDsHelper.PearID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Pear");
 		PincerScale = new ItemMisc(IDsHelper.PincerScaleID, "PincerScale").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("PincerScale");
 		Pineapple = new ItemPineapple(IDsHelper.PineappleID, 2, 3.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Pineapple");
@@ -184,6 +186,7 @@ public class ItemsHelper{
 		GameRegistry.registerItem(TaintedLeather, "TaintedLeather");
 		GameRegistry.registerItem(TaintedPage, "TaintedPage");
 		GameRegistry.registerItem(InfectedGem, "InfectedGem");
+		GameRegistry.registerItem(LagoonStick, "LagoonStick");
 	}
 	
 
@@ -239,6 +242,7 @@ public class ItemsHelper{
         LanguageRegistry.addName(TaintedInkSack, "Tainted Ink Sack");
         LanguageRegistry.addName(TaintedLeather, "Tainted Leather");
         LanguageRegistry.addName(TaintedPage, "Tainted Page");
+        LanguageRegistry.addName(LagoonStick, "Lagoon Stick");
 	}
 
 }

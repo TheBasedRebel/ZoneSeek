@@ -197,8 +197,16 @@ public class CraftingTableHandler {
 			" X ", " T ", " T ", 'T', ItemsHelper.ObsidianStick, 'X', ItemsHelper.SludgeStone
 			
 		});
-		
 		//New Recipes
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.LagoonLadder, 1), new Object[] {
+			"X X", "XXX", "X X", 'X', ItemsHelper.LagoonStick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.PalmWoodPlanks, 1), new Object[] {
+			"   ", " X ", " X ", 'X', BlocksHelper.PalmLog
+			
+		});
+
 
 		
 	}

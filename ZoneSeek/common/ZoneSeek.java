@@ -72,8 +72,8 @@ public class ZoneSeek {
 		GameRegistry.registerWorldGenerator(new WorldGenOres());
 		
 	    //May Cause Lag?
-		GameRegistry.registerWorldGenerator(new WorldGeneratorLagoon());
-	    GameRegistry.registerWorldGenerator(new WorldGeneratorSludge());
+		//GameRegistry.registerWorldGenerator(new WorldGeneratorLagoon());
+	    //GameRegistry.registerWorldGenerator(new WorldGeneratorSludge());
 	    //-------------------------------------------------------------
 	    
 	    
