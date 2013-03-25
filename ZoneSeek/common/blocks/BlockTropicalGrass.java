@@ -99,7 +99,7 @@ public class BlockTropicalGrass extends Block
     }
 
     @SideOnly(Side.CLIENT)
-    public void func_94332_a(IconRegister par1IconRegister)
+    public void registerIcons(IconRegister par1IconRegister)
     {
         this.blockIcon = par1IconRegister.registerIcon("zoneseek:tropicalgrassside");
         this.iconGrassTop = par1IconRegister.registerIcon("zoneseek:tropicalgrasstop");

@@ -204,7 +204,7 @@ public class BlockLagoonLadder extends Block
         return true;
     }
     
-	public void func_94332_a(IconRegister reg){
+	public void registerIcons(IconRegister reg){
 		this.blockIcon = reg.registerIcon("zoneseek:" + this.getTextureName());
 	}
 }

@@ -9,11 +9,11 @@ import net.minecraftforge.common.IArmorTextureProvider;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemInfectedArmor extends ItemArmor implements IArmorTextureProvider
+public class ItemInfectedLeggings extends ItemArmor implements IArmorTextureProvider
 {
 	private Icon icon;
 	private String n;
-	public ItemInfectedArmor(int itemID,EnumArmorMaterial armorMaterial, int renderIndex, int armorType, String name)
+	public ItemInfectedLeggings(int itemID,EnumArmorMaterial armorMaterial, int renderIndex, int armorType, String name)
 	{
 		super(itemID,armorMaterial,renderIndex,armorType);
 		setUnlocalizedName(name);

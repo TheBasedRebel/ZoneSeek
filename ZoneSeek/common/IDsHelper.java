@@ -216,7 +216,7 @@ public class IDsHelper {
 		InfectedChestplateID = config.get(itemids, "Infected Chestplate ID", 1019).getInt();
 		InfectedGemID = config.get(itemids, "Infected Gem ID", 1020).getInt();
 		InfectedHelmetID = config.get(itemids, "Infected Helmet ID", 1021).getInt();
-		InfectedHoeID = config.get(itemids, "Infected Leggings ID", 1022).getInt();
+		InfectedHoeID = config.get(itemids, "Infected Hoe ID", 1022).getInt();
 		InfectedPaxcelID = config.get(itemids, "Infected Paxcel ID", 1023).getInt();
 		InfectedPickaxeID = config.get(itemids, "Infected Pickaxe ID", 1024).getInt();
 		InfectedPlateID = config.get(itemids, "Infected Plate ID", 1025).getInt();
@@ -242,6 +242,7 @@ public class IDsHelper {
 		TaintedInkSackID = config.get(itemids, "Tainted Ink Sack ID", 1045).getInt();
 		TaintedLeatherID = config.get(itemids, "Tainted Leather ID", 1046).getInt();
 		TaintedPageID = config.get(itemids, "Tainted Page ID", 1047).getInt();
+		InfectedLeggingsID = config.get(itemids, "Infected Leggings ID", 1049).getInt();
 		
 		
 	}

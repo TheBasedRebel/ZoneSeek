@@ -28,7 +28,7 @@ public BlockWallPaperGreen(int ID) {
 public void registerIcons(IconRegister par1IconRegister)
 {
          this.blockIcon = par1IconRegister.registerIcon("zoneseek:wpgreen");
-     	this.topIcon  = par1IconRegister.registerIcon("zoneseek:wpgreenetop");
+     	this.topIcon  = par1IconRegister.registerIcon("zoneseek:wpgreentop");
     	this.sideIcon = par1IconRegister.registerIcon("zoneseek:wpgreen");
     	this.bottomIcon = par1IconRegister.registerIcon("zoneseek:wpgreentop");
 }
