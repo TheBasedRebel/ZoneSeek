@@ -24,12 +24,12 @@ public class WorldGenOres implements IWorldGenerator{
 	}
     
 	private void generateSurface(World world, Random random, int chunkX, int chunkZ){
-		for(int i = 0; i < 10; i++){
+		for(int i = 0; i < 5; i++){
 			int xCoord = chunkX + random.nextInt(16);
 			int yCoord = random.nextInt(32);
 			int zCoord = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(BlocksHelper.InfectedOre.blockID, 10)).generate(world, random, xCoord, yCoord, zCoord);
+			(new WorldGenMinable(BlocksHelper.InfectedOre.blockID, 3)).generate(world, random, xCoord, yCoord, zCoord);
 		}
 		
 		for(int i = 0; i < 7; i++){
@@ -37,7 +37,7 @@ public class WorldGenOres implements IWorldGenerator{
 			int yCoord = random.nextInt(32);
 			int zCoord = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(BlocksHelper.SludgeOre.blockID, 8)).generate(world, random, xCoord, yCoord, zCoord);
+			(new WorldGenMinable(BlocksHelper.SludgeOre.blockID, 4)).generate(world, random, xCoord, yCoord, zCoord);
 		}
 		for(int i = 0; i < 12; i++){
 			int xCoord = chunkX + random.nextInt(16);
@@ -46,16 +46,16 @@ public class WorldGenOres implements IWorldGenerator{
 			
 			(new WorldGenMinable(BlocksHelper.Granite.blockID, 12)).generate(world, random, xCoord, yCoord, zCoord);
 		}
-		for(int i = 0; i < 14; i++){
+		for(int i = 0; i < 2; i++){
 			int xCoord = chunkX + random.nextInt(16);
-			int yCoord = random.nextInt(48);
+			int yCoord = random.nextInt(12);
 			int zCoord = chunkZ + random.nextInt(16);
 			
-			(new WorldGenMinable(BlocksHelper.Apophyllite.blockID, 10)).generate(world, random, xCoord, yCoord, zCoord);
+			(new WorldGenMinable(BlocksHelper.Apophyllite.blockID, 3)).generate(world, random, xCoord, yCoord, zCoord);
 		}
-		for(int i = 0; i < 10; i++){
+		for(int i = 0; i < 4; i++){
 			int xCoord = chunkX + random.nextInt(16);
-			int yCoord = random.nextInt(50);
+			int yCoord = random.nextInt(20);
 			int zCoord = chunkZ + random.nextInt(16);
 			(new WorldGenMinable(BlocksHelper.Axinite.blockID, 5)).generate(world, random, xCoord, yCoord, zCoord);
 		}
@@ -63,13 +63,13 @@ public class WorldGenOres implements IWorldGenerator{
 			int xCoord = chunkX + random.nextInt(16);
 			int yCoord = random.nextInt(40);
 			int zCoord = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(BlocksHelper.Betafite.blockID, 5)).generate(world, random, xCoord, yCoord, zCoord);
+			(new WorldGenMinable(BlocksHelper.Betafite.blockID, 4)).generate(world, random, xCoord, yCoord, zCoord);
 		}
-		for(int i = 0; i < 6; i++){
+		for(int i = 0; i < 2; i++){
 			int xCoord = chunkX + random.nextInt(16);
 			int yCoord = random.nextInt(35);
 			int zCoord = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(BlocksHelper.Brochantite.blockID, 5)).generate(world, random, xCoord, yCoord, zCoord);
+			(new WorldGenMinable(BlocksHelper.Brochantite.blockID, 2)).generate(world, random, xCoord, yCoord, zCoord);
 		}
 		for(int i = 0; i < 4; i++){
 			int xCoord = chunkX + random.nextInt(16);
@@ -83,11 +83,11 @@ public class WorldGenOres implements IWorldGenerator{
 			int zCoord = chunkZ + random.nextInt(16);
 			(new WorldGenMinable(BlocksHelper.Fotite.blockID, 2)).generate(world, random, xCoord, yCoord, zCoord);
 		}
-		for(int i = 0; i < 10; i++){
+		for(int i = 0; i < 7; i++){
 			int xCoord = chunkX + random.nextInt(16);
 			int yCoord = random.nextInt(35);
 			int zCoord = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(BlocksHelper.Heterogenite.blockID, 5)).generate(world, random, xCoord, yCoord, zCoord);
+			(new WorldGenMinable(BlocksHelper.Heterogenite.blockID, 4)).generate(world, random, xCoord, yCoord, zCoord);
 		}
 		for(int i = 0; i < 10; i++){
 			int xCoord = chunkX + random.nextInt(16);
