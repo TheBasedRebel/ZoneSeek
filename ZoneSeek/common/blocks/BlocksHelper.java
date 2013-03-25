@@ -267,9 +267,9 @@ public class BlocksHelper {
 		LanguageRegistry.addName(Heterogenite, "Heterogenite");
 		LanguageRegistry.addName(Kasolite, "Kasolite");
 		LanguageRegistry.addName(Lazurite, "Lazurite");
-		LanguageRegistry.addName(PalmLeaf, "PalmLeaf");
+		LanguageRegistry.addName(PalmLeaf, "Palm Leaf");
 		LanguageRegistry.addName(PalmWoodPlanks, "Palm Wood Planks");
-		LanguageRegistry.addName(PalmLog, "PalmLog");
+		LanguageRegistry.addName(PalmLog, "Palm Log");
 		LanguageRegistry.addName(SludgeStoneGround, "Sludge Stone Ground");
 		LanguageRegistry.addName(TropicalDirt, "Tropical Dirt");
 		LanguageRegistry.addName(TropicalGrass, "Tropical Grass");
@@ -289,6 +289,7 @@ public class BlocksHelper {
 		LanguageRegistry.addName(LagoonLeaf, "Lagoon Leaf");
 		LanguageRegistry.addName(LagoonLog, "Lagoon Log");
 		LanguageRegistry.addName(LagoonPlanks, "Lagoon Planks");
+		LanguageRegistry.addName(LagoonSapling, "Lagoon Sapling");
 		
 		
 		

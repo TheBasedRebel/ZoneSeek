@@ -151,9 +151,6 @@ public class BlockLagoonSapling extends BlockFlower
             if (flag)
             {
                 par1World.setBlock(par2 + i1, par3, par4 + j1, this.blockID, l, 4);
-                par1World.setBlock(par2 + i1 + 1, par3, par4 + j1, this.blockID, l, 4);
-                par1World.setBlock(par2 + i1, par3, par4 + j1 + 1, this.blockID, l, 4);
-                par1World.setBlock(par2 + i1 + 1, par3, par4 + j1 + 1, this.blockID, l, 4);
             }
             else
             {
