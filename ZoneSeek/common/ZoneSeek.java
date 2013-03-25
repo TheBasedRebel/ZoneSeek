@@ -18,6 +18,7 @@ import ZoneSeek.common.recipes.ShapelessHandler;
 import ZoneSeek.common.worldgen.WorldGeneratorLagoon;
 import ZoneSeek.common.worldgen.WorldGeneratorSludge;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PreInit;
@@ -30,6 +31,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @NetworkMod(clientSideRequired = true, serverSideRequired = false, packetHandler = CommonPacketHandler.class, channels = {"ZoneSeek"})
 
 public class ZoneSeek {
+	@SidedProxy(clientSide = "ZoneSeek.client.ClientProxyZoneSeek", serverSide = "ZoneSeek.common.CommonProxyZoneSeek")
+	public static CommonProxyZoneSeek proxy;
 	
 	@Instance
 	public static ZoneSeek instance = new ZoneSeek();
@@ -56,6 +59,7 @@ public class ZoneSeek {
 
 	@Init
 	public void load(FMLInitializationEvent event){
+		proxy.registerRenders();
         BlocksHelper.setupBlocks();
         ItemsHelper.setupItems();
         BiomesHelper.setupBiomes();
@@ -66,8 +70,13 @@ public class ZoneSeek {
         
 
 		GameRegistry.registerWorldGenerator(new WorldGenOres());
-	    GameRegistry.registerWorldGenerator(new WorldGeneratorLagoon());
+		
+	    //May Cause Lag?
+		GameRegistry.registerWorldGenerator(new WorldGeneratorLagoon());
 	    GameRegistry.registerWorldGenerator(new WorldGeneratorSludge());
+	    //-------------------------------------------------------------
+	    
+	    
 		//GameRegistry.registerFuelHandler(new FuelHandler());
 		
 		//NetworkRegistry.instance().registerGuiHandler(instance, guihandler);
