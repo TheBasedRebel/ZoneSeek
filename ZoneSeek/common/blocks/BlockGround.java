@@ -9,7 +9,7 @@ public class BlockGround extends Block{
 	private String textureName;
 
 	public BlockGround(int par1, String tex) {
-		super(par1, Material.ground);
+		super(par1, Material.grass);
 		this.textureName = tex;
 	}
 

@@ -98,10 +98,10 @@ public class LagoonSlug extends EntityMob{
 	        this.worldObj.playSoundAtEntity(this, "mob.silverfish.step", 0.15F, 1.0F);
 	    }
 	    
-	    protected int getDropItemId()
-	    {
-	    	return 5002 ;
-	    }
+	  //  protected int getDropItemId()
+	  //  {
+	  //  	return 5002 ;
+	  //  }
 	    
 	    protected void droprareDrop(int par1)
 	    {

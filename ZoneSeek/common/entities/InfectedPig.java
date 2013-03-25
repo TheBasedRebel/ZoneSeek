@@ -114,10 +114,10 @@ public class InfectedPig extends EntityMob{
 	        this.worldObj.playSoundAtEntity(this, "mob.pig.step", 0.15F, 1.0F);
 	    }
 	    
-	    protected int getDropItemId()
-	    {
-	    	return 5002 ;
-	    }
+	   // protected int getDropItemId()
+	    //{
+	    //	return 5002 ;
+	    //}
 	    
 	    protected void droprareDrop(int par1)
 	    {

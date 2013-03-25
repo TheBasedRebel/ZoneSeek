@@ -2,12 +2,9 @@ package ZoneSeek.common.entities;
 
 import ZoneSeek.common.items.ItemsHelper;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityAgeable;
-import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.ai.EntityAIAttackOnCollide;
-import net.minecraft.entity.ai.EntityAIBreakDoor;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAIMoveThroughVillage;
@@ -17,18 +14,18 @@ import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.monster.EntityMob;
-import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-public class InfectedCow extends EntityMob{
+public class Cerberus extends EntityMob{
 
-	public InfectedCow(World par1World) {
+	public Cerberus(World par1World) {
 		super(par1World);
-		this.texture = "/mods/zoneseek/textures/models/infcow.png";
+		this.texture = "/mods/zoneseek/textures/models/cerberus.png";
 		this.moveSpeed = 0.3F;
         this.getNavigator().setAvoidsWater(true);
         this.tasks.addTask(0, new EntityAISwimming(this));
@@ -49,58 +46,73 @@ public class InfectedCow extends EntityMob{
         return true;
     }
 	 
-	 @Override
-	 protected boolean canDespawn() {
-	 return true;
-	 }
 
 	public int getMaxHealth() {
-		return 15;
+		return 25;
 	}
 	
 	@Override
+	protected boolean canDespawn() {
+	return true;
+	}
+
 	protected boolean isValidLightLevel()
 	{
 	    return true; //don't care about the light level to spawn
 	}
 	
-	public int getAttackStrength(){
-		return 4;
-	}
-	
+    public int getAttackStrength(Entity var1)
+    {
+        return 6;
+    }
+
+    protected void entityInit()
+    {
+        super.entityInit();
+        this.dataWatcher.addObject(4, new Byte((byte)0));
+    }
     protected Entity findPlayerToAttack()
     {
         double var1 = 8.0D;
         return this.worldObj.getClosestVulnerablePlayerToEntity(this, var1);
     }
-
-	public EnumCreatureAttribute getCreatureAttribute(){
-	    return EnumCreatureAttribute.ARTHROPOD;
-	    }
 	
 	 protected String getLivingSound()
 	    {
-	        return "mob.cow.say";
+	        return "mob.wolf.say";
 	    }
 	 
 	    protected String getHurtSound()
 	    {
-	        return "mob.cow.hurt";
+	        return "mob.wolf.hurt";
 	    }
 	    
 	    protected String getDeathSound()
 	    {
-	        return "mob.cow.death";
+	        return "mob.wolf.death";
+	    }
+	    
+	    public void writeEntityToNBT(NBTTagCompound var1)
+	    {
+	        super.writeEntityToNBT(var1);
+	    }
+
+	    /**
+	     * (abstract) Protected helper method to read subclass entity data from NBT.
+	     */
+	    public void readEntityFromNBT(NBTTagCompound var1)
+	    {
+	        super.readEntityFromNBT(var1);
 	    }
 	    
 	    protected void playStepSound(int par1, int par2, int par3, int par4)
 	    {
-	        this.worldObj.playSoundAtEntity(this, "mob.cow.step", 0.15F, 1.0F);
+	        this.worldObj.playSoundAtEntity(this, "mob.wolf.step", 0.15F, 1.0F);
 	    }
 	    
 	   // protected int getDropItemId()
-	    //{
-	    	//return 5002 ;
+	   // {
+	    //	return 5002 ;
 	   // }
 	    
 	    protected void droprareDrop(int par1)
@@ -108,9 +120,9 @@ public class InfectedCow extends EntityMob{
 	    	switch(this.rand.nextInt(2))
 	    	{
 	    	case 0:
-	    		this.dropItem(ItemsHelper.InfectedStone.itemID, 1);
+	    		this.dropItem(ItemsHelper.KasoliteCrystal.itemID, 1);
 	    	case 1:
-	    		this.dropItem(ItemsHelper.InfectedGem.itemID, this.rand.nextInt(5) +1);
+	    		this.dropItem(ItemsHelper.KasoliteCrystal.itemID, this.rand.nextInt(5) +1);
 	    	}
 	    }
 	    
@@ -118,7 +130,7 @@ public class InfectedCow extends EntityMob{
 	    {
 	    	if(this.rand.nextInt(1) == 0)
 	    	{
-	    		this.dropItem(ItemsHelper.TaintedLeather.itemID, 2);
+	    		this.dropItem(ItemsHelper.KasoliteCrystal.itemID, 2);
 	    	}
 	    }
 	    
@@ -144,7 +156,7 @@ public class InfectedCow extends EntityMob{
 
 	                if (var2 > 0)
 	                {
-	                    ((EntityLiving)par1Entity).addPotionEffect(new PotionEffect(Potion.poison.id, var2 * 20, 0));
+	                    ((EntityLiving)par1Entity).addPotionEffect(new PotionEffect(Potion.weakness.id, var2 * 10, 0));
 	                }
 	            }
 
@@ -155,6 +167,5 @@ public class InfectedCow extends EntityMob{
 	            return false;
 	        }
 	    }
-
 
 }

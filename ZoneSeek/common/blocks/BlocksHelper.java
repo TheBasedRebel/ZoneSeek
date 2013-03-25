@@ -114,28 +114,28 @@ public class BlocksHelper {
 		WallPaperYellowBottom = new BlockWallPaperYellowB(IDsHelper.WallPaperYellowBottomID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperYellowBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Normal Blocks Stone
-		InfectedBlock = new BlockStone(IDsHelper.InfectedBlockID, "InfectedBlock").setHardness(10F).setResistance(0.2F).setUnlocalizedName("InfectedBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		InfectedBrick = new BlockStone(IDsHelper.InfectedBrickID, "InfectedBrick").setHardness(10F).setResistance(0.2F).setUnlocalizedName("InfectedBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeBrick = new BlockStone(IDsHelper.SludgeBrickID, "SludgeBrick").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeRock = new BlockStone(IDsHelper.SludgeRockID, "SludgeRock").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeRock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		InfectedBlock = new BlockStone(IDsHelper.InfectedBlockID, "InfectedBlock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("InfectedBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		InfectedBrick = new BlockStone(IDsHelper.InfectedBrickID, "InfectedBrick").setHardness(2F).setResistance(0.2F).setUnlocalizedName("InfectedBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeBrick = new BlockStone(IDsHelper.SludgeBrickID, "SludgeBrick").setHardness(2F).setResistance(0.2F).setUnlocalizedName("SludgeBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeRock = new BlockStone(IDsHelper.SludgeRockID, "SludgeRock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("SludgeRock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeStoneGround = new BlockStone(IDsHelper.SludgeStoneGroundID, "SludgeStoneGround").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeStoneGround").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		Tile = new BlockStone(IDsHelper.TileID, "Tile").setHardness(10F).setResistance(0.2F).setUnlocalizedName("Tile").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Tile = new BlockStone(IDsHelper.TileID, "Tile").setHardness(2F).setResistance(0.2F).setUnlocalizedName("Tile").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 
 		//Normal Blocks Ground
-		LagoonDirt = new BlockGround(IDsHelper.LagoonDirtID, "LagoonDirt").setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeDirt = new BlockGround(IDsHelper.SludgeDirtID, "SludgeDirt").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		TropicalDirt = new BlockGround(IDsHelper.TropicalDirtID, "TropicalDirt").setHardness(10F).setResistance(0.2F).setUnlocalizedName("TropicalDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonDirt = new BlockGround(IDsHelper.LagoonDirtID, "LagoonDirt").setHardness(0.8F).setResistance(0.2F).setUnlocalizedName("LagoonDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeDirt = new BlockGround(IDsHelper.SludgeDirtID, "SludgeDirt").setHardness(0.8F).setResistance(0.2F).setUnlocalizedName("SludgeDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		TropicalDirt = new BlockGround(IDsHelper.TropicalDirtID, "TropicalDirt").setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("TropicalDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Normal Blocks Lamp
-		InfectedLamp = new BlockLamp(IDsHelper.InfectedLampID, "InfectedLamp").setHardness(10F).setResistance(0.2F).setUnlocalizedName("InfectedLamp").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeLamp = new BlockLamp(IDsHelper.SludgeLampID, "SludgeLamp").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeLamp").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		InfectedLamp = new BlockLamp(IDsHelper.InfectedLampID, "InfectedLamp").setHardness(0.2F).setResistance(0.1F).setUnlocalizedName("InfectedLamp").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeLamp = new BlockLamp(IDsHelper.SludgeLampID, "SludgeLamp").setHardness(0.2F).setResistance(0.1F).setUnlocalizedName("SludgeLamp").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Special Blocks
 		LagoonLadder = new BlockLagoonLadder(IDsHelper.LagoonLadderID, "LagoonLadder").setHardness(12F).setResistance(10F).setUnlocalizedName("LagoonLadder").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		Counter = new BlockCounter(IDsHelper.CounterID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("Counter").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Biome Blocks
-		LagoonGrass = new BlockLagoonGrass(IDsHelper.LagoonGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonGrass = new BlockLagoonGrass(IDsHelper.LagoonGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("LagoonGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		LagoonLeaf = new BlockLagoonLeaf(IDsHelper.LagoonLeafID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		LagoonLog = new BlockLagoonLog(IDsHelper.LagoonLogID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		LagoonSapling = new BlockLagoonSapling(IDsHelper.LagoonSaplingID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonSapling").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -143,11 +143,11 @@ public class BlocksHelper {
 		LagoonVines = new BlockLagoonVines(IDsHelper.LagoonVinesID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonVines").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		PalmLeaf = new BlockPalmLeaf(IDsHelper.PalmLeafID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("PalmLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		PalmLog = new BlockPalmLog(IDsHelper.PalmLogID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("PalmLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeGrass = new BlockSludgeGrass(IDsHelper.SludgeGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeGrass = new BlockSludgeGrass(IDsHelper.SludgeGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("SludgeGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeLeaf = new BlockSludgeLeaf(IDsHelper.SludgeLeafID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeLog = new BlockSludgeLog(IDsHelper.SludgeLogID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeTallGrass = new BlockSludgeTallGrass(IDsHelper.SludgeTallGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		TropicalGrass = new BlockTropicalGrass(IDsHelper.TropicalGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("TropicalGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		TropicalGrass = new BlockTropicalGrass(IDsHelper.TropicalGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("TropicalGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		TropicalTallGrass = new BlockTropicalTallGrass(IDsHelper.TropicalTallGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("TropicalTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Stairs
