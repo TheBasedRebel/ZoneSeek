@@ -210,7 +210,7 @@ public class ItemsHelper{
 		LanguageRegistry.addName(InfectedBow, "Infected Bow");
 		LanguageRegistry.addName(InfectedChestplate, "Infected Chestplate");
 		LanguageRegistry.addName(InfectedGem, "Infected Gem");
-		LanguageRegistry.addName(InfectedHelmet, "InfectedHelmet");
+		LanguageRegistry.addName(InfectedHelmet, "Infected Helmet");
 		LanguageRegistry.addName(InfectedHoe, "Infected Hoe");
 		LanguageRegistry.addName(InfectedLeggings, "Infected Leggings");
 		LanguageRegistry.addName(InfectedPaxcel, "Infected Paxcel");

@@ -17,15 +17,15 @@ public class MobsHelper {
 	public static void setupMobs(){
 		//Mobs Hostile
 		EntityRegistry.registerModEntity(InfectedPig.class, "InfectedPig", 1, ZoneSeek.instance, 80, 3, true);
-		LanguageRegistry.instance().addStringLocalization("InfectedPig", "Infected Pig");
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.InfectedPig.name", "Infected Pig");
 		EntityRegistry.addSpawn(InfectedPig.class, 900, 1, 4, EnumCreatureType.creature, BiomeGenBase.beach, BiomeGenBase.desert, BiomeGenBase.extremeHills, BiomeGenBase.forest, BiomeGenBase.jungle, BiomeGenBase.plains, BiomeGenBase.taiga, BiomeGenBase.taigaHills, BiomeGenBase.icePlains, BiomeGenBase.desertHills, BiomeGenBase.extremeHillsEdge, BiomeGenBase.forestHills, BiomeGenBase.frozenOcean, BiomeGenBase.frozenRiver, BiomeGenBase.jungleHills, BiomeGenBase.swampland);
 		
 		EntityRegistry.registerModEntity(InfectedCow.class, "InfectedCow", 2, ZoneSeek.instance, 80, 3, true);
-		LanguageRegistry.instance().addStringLocalization("InfectedCow", "Infected Cow");
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.InfectedCow.name", "Infected Cow");
 		EntityRegistry.addSpawn(InfectedCow.class, 900, 1, 4, EnumCreatureType.creature, BiomeGenBase.beach, BiomeGenBase.desert, BiomeGenBase.extremeHills, BiomeGenBase.forest, BiomeGenBase.jungle, BiomeGenBase.plains, BiomeGenBase.taiga, BiomeGenBase.taigaHills, BiomeGenBase.icePlains, BiomeGenBase.desertHills, BiomeGenBase.extremeHillsEdge, BiomeGenBase.forestHills, BiomeGenBase.frozenOcean, BiomeGenBase.frozenRiver, BiomeGenBase.jungleHills, BiomeGenBase.swampland);
 		
 		EntityRegistry.registerModEntity(LagoonSlug.class, "LagoonSlug", 3, ZoneSeek.instance, 80, 3, true);
-		LanguageRegistry.instance().addStringLocalization("LagoonSlug", "Lagoon Slug");
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.LagoonSlug.name", "Lagoon Slug");
 		EntityRegistry.addSpawn(LagoonSlug.class, 900, 1, 4, EnumCreatureType.creature, BiomesHelper.Lagoon);
 		//Mobs Peaceful
 		

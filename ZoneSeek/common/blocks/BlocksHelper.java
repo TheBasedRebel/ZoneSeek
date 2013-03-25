@@ -114,7 +114,6 @@ public class BlocksHelper {
 		WallPaperYellowBottom = new BlockWallPaperYellowB(IDsHelper.WallPaperYellowBottomID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperYellowBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Normal Blocks Stone
-		Counter = new BlockStone(IDsHelper.CounterID, "Counter").setHardness(10F).setResistance(0.2F).setUnlocalizedName("Counter").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		InfectedBlock = new BlockStone(IDsHelper.InfectedBlockID, "InfectedBlock").setHardness(10F).setResistance(0.2F).setUnlocalizedName("InfectedBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		InfectedBrick = new BlockStone(IDsHelper.InfectedBrickID, "InfectedBrick").setHardness(10F).setResistance(0.2F).setUnlocalizedName("InfectedBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeBrick = new BlockStone(IDsHelper.SludgeBrickID, "SludgeBrick").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -133,6 +132,7 @@ public class BlocksHelper {
 		
 		//Special Blocks
 		LagoonLadder = new BlockLagoonLadder(IDsHelper.LagoonLadderID, "LagoonLadder").setHardness(12F).setResistance(10F).setUnlocalizedName("LagoonLadder").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Counter = new BlockCounter(IDsHelper.CounterID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("Counter").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Biome Blocks
 		LagoonGrass = new BlockLagoonGrass(IDsHelper.LagoonGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
