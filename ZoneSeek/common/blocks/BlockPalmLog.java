@@ -27,9 +27,9 @@ public class BlockPalmLog extends Block
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister par1IconRegister)
 	{
-		this.blockIcon = par1IconRegister.registerIcon("zoneseek:palmwood");
-		this.topIcon  = par1IconRegister.registerIcon("zoneseek:palmwoodtop");
-		this.sideIcon = par1IconRegister.registerIcon("zoneseek:palmwood");
+		this.blockIcon = par1IconRegister.registerIcon("zoneseek:palmwoodside");
+		this.topIcon  = par1IconRegister.registerIcon("zoneseek:palmWoodTop");
+		this.sideIcon = par1IconRegister.registerIcon("zoneseek:palmwoodside");
 	}
 
 	@Override

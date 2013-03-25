@@ -94,13 +94,13 @@ public class ItemsHelper{
 		InfectedArrow = new ItemInfectedArrow(IDsHelper.InfectedArrowID).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("InfectedArrow");
 		InfectedAxe = new ItemInfectedAxe(IDsHelper.InfectedAxeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedAxe");
 		InfectedBattleAxe = new ItemBattleAxe(IDsHelper.InfectedBattleAxeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("InfectedBattleAxe");
-		InfectedBoots = new ItemInfectedBoots(IDsHelper.InfectedBootsID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedboots").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedBoots");
+		InfectedBoots = new ItemInfectedBoots(IDsHelper.InfectedBootsID, InfectedArmorMaterial, proxy.addArmor("Infected"), 3, "infectedboots").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedBoots");
 		InfectedBow = new ItemInfectedBow(IDsHelper.InfectedBowID).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("InfectedBow");
-		InfectedChestplate = new ItemInfectedChestPlate(IDsHelper.InfectedChestplateID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedchestplate").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedChestplate");
+		InfectedChestplate = new ItemInfectedChestPlate(IDsHelper.InfectedChestplateID, InfectedArmorMaterial, proxy.addArmor("Infected"), 1, "infectedchestplate").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedChestplate");
 		InfectedGem = new ItemMisc(IDsHelper.InfectedGemID, "InfectedGem").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("InfectedGem");
 		InfectedHelmet = new ItemInfectedHelmet(IDsHelper.InfectedHelmetID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedhelmet").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedHelmet");
 		InfectedHoe = new ItemInfectedHoe(IDsHelper.InfectedHoeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedHoe");
-		InfectedLeggings = new ItemInfectedLeggings(IDsHelper.InfectedLeggingsID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedleggings").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedLeggings");
+		InfectedLeggings = new ItemInfectedLeggings(IDsHelper.InfectedLeggingsID, InfectedArmorMaterial, proxy.addArmor("Infected"), 2, "infectedleggings").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedLeggings");
 		InfectedPaxcel = new ItemInfectedPaxcel(IDsHelper.InfectedPaxcelID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedPaxcel");
 		InfectedPickaxe = new ItemInfectedPickaxe(IDsHelper.InfectedPickaxeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedPickaxe");
 		InfectedPlate = new ItemMisc(IDsHelper.InfectedPlateID, "InfectedPlate").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("InfectedPlate");
