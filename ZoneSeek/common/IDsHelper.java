@@ -72,6 +72,13 @@ public class IDsHelper {
     public static int LagoonStairsID;
     public static int SludgeStairsID;
     public static int GraniteStairsID;
+    public static int BloodFlowerID;
+    public static int BlossomsID;
+    public static int DaisyID;
+    public static int DeadFlowerID;
+    public static int IrisID;
+    public static int SpringFlowersID;
+    public static int TulipID;
     
     
     
@@ -168,7 +175,7 @@ public class IDsHelper {
 		SidingID = config.get(blockids, "Siding ID", 815).getInt();
 		SludgeBrickID = config.get(blockids, "Sludge Brick ID", 816).getInt();
 		SludgeDirtID = config.get(blockids, "Sludge Dirt ID", 254).getInt();
-		SludgeGrassID = config.get(blockids, "Sludge Grass ID", 255).getInt();
+		SludgeGrassID = config.get(blockids, "Sludge Grass ID", 178).getInt();
 		SludgeLampID = config.get(blockids, "Sludge Lamp ID", 819).getInt();
 		SludgeLeafID = config.get(blockids, "Sludge Leaf ID", 820).getInt();
 		SludgeLogID = config.get(blockids, "Sludge Log ID", 821).getInt();
@@ -192,7 +199,14 @@ public class IDsHelper {
 		TropicalTallGrassID = config.get(blockids, "Tropical Tall Grass ID", 839).getInt();
 		LagoonStairsID = config.get(blockids, "Lagoon Stairs ID", 840).getInt();
 		SludgeStairsID = config.get(blockids, "Sludge Stairs ID", 841).getInt();
-		GraniteStairsID = config.get(blockids, "Granite Stairs ID", 842).getInt();
+		GraniteStairsID = config.get(blockids, "Granite Stairs ID", 842).getInt();		
+		BloodFlowerID = config.get(blockids, "Blood Flower ID", 172).getInt();
+		BlossomsID = config.get(blockids, "Blossoms ID", 173).getInt();
+		DaisyID = config.get(blockids, "Daisy ID", 174).getInt();
+		DeadFlowerID = config.get(blockids, "Dead Flower ID", 175).getInt();
+		IrisID = config.get(blockids, "Iris ID", 176).getInt();
+		SpringFlowersID = config.get(blockids, "Spring Flowers ID", 177).getInt();
+		TulipID = config.get(blockids, "TulipID", 179).getInt();
 		
 		//Item IDs
 		ApophylliteCrystalID = config.get(itemids, "Apophyllite Crystal ID", 1000).getInt();

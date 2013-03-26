@@ -21,9 +21,9 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-public class Cerberus extends EntityMob{
+public class Orthrus extends EntityMob{
 
-	public Cerberus(World par1World) {
+	public Orthrus(World par1World) {
 		super(par1World);
 		this.texture = "/mods/zoneseek/textures/models/cerberus.png";
 		this.moveSpeed = 0.3F;

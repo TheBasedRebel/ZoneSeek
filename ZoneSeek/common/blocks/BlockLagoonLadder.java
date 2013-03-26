@@ -17,12 +17,9 @@ import static net.minecraftforge.common.ForgeDirection.*;
 
 public class BlockLagoonLadder extends Block
 {
-	private String textureName;
-	
-    protected BlockLagoonLadder(int par1, String tex)
+    protected BlockLagoonLadder(int par1)
     {
         super(par1, Material.circuits);
-        this.textureName = tex;
     }
 
     /**
@@ -98,10 +95,6 @@ public class BlockLagoonLadder extends Block
     {
         return false;
     }
-    
-	public String getTextureName(){
-		return this.textureName;
-	}
 
     /**
      * The type of render function that is called for this block
@@ -204,7 +197,9 @@ public class BlockLagoonLadder extends Block
         return true;
     }
     
-	public void registerIcons(IconRegister reg){
-		this.blockIcon = reg.registerIcon("zoneseek:" + this.getTextureName());
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister par1IconRegister)
+	{
+		this.blockIcon = par1IconRegister.registerIcon("zoneseek:lagoonladder");
 	}
 }

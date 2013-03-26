@@ -1,7 +1,7 @@
 package ZoneSeek.common.entities.render;
 
-import ZoneSeek.common.entities.Cerberus;
-import ZoneSeek.common.models.ModelCerberus;
+import ZoneSeek.common.entities.Orthrus;
+import ZoneSeek.common.models.ModelOrthrus;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
@@ -11,24 +11,24 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
-public class RenderCerberus extends RenderLiving
+public class RenderOrthrus extends RenderLiving
 {
 	
 	
-    public RenderCerberus(ModelCerberus par1ModelBase, float par2)
+    public RenderOrthrus(ModelOrthrus par1ModelBase, float par2)
     {
         super(par1ModelBase, par2);
         
     }
 
-    public void renderCow(Cerberus par1EntityCow, double par2, double par4, double par6, float par8, float par9)
+    public void renderCow(Orthrus par1EntityCow, double par2, double par4, double par6, float par8, float par9)
     {
         super.doRenderLiving(par1EntityCow, par2, par4, par6, par8, par9);
     }
 
     public void doRenderLiving(EntityLiving par1EntityLiving, double par2, double par4, double par6, float par8, float par9)
     {
-        this.renderCow((Cerberus)par1EntityLiving, par2, par4, par6, par8, par9);
+        this.renderCow((Orthrus)par1EntityLiving, par2, par4, par6, par8, par9);
     }
 
     /**
@@ -39,6 +39,6 @@ public class RenderCerberus extends RenderLiving
      */
     public void doRender(Entity par1Entity, double par2, double par4, double par6, float par8, float par9)
     {
-        this.renderCow((Cerberus)par1Entity, par2, par4, par6, par8, par9);
+        this.renderCow((Orthrus)par1Entity, par2, par4, par6, par8, par9);
     }
 }

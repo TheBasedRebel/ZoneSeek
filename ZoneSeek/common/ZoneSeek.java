@@ -2,6 +2,7 @@ package ZoneSeek.common;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.Configuration;
+import net.minecraftforge.common.MinecraftForge;
 import ZoneSeek.ZoneSeekArmor;
 import ZoneSeek.ZoneSeekBlocks;
 import ZoneSeek.ZoneSeekFood;
@@ -15,6 +16,7 @@ import ZoneSeek.common.items.ItemsHelper;
 import ZoneSeek.common.recipes.CraftingTableHandler;
 import ZoneSeek.common.recipes.FurnaceHandler;
 import ZoneSeek.common.recipes.ShapelessHandler;
+import ZoneSeek.common.worldgen.WorldGeneratorFlowers;
 import ZoneSeek.common.worldgen.WorldGeneratorLagoon;
 import ZoneSeek.common.worldgen.WorldGeneratorSludge;
 import cpw.mods.fml.common.Mod;
@@ -68,9 +70,17 @@ public class ZoneSeek {
         FurnaceHandler.setupRecipes();
         ShapelessHandler.setupRecipes();
         
-
+		MinecraftForge.addGrassPlant(BlocksHelper.BloodFlower, 0, 1);
+		MinecraftForge.addGrassPlant(BlocksHelper.Blossoms, 0, 1);
+		MinecraftForge.addGrassPlant(BlocksHelper.Daisy, 0, 1);
+		MinecraftForge.addGrassPlant(BlocksHelper.DeadFlower, 0, 1);
+		MinecraftForge.addGrassPlant(BlocksHelper.Iris, 0, 1);
+		MinecraftForge.addGrassPlant(BlocksHelper.SpringFlowers, 0, 1);
+		MinecraftForge.addGrassPlant(BlocksHelper.Tulip, 0, 1);
+        
 		GameRegistry.registerWorldGenerator(new WorldGenOres());
-		
+		GameRegistry.registerWorldGenerator(new WorldGeneratorFlowers());
+
 	    //May Cause Lag?
 		//GameRegistry.registerWorldGenerator(new WorldGeneratorLagoon());
 	    //GameRegistry.registerWorldGenerator(new WorldGeneratorSludge());

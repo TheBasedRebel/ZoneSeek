@@ -1,17 +1,17 @@
 package ZoneSeek.client;
 
 import ZoneSeek.common.CommonProxyZoneSeek;
-import ZoneSeek.common.entities.Cerberus;
+import ZoneSeek.common.entities.Orthrus;
 import ZoneSeek.common.entities.EntityInfectedArrow;
 import ZoneSeek.common.entities.InfectedCow;
 import ZoneSeek.common.entities.InfectedPig;
 import ZoneSeek.common.entities.LagoonSlug;
-import ZoneSeek.common.entities.render.RenderCerberus;
+import ZoneSeek.common.entities.render.RenderOrthrus;
 import ZoneSeek.common.entities.render.RenderInfectedArrow;
 import ZoneSeek.common.entities.render.RenderInfectedCow;
 import ZoneSeek.common.entities.render.RenderInfectedPig;
 import ZoneSeek.common.entities.render.RenderLagoonSlug;
-import ZoneSeek.common.models.ModelCerberus;
+import ZoneSeek.common.models.ModelOrthrus;
 import ZoneSeek.common.models.ModelInfectedCow;
 import ZoneSeek.common.models.ModelInfectedPig;
 import ZoneSeek.common.models.ModelLagoonSlug;
@@ -25,7 +25,7 @@ public class ClientProxyZoneSeek extends CommonProxyZoneSeek{
 		RenderingRegistry.registerEntityRenderingHandler(InfectedPig.class, new RenderInfectedPig(new ModelInfectedPig(), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(InfectedCow.class, new RenderInfectedCow(new ModelInfectedCow(), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(LagoonSlug.class, new RenderLagoonSlug(new ModelLagoonSlug(), 0.5F));
-		RenderingRegistry.registerEntityRenderingHandler(Cerberus.class, new RenderCerberus(new ModelCerberus(), 0.5F));
+		RenderingRegistry.registerEntityRenderingHandler(Orthrus.class, new RenderOrthrus(new ModelOrthrus(), 0.5F));
 	}
 	
 	public int addArmor(String Armor){

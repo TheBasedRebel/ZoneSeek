@@ -4,7 +4,7 @@ import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-public class ModelCerberus extends ModelBase
+public class ModelOrthrus extends ModelBase
 {
   //fields
     ModelRenderer WolfHead;
@@ -34,7 +34,7 @@ public class ModelCerberus extends ModelBase
     ModelRenderer Spike_3;
     ModelRenderer R_Wing_3;
   
-  public ModelCerberus()
+  public ModelOrthrus()
   {
     textureWidth = 64;
     textureHeight = 64;

@@ -2,6 +2,8 @@ package ZoneSeek.common.blocks;
 
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFlower;
+import net.minecraft.block.material.Material;
 import net.minecraftforge.common.MinecraftForge;
 import ZoneSeek.ZoneSeekArmor;
 import ZoneSeek.ZoneSeekBlocks;
@@ -75,7 +77,14 @@ public class BlocksHelper {
     public static Block WallPaperYellowBottom;
     public static Block LagoonStairs;
     public static Block SludgeStairs;
-    public static Block GraniteStairs;
+    public static Block GraniteStairs;   
+    public static Block BloodFlower;
+    public static Block Blossoms;
+    public static Block Daisy;
+    public static Block DeadFlower;
+    public static Block Iris;
+    public static Block SpringFlowers;
+    public static Block Tulip;
 
 	public static void setupBlocks() {
 		
@@ -131,7 +140,7 @@ public class BlocksHelper {
 		SludgeLamp = new BlockLamp(IDsHelper.SludgeLampID, "SludgeLamp").setHardness(0.2F).setResistance(0.1F).setUnlocalizedName("SludgeLamp").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Special Blocks
-		LagoonLadder = new BlockLagoonLadder(IDsHelper.LagoonLadderID, "LagoonLadder").setHardness(12F).setResistance(10F).setUnlocalizedName("LagoonLadder").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonLadder = new BlockLagoonLadder(IDsHelper.LagoonLadderID).setHardness(12F).setResistance(10F).setUnlocalizedName("LagoonLadder").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		Counter = new BlockCounter(IDsHelper.CounterID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("Counter").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Biome Blocks
@@ -155,6 +164,15 @@ public class BlocksHelper {
 		SludgeStairs = new BlockSludgeStairs(IDsHelper.SludgeStairsID, BlocksHelper.SludgePlanks, 0).setUnlocalizedName("SludgeStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		GraniteStairs = new BlockGraniteStairs(IDsHelper.GraniteStairsID, BlocksHelper.Granite, 0).setUnlocalizedName("GraniteStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
+		//Flowers
+		BloodFlower = new BlockFlowerCustom(IDsHelper.BloodFlowerID, "BloodFlower").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("BloodFlower").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Blossoms = new BlockFlowerCustom(IDsHelper.BlossomsID, "Blossoms").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("Blossoms").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Daisy = new BlockFlowerCustom(IDsHelper.DaisyID, "Daisy").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("Daisy").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		DeadFlower = new BlockFlowerCustom(IDsHelper.DeadFlowerID, "DeadFlower").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("DeadFlower").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Iris = new BlockFlowerCustom(IDsHelper.IrisID, "Iris").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("Iris").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SpringFlowers = new BlockFlowerCustom(IDsHelper.SpringFlowersID, "SpringFlowers").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("SpringFlowers").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Tulip = new BlockFlowerCustom(IDsHelper.TulipID, "Tulip").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("Tulip").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		
 		//Machines
 		//geothermalOven = new BlockLavaFurnace(IDsHelper.lavafurnaceID, "LavaFurnaceFront").setHardness(2.5F).setResistance(22F).setUnlocalizedName("geothermaloven").setStepSound(Block.soundStoneFootstep).setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		//geothermalOvenActive = new BlockLavaFurnace(IDsHelper.lavafurnaceID + 1, "LavaFurnaceFrontRunning").setHardness(2.5F).setResistance(22F).setUnlocalizedName("geothermaloven1").setStepSound(Block.soundStoneFootstep).setLightValue(0.3F);
@@ -165,6 +183,15 @@ public class BlocksHelper {
 		MinecraftForge.setBlockHarvestLevel(InfectedOre, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(Granite, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(SludgeOre, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Apophyllite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Axinite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Betafite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Brochantite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Dolomite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Fotite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Heterogenite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Kasolite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(Lazurite, "pickaxe", 2);
 		
 		gameRegisters();
 		languageRegisters();
@@ -229,6 +256,14 @@ public class BlocksHelper {
 		GameRegistry.registerBlock(LagoonStairs, "AdamBahr_LagoonStairs");
 		GameRegistry.registerBlock(SludgeStairs, "AdamBahr_SludgeStairs");
 		GameRegistry.registerBlock(GraniteStairs, "AdamBahr_GraniteStairs");
+		GameRegistry.registerBlock(BloodFlower, "AdamBahr_BloodFlower");
+		GameRegistry.registerBlock(Blossoms, "AdamBahr_Blossoms");
+		GameRegistry.registerBlock(Daisy, "AdamBahr_Daisy");
+		GameRegistry.registerBlock(DeadFlower, "AdamBahr_DeadFlower");
+		GameRegistry.registerBlock(Iris, "AdamBahr_Iris");
+		GameRegistry.registerBlock(SpringFlowers, "AdamBahr_SpringFlowers");
+		GameRegistry.registerBlock(Tulip, "AdamBahr_Tulip");
+		GameRegistry.registerBlock(LagoonLadder, "Lagoon Ladder");
 	}
 	
 	private static void languageRegisters() {
@@ -290,6 +325,14 @@ public class BlocksHelper {
 		LanguageRegistry.addName(LagoonLog, "Lagoon Log");
 		LanguageRegistry.addName(LagoonPlanks, "Lagoon Planks");
 		LanguageRegistry.addName(LagoonSapling, "Lagoon Sapling");
+		LanguageRegistry.addName(BloodFlower, "Blood Flower");
+		LanguageRegistry.addName(Blossoms, "Blossoms");
+		LanguageRegistry.addName(Daisy, "Daisy");
+		LanguageRegistry.addName(DeadFlower, "Dead Flower");
+		LanguageRegistry.addName(Iris, "Iris");
+		LanguageRegistry.addName(SpringFlowers, "Spring Flowers");
+		LanguageRegistry.addName(Tulip, "Tulip");
+		LanguageRegistry.addName(LagoonLadder, "Lagoon Ladder");
 		
 		
 		
