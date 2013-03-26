@@ -103,24 +103,24 @@ public class BlocksHelper {
 		SludgeOre = new BlockOre(IDsHelper.SludgeOreID, "SludgeOre").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeOre").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 
 		//Normal Blocks Wood
-		CarpetRed = new BlockWood(IDsHelper.CarpetRedID, "CarpetRed").setHardness(12F).setResistance(10F).setUnlocalizedName("CarpetRed").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		CoconutBlock = new BlockWood(IDsHelper.CoconutBlockID, "CoconutBlock").setHardness(12F).setResistance(10F).setUnlocalizedName("CoconutBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		HardWood = new BlockWood(IDsHelper.HardWoodID, "HardWood").setHardness(12F).setResistance(10F).setUnlocalizedName("HardWood").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		LagoonPlanks = new BlockWood(IDsHelper.LagoonPlanksID, "LagoonPlanks").setHardness(12F).setResistance(10F).setUnlocalizedName("LagoonPlanks").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		PalmWoodPlanks = new BlockWood(IDsHelper.PalmWoodPlanksID, "PalmWoodPlanks").setHardness(12F).setResistance(10F).setUnlocalizedName("PalmWoodPlanks").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		Siding = new BlockWood(IDsHelper.SidingID, "Siding").setHardness(12F).setResistance(10F).setUnlocalizedName("Siding").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgePlanks = new BlockWood(IDsHelper.SludgePlanksID, "SludgePlanks").setHardness(12F).setResistance(10F).setUnlocalizedName("SludgePlanks").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		CarpetRed = new BlockWood(IDsHelper.CarpetRedID, "CarpetRed").setHardness(2F).setResistance(1F).setUnlocalizedName("CarpetRed").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		CoconutBlock = new BlockWood(IDsHelper.CoconutBlockID, "CoconutBlock").setHardness(2F).setResistance(1F).setUnlocalizedName("CoconutBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		HardWood = new BlockWood(IDsHelper.HardWoodID, "HardWood").setHardness(2F).setResistance(1F).setUnlocalizedName("HardWood").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonPlanks = new BlockWood(IDsHelper.LagoonPlanksID, "LagoonPlanks").setHardness(2F).setResistance(1F).setUnlocalizedName("LagoonPlanks").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PalmWoodPlanks = new BlockWood(IDsHelper.PalmWoodPlanksID, "PalmWoodPlanks").setHardness(2F).setResistance(0F).setUnlocalizedName("PalmWoodPlanks").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Siding = new BlockWood(IDsHelper.SidingID, "Siding").setHardness(2F).setResistance(1F).setUnlocalizedName("Siding").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgePlanks = new BlockWood(IDsHelper.SludgePlanksID, "SludgePlanks").setHardness(2F).setResistance(0F).setUnlocalizedName("SludgePlanks").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//WallPaper
-		WallPaperBlue = new BlockWallPaperBlue(IDsHelper.WallPaperBlueID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperBlue").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		WallPaperBlueBottom = new BlockWallPaperBlueB(IDsHelper.WallPaperBlueBottomID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperBlueBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		WallPaperGreen = new BlockWallPaperGreen(IDsHelper.WallPaperGreenID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperGreen").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		WallPaperGreenBottom = new BlockWallPaperGreenB(IDsHelper.WallPaperGreenBottomID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperGreenBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		WallPaperRed = new BlockWallPaperRed(IDsHelper.WallPaperRedID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperRed").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		WallPaperRedBottom = new BlockWallPaperRedB(IDsHelper.WallPaperRedBottomID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperRedBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		WallPaperWhite = new BlockWallPaperWhite(IDsHelper.WallPaperWhiteID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperWhite").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		WallPaperYellow = new BlockWallPaperYellow(IDsHelper.WallPaperYellowID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperYellow").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		WallPaperYellowBottom = new BlockWallPaperYellowB(IDsHelper.WallPaperYellowBottomID).setHardness(12F).setResistance(10F).setUnlocalizedName("WallPaperYellowBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperBlue = new BlockWallPaperBlue(IDsHelper.WallPaperBlueID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperBlue").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperBlueBottom = new BlockWallPaperBlueB(IDsHelper.WallPaperBlueBottomID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperBlueBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperGreen = new BlockWallPaperGreen(IDsHelper.WallPaperGreenID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperGreen").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperGreenBottom = new BlockWallPaperGreenB(IDsHelper.WallPaperGreenBottomID).setHardness(2F).setResistance(10F).setUnlocalizedName("WallPaperGreenBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperRed = new BlockWallPaperRed(IDsHelper.WallPaperRedID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperRed").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperRedBottom = new BlockWallPaperRedB(IDsHelper.WallPaperRedBottomID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperRedBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperWhite = new BlockWallPaperWhite(IDsHelper.WallPaperWhiteID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperWhite").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperYellow = new BlockWallPaperYellow(IDsHelper.WallPaperYellowID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperYellow").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperYellowBottom = new BlockWallPaperYellowB(IDsHelper.WallPaperYellowBottomID).setHardness(2F).setResistance(10F).setUnlocalizedName("WallPaperYellowBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Normal Blocks Stone
 		InfectedBlock = new BlockStone(IDsHelper.InfectedBlockID, "InfectedBlock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("InfectedBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -140,24 +140,24 @@ public class BlocksHelper {
 		SludgeLamp = new BlockLamp(IDsHelper.SludgeLampID, "SludgeLamp").setHardness(0.2F).setResistance(0.1F).setUnlocalizedName("SludgeLamp").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Special Blocks
-		LagoonLadder = new BlockLagoonLadder(IDsHelper.LagoonLadderID).setHardness(12F).setResistance(10F).setUnlocalizedName("LagoonLadder").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		Counter = new BlockCounter(IDsHelper.CounterID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("Counter").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonLadder = new BlockLagoonLadder(IDsHelper.LagoonLadderID).setHardness(2F).setResistance(1F).setUnlocalizedName("LagoonLadder").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Counter = new BlockCounter(IDsHelper.CounterID).setHardness(2F).setResistance(0.2F).setUnlocalizedName("Counter").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Biome Blocks
 		LagoonGrass = new BlockLagoonGrass(IDsHelper.LagoonGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("LagoonGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		LagoonLeaf = new BlockLagoonLeaf(IDsHelper.LagoonLeafID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		LagoonLog = new BlockLagoonLog(IDsHelper.LagoonLogID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		LagoonSapling = new BlockLagoonSapling(IDsHelper.LagoonSaplingID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonSapling").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		LagoonTallGrass = new BlockLagoonTallGrass(IDsHelper.LagoonTallGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		LagoonVines = new BlockLagoonVines(IDsHelper.LagoonVinesID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("LagoonVines").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		PalmLeaf = new BlockPalmLeaf(IDsHelper.PalmLeafID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("PalmLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		PalmLog = new BlockPalmLog(IDsHelper.PalmLogID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("PalmLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonLeaf = new BlockLagoonLeaf(IDsHelper.LagoonLeafID).setHardness(0.5F).setResistance(0.2F).setUnlocalizedName("LagoonLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonLog = new BlockLagoonLog(IDsHelper.LagoonLogID).setHardness(2F).setResistance(0.2F).setUnlocalizedName("LagoonLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonSapling = new BlockLagoonSapling(IDsHelper.LagoonSaplingID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("LagoonSapling").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonTallGrass = new BlockLagoonTallGrass(IDsHelper.LagoonTallGrassID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("LagoonTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonVines = new BlockLagoonVines(IDsHelper.LagoonVinesID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("LagoonVines").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PalmLeaf = new BlockPalmLeaf(IDsHelper.PalmLeafID).setHardness(0.5F).setResistance(0.2F).setUnlocalizedName("PalmLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PalmLog = new BlockPalmLog(IDsHelper.PalmLogID).setHardness(2F).setResistance(0.2F).setUnlocalizedName("PalmLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeGrass = new BlockSludgeGrass(IDsHelper.SludgeGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("SludgeGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeLeaf = new BlockSludgeLeaf(IDsHelper.SludgeLeafID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeLog = new BlockSludgeLog(IDsHelper.SludgeLogID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeTallGrass = new BlockSludgeTallGrass(IDsHelper.SludgeTallGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeLeaf = new BlockSludgeLeaf(IDsHelper.SludgeLeafID).setHardness(0.5F).setResistance(0.2F).setUnlocalizedName("SludgeLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeLog = new BlockSludgeLog(IDsHelper.SludgeLogID).setHardness(2F).setResistance(0.2F).setUnlocalizedName("SludgeLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeTallGrass = new BlockSludgeTallGrass(IDsHelper.SludgeTallGrassID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("SludgeTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		TropicalGrass = new BlockTropicalGrass(IDsHelper.TropicalGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("TropicalGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		TropicalTallGrass = new BlockTropicalTallGrass(IDsHelper.TropicalTallGrassID).setHardness(10F).setResistance(0.2F).setUnlocalizedName("TropicalTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		TropicalTallGrass = new BlockTropicalTallGrass(IDsHelper.TropicalTallGrassID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("TropicalTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Stairs
 		LagoonStairs = new BlockLagoonStairs(IDsHelper.LagoonStairsID, BlocksHelper.LagoonPlanks, 0).setUnlocalizedName("LagoonStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
