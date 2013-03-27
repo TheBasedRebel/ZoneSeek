@@ -125,7 +125,7 @@ public class CraftingTableHandler {
 		
 		//Misc
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.CarpetRed, 4), new Object[] {
-			"TTT", "XXX", "TTT", 'T', Block.cloth, 'X', Block.plantRed
+			"TTT", "XXX", "TTT", 'T', Block.cloth, 'X', ItemsHelper.RedDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.HardWood, 4), new Object[] {
@@ -141,35 +141,59 @@ public class CraftingTableHandler {
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperGreenBottom, 4), new Object[] {
-			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.InfectedShard
+			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.GreenDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperBlueBottom, 4), new Object[] {
-			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', Item.diamond
+			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.BlueDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperRedBottom, 4), new Object[] {
-			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', Item.redstone
+			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.RedDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperYellowBottom, 4), new Object[] {
-			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', Item.goldNugget
+			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.YellowDye
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperCrimsonBottom, 4), new Object[] {
+			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.CrimsonDye
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperGrayBottom, 4), new Object[] {
+			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.GrayDye
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperPinkBottom, 4), new Object[] {
+			"   ", "XXX", "TTT", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.PinkDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperGreen, 4), new Object[] {
-			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.InfectedShard
+			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.GreenDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperBlue, 4), new Object[] {
-			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', Item.diamond
+			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.BlueDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperRed, 4), new Object[] {
-			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', Item.redstone
+			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.RedDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperYellow, 4), new Object[] {
-			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', Item.goldNugget
+			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.YellowDye
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperCrimson, 4), new Object[] {
+			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.CrimsonDye
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperGray, 4), new Object[] {
+			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.GrayDye
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.WallPaperPink, 4), new Object[] {
+			" X ", "XTX", " X ", 'T', BlocksHelper.WallPaperWhite, 'X', ItemsHelper.PinkDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.Counter, 1), new Object[] {
