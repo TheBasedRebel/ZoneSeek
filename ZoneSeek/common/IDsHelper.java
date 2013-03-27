@@ -79,6 +79,12 @@ public class IDsHelper {
     public static int IrisID;
     public static int SpringFlowersID;
     public static int TulipID;
+    public static int WallPaperCrimsonID;
+    public static int WallPaperCrimsonBottomID;
+    public static int WallPaperGrayID;
+    public static int WallPaperGrayBottomID;
+    public static int WallPaperPinkID;
+    public static int WallPaperPinkBottomID;
     
     
     
@@ -280,6 +286,12 @@ public class IDsHelper {
 		IrisID = config.get(blockids, "Iris ID", 176).getInt();
 		SpringFlowersID = config.get(blockids, "Spring Flowers ID", 177).getInt();
 		TulipID = config.get(blockids, "TulipID", 179).getInt();
+		WallPaperCrimsonID = config.get(blockids, "WallPaper Crimson ID", 843).getInt();
+		WallPaperCrimsonBottomID = config.get(blockids, "WallPaper Crimson Bottom ID", 844).getInt();
+		WallPaperGrayID = config.get(blockids, "WallPaper Gray ID", 845).getInt();
+		WallPaperGrayBottomID = config.get(blockids, "WallPaper Gray Bottom ID", 846).getInt();
+		WallPaperPinkID = config.get(blockids, "WallPaper Pink ID", 847).getInt();
+		WallPaperPinkBottomID = config.get(blockids, "WallPaper Pink Bottom ID", 848).getInt();
 		
 		//Item IDs
 		ApophylliteCrystalID = config.get(itemids, "Apophyllite Crystal ID", 1000).getInt();
@@ -398,7 +410,7 @@ public class IDsHelper {
 		SludgePickaxeID = config.get(itemids, "Sludge Pickaxe ID", 1113).getInt();
 		SludgeSickleID = config.get(itemids, "Sludge Sickle ID", 1114).getInt();
 		SludgeSpadeID = config.get(itemids, "Sludge Spade ID", 1115).getInt();
-		YellowDyeID = config.get(itemids, "Yellow Dye ID", 1115).getInt();
+		YellowDyeID = config.get(itemids, "Yellow Dye ID", 1116).getInt();
 		
 		
 	}

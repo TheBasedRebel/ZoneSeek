@@ -262,15 +262,33 @@ public class ItemsHelper{
 		SlimeClub = new ItemBlade(IDsHelper.SlimeClubID, SlimeMaterial, "SlimeClub").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeClub");
 		SlimeStabber = new ItemBlade(IDsHelper.SlimeStabberID, SlimeMaterial, "SlimeStabber").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeStabber");
 		//Scale
-		
+		ScaleHelmet = new ItemScaleArmor(IDsHelper.ScaleHelmetID, InfectedArmorMaterial, proxy.addArmor("Scale"), 0, "ScaleHelmet").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("ScaleHelmet");
+		ScaleChestplate = new ItemScaleArmor(IDsHelper.ScaleChestplateID, InfectedArmorMaterial, proxy.addArmor("Scale"), 1, "ScaleChestplate").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("ScaleChestplate");
+		ScaleLeggings = new ItemScaleArmor(IDsHelper.ScaleLeggingsID, InfectedArmorMaterial, proxy.addArmor("Scale"), 2, "ScaleLeggings").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("ScaleLeggings");
+		ScaleBoots = new ItemScaleArmor(IDsHelper.ScaleBootsID, InfectedArmorMaterial, proxy.addArmor("Scale"), 3, "ScaleBoots").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("ScaleBoots");
 		//Dye
-		
+		BlueDye = new ItemMisc(IDsHelper.BlueDyeID, "BlueDye").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("BlueDye");
+		CrimsonDye = new ItemMisc(IDsHelper.CrimsonDyeID, "CrimsonDye").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("CrimsonDye");
+		GrayDye = new ItemMisc(IDsHelper.GrayDyeID, "GrayDye").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("GrayDye");
+		GreenDye = new ItemMisc(IDsHelper.GreenDyeID, "GreenDye").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("GreenDye");
+		PinkDye = new ItemMisc(IDsHelper.PinkDyeID, "PinkDye").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("PinkDye");
+		RedDye = new ItemMisc(IDsHelper.RedDyeID, "RedDye").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("RedDye");
+		YellowDye = new ItemMisc(IDsHelper.YellowDyeID, "YellowDye").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("YellowDye");
 		//Shards
-		
+		ApophylliteShard = new ItemCrystal(IDsHelper.ApophylliteShardID, "ApophylliteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("ApophylliteShard");
+		AxiniteShard = new ItemCrystal(IDsHelper.AxiniteShardID, "AxiniteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("AxiniteShard");
+		BetafiteShard = new ItemCrystal(IDsHelper.BetafiteShardID, "BetafiteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("BetafiteShard");
+		BrochantiteShard = new ItemCrystal(IDsHelper.BrochantiteShardID, "BrochantiteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("BrochantiteShard");
+		DolomiteShard = new ItemCrystal(IDsHelper.DolomiteShardID, "DolomiteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("DolomiteShard");
+		FotiteShard = new ItemCrystal(IDsHelper.FotiteShardID, "FotiteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("FotiteShard");
+		HeterogeniteShard = new ItemCrystal(IDsHelper.HeterogeniteShardID, "HeterogeniteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("HeterogeniteShard");
+		KasoliteShard = new ItemCrystal(IDsHelper.KasoliteShardID, "KasoliteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("KasoliteShard");
+		LazuriteShard = new ItemCrystal(IDsHelper.LazuriteShardID, "LazuriteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LazuriteShard");
+		MasterCrystal = new ItemCrystal(IDsHelper.MasterCrystalID, "MasterCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("MasterCrystal");
 		//Sludge
 		SludgeHammer = new ItemSludgeHammer(IDsHelper.SludgeHammerID, SludgeHammerMaterial, "SludgeHammer").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeHammer");
 		SludgeSickle = new ItemSludgeSickle(IDsHelper.SludgeSickleID, SludgeSickleMaterial, "SludgeSickle").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeSickle");
-		LazuriteAxe = new ItemCustomAxe(IDsHelper.SludgeAxeID, SludgeMaterial, "SludgeAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeAxe");
+		SludgeAxe = new ItemCustomAxe(IDsHelper.SludgeAxeID, SludgeMaterial, "SludgeAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeAxe");
 		SludgePickaxe = new ItemCustomPickaxe(IDsHelper.SludgePickaxeID, SludgeMaterial, "SludgePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgePickaxe");
 		SludgeSpade = new ItemCustomSpade(IDsHelper.SludgeSpadeID, SludgeMaterial, "SludgeSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeSpade");
 		SludgeHoe = new ItemCustomHoe(IDsHelper.SludgeHoeID, SludgeMaterial, "SludgeHoe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeHoe");
@@ -336,7 +354,7 @@ public class ItemsHelper{
 		GameRegistry.registerItem(ApophylliteAxe, "ApophylliteAxe");
 		GameRegistry.registerItem(ApophyllitePickaxe, "ApophyllitePickaxe");
 		GameRegistry.registerItem(ApophylliteSpade, "ApophylliteSpade");
-		GameRegistry.registerItem(ApophylliteAxe, "ApophylliteAxe");
+		GameRegistry.registerItem(AxiBlade, "AxiBlade");
 		GameRegistry.registerItem(AxiniteAxe, "AxiniteAxe");
 		GameRegistry.registerItem(AxinitePickaxe, "AxinitePickaxe");
 		GameRegistry.registerItem(AxiniteSpade, "AxiniteSpade");
@@ -371,8 +389,33 @@ public class ItemsHelper{
 		GameRegistry.registerItem(SlimeCannon, "SlimeCannon");
 		GameRegistry.registerItem(SlimeClub, "SlimeClub");
 		GameRegistry.registerItem(SlimeStabber, "SlimeStabber");
-		
-		
+		GameRegistry.registerItem(SludgeAxe, "SludgeAxe");
+		GameRegistry.registerItem(SludgeHammer, "SludgeHammer");
+		GameRegistry.registerItem(SludgeHoe, "SludgeHoe");
+		GameRegistry.registerItem(SludgePickaxe, "SludgePickaxe");
+		GameRegistry.registerItem(SludgeSickle, "SludgeSickle");
+		GameRegistry.registerItem(SludgeSpade, "SludgeSpade");
+		GameRegistry.registerItem(ScaleBoots, "ScaleBoots");
+		GameRegistry.registerItem(ScaleChestplate, "ScaleChestplate");
+		GameRegistry.registerItem(ScaleHelmet, "ScaleHelmet");
+		GameRegistry.registerItem(ScaleLeggings, "ScaleLeggings");
+		GameRegistry.registerItem(BlueDye, "BlueDye");
+		GameRegistry.registerItem(CrimsonDye, "CrimsonDye");
+		GameRegistry.registerItem(GrayDye, "GrayDye");
+		GameRegistry.registerItem(GreenDye, "GreenDye");
+		GameRegistry.registerItem(PinkDye, "PinkDye");
+		GameRegistry.registerItem(RedDye, "RedDye");
+		GameRegistry.registerItem(YellowDye, "YellowDye");
+		GameRegistry.registerItem(ApophylliteShard, "ApophylliteShard");
+		GameRegistry.registerItem(AxiniteShard, "AxiniteShard");
+		GameRegistry.registerItem(BetafiteShard, "BetafiteShard");
+		GameRegistry.registerItem(BrochantiteShard, "BrochantiteShard");
+		GameRegistry.registerItem(DolomiteShard, "DolomiteShard");
+		GameRegistry.registerItem(FotiteShard, "FotiteShard");
+		GameRegistry.registerItem(HeterogeniteShard, "HeterogeniteShard");
+		GameRegistry.registerItem(KasoliteShard, "KasoliteShard");
+		GameRegistry.registerItem(LazuriteShard, "LazuriteShard");
+		GameRegistry.registerItem(MasterCrystal, "MasterCrystal");
 	}
 	
 
@@ -468,13 +511,33 @@ public class ItemsHelper{
 		LanguageRegistry.addName(SlimeCannon, "Slime Cannon");
 		LanguageRegistry.addName(SlimeClub, "Slime Club");
 		LanguageRegistry.addName(SlimeStabber, "Slime Stabber");
-		
 		LanguageRegistry.addName(SludgeAxe, "Sludge Axe");
 		LanguageRegistry.addName(SludgeHammer, "Sludge Hammer");
 		LanguageRegistry.addName(SludgeHoe, "Sludge Hoe");
 		LanguageRegistry.addName(SludgePickaxe, "Sludge Pickaxe");
 		LanguageRegistry.addName(SludgeSickle, "Sludge Sickle");
 		LanguageRegistry.addName(SludgeSpade, "Sludge Spade");
+		LanguageRegistry.addName(ScaleBoots, "Scale Boots");
+		LanguageRegistry.addName(ScaleChestplate, "Scale Chestplate");
+		LanguageRegistry.addName(ScaleHelmet, "Scale Helmet");
+		LanguageRegistry.addName(ScaleLeggings, "Scale Leggings");
+		LanguageRegistry.addName(BlueDye, "Blue Dye");
+		LanguageRegistry.addName(CrimsonDye, "Crimson Dye");
+		LanguageRegistry.addName(GrayDye, "Gray Dye");
+		LanguageRegistry.addName(GreenDye, "Green Dye");
+		LanguageRegistry.addName(PinkDye, "Pink Dye");
+		LanguageRegistry.addName(RedDye, "Red Dye");
+		LanguageRegistry.addName(YellowDye, "Yellow Dye");
+		LanguageRegistry.addName(ApophylliteShard, "Apophyllite Shard");
+		LanguageRegistry.addName(AxiniteShard, "Axinite Shard");
+		LanguageRegistry.addName(BetafiteShard, "Betafite Shard");
+		LanguageRegistry.addName(BrochantiteShard, "Brochantite Shard");
+		LanguageRegistry.addName(DolomiteShard, "Dolomite Shard");
+		LanguageRegistry.addName(FotiteShard, "Fotite Shard");
+		LanguageRegistry.addName(HeterogeniteShard, "Heterogenite Shard");
+		LanguageRegistry.addName(KasoliteShard, "Kasolite Shard");
+		LanguageRegistry.addName(LazuriteShard, "Lazurite Shard");
+		LanguageRegistry.addName(MasterCrystal, "Master Crystal");
 	}
 
 }

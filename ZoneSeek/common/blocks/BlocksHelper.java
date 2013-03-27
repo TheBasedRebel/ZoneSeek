@@ -85,6 +85,12 @@ public class BlocksHelper {
     public static Block Iris;
     public static Block SpringFlowers;
     public static Block Tulip;
+    public static Block WallPaperCrimson;
+    public static Block WallPaperCrimsonBottom;
+    public static Block WallPaperGray;
+    public static Block WallPaperGrayBottom;
+    public static Block WallPaperPink;
+    public static Block WallPaperPinkBottom;
 
 	public static void setupBlocks() {
 		
@@ -122,6 +128,12 @@ public class BlocksHelper {
 		WallPaperYellow = new BlockWallPaperYellow(IDsHelper.WallPaperYellowID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperYellow").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		WallPaperYellowBottom = new BlockWallPaperYellowB(IDsHelper.WallPaperYellowBottomID).setHardness(2F).setResistance(10F).setUnlocalizedName("WallPaperYellowBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
+		WallPaperCrimson = new BlockWallPaperCrimson(IDsHelper.WallPaperCrimsonID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperCrimson").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperCrimsonBottom = new BlockWallPaperCrimsonB(IDsHelper.WallPaperCrimsonBottomID).setHardness(2F).setResistance(10F).setUnlocalizedName("WallPaperCrimsonBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperGray = new BlockWallPaperGray(IDsHelper.WallPaperGrayID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperGray").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperGrayBottom = new BlockWallPaperGrayB(IDsHelper.WallPaperGrayBottomID).setHardness(2F).setResistance(10F).setUnlocalizedName("WallPaperGrayBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperPink = new BlockWallPaperPink(IDsHelper.WallPaperPinkID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperPink").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		WallPaperPinkBottom = new BlockWallPaperPinkB(IDsHelper.WallPaperPinkBottomID).setHardness(2F).setResistance(10F).setUnlocalizedName("WallPaperPinkBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		//Normal Blocks Stone
 		InfectedBlock = new BlockStone(IDsHelper.InfectedBlockID, "InfectedBlock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("InfectedBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		InfectedBrick = new BlockStone(IDsHelper.InfectedBrickID, "InfectedBrick").setHardness(2F).setResistance(0.2F).setUnlocalizedName("InfectedBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -264,6 +276,13 @@ public class BlocksHelper {
 		GameRegistry.registerBlock(SpringFlowers, "AdamBahr_SpringFlowers");
 		GameRegistry.registerBlock(Tulip, "AdamBahr_Tulip");
 		GameRegistry.registerBlock(LagoonLadder, "Lagoon Ladder");
+		GameRegistry.registerBlock(WallPaperCrimson, "AdamBahr_WallPaperCrimson");
+		GameRegistry.registerBlock(WallPaperCrimsonBottom, "AdamBahr_WallPaperBottomCrimson");
+		GameRegistry.registerBlock(WallPaperGray, "AdamBahr_WallPaperGray");
+		GameRegistry.registerBlock(WallPaperGrayBottom, "AdamBahr_WallPaperBottomGray");
+		GameRegistry.registerBlock(WallPaperPink, "AdamBahr_WallPaperPink");
+		GameRegistry.registerBlock(WallPaperPinkBottom, "AdamBahr_WallPaperBottomPink");
+		
 	}
 	
 	private static void languageRegisters() {
@@ -333,6 +352,12 @@ public class BlocksHelper {
 		LanguageRegistry.addName(SpringFlowers, "Spring Flowers");
 		LanguageRegistry.addName(Tulip, "Tulip");
 		LanguageRegistry.addName(LagoonLadder, "Lagoon Ladder");
+		LanguageRegistry.addName(WallPaperCrimson, "Wallpaper Crimson");
+		LanguageRegistry.addName(WallPaperCrimsonBottom, "Wallpaper Bottom Crimson");
+		LanguageRegistry.addName(WallPaperGray, "Wallpaper Gray");
+		LanguageRegistry.addName(WallPaperGrayBottom, "Wallpaper Bottom Gray");
+		LanguageRegistry.addName(WallPaperPink, "Wallpaper Pink");
+		LanguageRegistry.addName(WallPaperPinkBottom, "Wallpaper Bottom Pink");
 		
 		
 		
