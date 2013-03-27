@@ -152,6 +152,8 @@ public class ItemsHelper{
 		EnumToolMaterial KasoliteMaterial = EnumHelper.addToolMaterial("Kasolite Material", 3, 5678, 7.7F, 3, 20);
 		EnumToolMaterial LazuriteMaterial = EnumHelper.addToolMaterial("Lazurite Material", 3, 3500, 6.8F, 3, 20);
 		EnumToolMaterial SlimeMaterial = EnumHelper.addToolMaterial("Slime Material", 3, 5500, 7.5F, 4, 20);
+		EnumToolMaterial SludgeHammerMaterial = EnumHelper.addToolMaterial("Sludge Hammer Material", 3, 2000, 7F, 5, 70);
+		EnumToolMaterial SludgeSickleMaterial = EnumHelper.addToolMaterial("Sludge Sickle Material", 3, 5500, 7.5F, 4, 20);
 		
 		//Armor Materials
 		EnumArmorMaterial InfectedArmorMaterial = EnumHelper.addArmorMaterial("Infected Armor", 33, new int[] {2, 6, 6, 5}, 16);
@@ -180,7 +182,7 @@ public class ItemsHelper{
 		InfectedChestplate = new ItemInfectedChestPlate(IDsHelper.InfectedChestplateID, InfectedArmorMaterial, proxy.addArmor("Infected"), 1, "infectedchestplate").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedChestplate");
 		InfectedGem = new ItemMisc(IDsHelper.InfectedGemID, "InfectedGem").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("InfectedGem");
 		InfectedHelmet = new ItemInfectedHelmet(IDsHelper.InfectedHelmetID, InfectedArmorMaterial, proxy.addArmor("Infected"), 0, "infectedhelmet").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedHelmet");
-		InfectedHoe = new ItemInfectedHoe(IDsHelper.InfectedHoeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedHoe");
+		InfectedHoe = new ItemCustomHoe(IDsHelper.InfectedHoeID, InfectedMaterial, "infectedhoe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedHoe");
 		InfectedLeggings = new ItemInfectedLeggings(IDsHelper.InfectedLeggingsID, InfectedArmorMaterial, proxy.addArmor("Infected"), 2, "infectedleggings").setCreativeTab(ZoneSeek.ZoneSeekArmor).setUnlocalizedName("InfectedLeggings");
 		InfectedPaxcel = new ItemInfectedPaxcel(IDsHelper.InfectedPaxcelID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedPaxcel");
 		InfectedPickaxe = new ItemInfectedPickaxe(IDsHelper.InfectedPickaxeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedPickaxe");
@@ -266,11 +268,12 @@ public class ItemsHelper{
 		//Shards
 		
 		//Sludge
-		SludgeHammer = new ItemBlade(IDsHelper.SludgeHammerID, LazuriteMaterial, "SludgeHammer").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeHammer");
-		SludgeSickle = new ItemBlade(IDsHelper.SludgeSickleID, LazuriteMaterial, "SludgeSickle").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeSickle");
+		SludgeHammer = new ItemSludgeHammer(IDsHelper.SludgeHammerID, SludgeHammerMaterial, "SludgeHammer").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeHammer");
+		SludgeSickle = new ItemSludgeSickle(IDsHelper.SludgeSickleID, SludgeSickleMaterial, "SludgeSickle").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeSickle");
 		LazuriteAxe = new ItemCustomAxe(IDsHelper.SludgeAxeID, SludgeMaterial, "SludgeAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeAxe");
 		SludgePickaxe = new ItemCustomPickaxe(IDsHelper.SludgePickaxeID, SludgeMaterial, "SludgePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgePickaxe");
 		SludgeSpade = new ItemCustomSpade(IDsHelper.SludgeSpadeID, SludgeMaterial, "SludgeSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeSpade");
+		SludgeHoe = new ItemCustomHoe(IDsHelper.SludgeHoeID, SludgeMaterial, "SludgeHoe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeHoe");
 
 		gameRegisters();
 		languageRegisters();
@@ -465,6 +468,13 @@ public class ItemsHelper{
 		LanguageRegistry.addName(SlimeCannon, "Slime Cannon");
 		LanguageRegistry.addName(SlimeClub, "Slime Club");
 		LanguageRegistry.addName(SlimeStabber, "Slime Stabber");
+		
+		LanguageRegistry.addName(SludgeAxe, "Sludge Axe");
+		LanguageRegistry.addName(SludgeHammer, "Sludge Hammer");
+		LanguageRegistry.addName(SludgeHoe, "Sludge Hoe");
+		LanguageRegistry.addName(SludgePickaxe, "Sludge Pickaxe");
+		LanguageRegistry.addName(SludgeSickle, "Sludge Sickle");
+		LanguageRegistry.addName(SludgeSpade, "Sludge Spade");
 	}
 
 }
