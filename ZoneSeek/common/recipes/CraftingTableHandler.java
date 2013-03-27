@@ -210,6 +210,254 @@ public class CraftingTableHandler {
 			" T ", " T ", " X ", 'T', ItemsHelper.ApophylliteCrystal, 'X', Item.stick
 			
 		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ApophylliteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.ApophylliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ApophylliteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.ApophylliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ApophyllitePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.ApophylliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ApophylliteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.ApophylliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.AxiBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.AxiniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.AxiniteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.AxiniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.AxiniteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.AxiniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.AxinitePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.AxiniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.AxiniteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.AxiniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BetaBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.BetafiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BetafiteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.BetafiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BetafiteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.BetafiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BetafitePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.BetafiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BetafiteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.BetafiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BroBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.BrochantiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BrochantiteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.BrochantiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BrochantiteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.BrochantiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BrochantitePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.BrochantiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BrochantiteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.BrochantiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.DoloBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.DolomiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.DolomiteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.DolomiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.DolomiteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.DolomiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.DolomitePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.DolomiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.DolomiteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.DolomiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FoeBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.FotiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FotiteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.FotiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FotiteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.FotiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FotitePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.FotiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FotiteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.FotiteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.GeniteBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.HeterogeniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.HeterogeniteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.HeterogeniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.HeterogeniteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.HeterogeniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.HeterogenitePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.HeterogeniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.HeterogeniteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.HeterogeniteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KasoBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.KasoliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KasoliteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.KasoliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KasoliteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.KasoliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KasolitePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.KasoliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KasoliteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.KasoliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.LazarusBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.LazuriteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.LazuriteAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.LazuriteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.LazuriteAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.LazuriteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.LazuritePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.LazuriteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.LazuriteSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.LazuriteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.MasterCrystal, 1), new Object[] {
+			"ABC", "DEF", "GHI", 'A', ItemsHelper.LazuriteCrystal, 'B', ItemsHelper.AxiniteCrystal, 'C', ItemsHelper.ApophylliteCrystal, 'D', ItemsHelper.BetafiteCrystal, 'E', ItemsHelper.BrochantiteCrystal, 'F', ItemsHelper.DolomiteCrystal, 'G', ItemsHelper.FotiteCrystal, 'H', ItemsHelper.HeterogeniteCrystal, 'I', ItemsHelper.KasoliteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ScaleBoots, 1), new Object[] {
+			"T T", "T T", "   ", 'T', ItemsHelper.CompactedScalePlate
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ScaleBoots, 1), new Object[] {
+			"   ", "T T", "T T", 'T', ItemsHelper.CompactedScalePlate
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ScaleChestplate, 1), new Object[] {
+			"T T", "TTT", "TTT", 'T', ItemsHelper.CompactedScalePlate
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ScaleHelmet, 1), new Object[] {
+			"TTT", "T T", "   ", 'T', ItemsHelper.CompactedScalePlate
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ScaleHelmet, 1), new Object[] {
+			"   ", "TTT", "T T", 'T', ItemsHelper.CompactedScalePlate
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ScaleLeggings, 1), new Object[] {
+			"TTT", "T T", "T T", 'T', ItemsHelper.CompactedScalePlate
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SlimeCannon, 1), new Object[] {
+			" TX", "TXT", "XT ", 'T', ItemsHelper.SlugSlime, 'X', Item.ingotIron
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SlimeClub, 1), new Object[] {
+			"TTT", "TTT", " X ", 'T', ItemsHelper.SlugSlime, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SlimeStabber, 1), new Object[] {
+			" T ", "TTT", " X ", 'T', ItemsHelper.SlugSlime, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeAxe, 1), new Object[] {
+			"TT ", "TX ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeAxe, 1), new Object[] {
+			" TT", " XT", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeHammer, 1), new Object[] {
+			"TTT", "TTT", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeHoe, 1), new Object[] {
+			"TT ", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeHoe, 1), new Object[] {
+			" TT", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgePickaxe, 1), new Object[] {
+			"TTT", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeSickle, 1), new Object[] {
+			"TTT", "X T", "X  ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeSpade, 1), new Object[] {
+			" T ", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			
+		});
 
 
 		
