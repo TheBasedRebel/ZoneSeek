@@ -71,11 +71,97 @@ public class ItemsHelper{
 	public static Item TaintedLeather;
 	public static Item TaintedPage;
 	
+	public static Item ApophylliBlade;
+	public static Item ApophylliteAxe;
+	public static Item ApophyllitePickaxe;
+	public static Item ApophylliteShard;
+	public static Item ApophylliteSpade;
+	public static Item AxiBlade;
+	public static Item AxiniteAxe;
+	public static Item AxinitePickaxe;
+	public static Item AxiniteShard;
+	
+	public static Item AxiniteSpade;
+	public static Item BetaBlade;
+	public static Item BetafiteAxe;
+	public static Item BetafitePickaxe;
+	public static Item BetafiteShard;
+	public static Item BetafiteSpade;
+	public static Item BlueDye;
+	public static Item BroBlade;
+	public static Item BrochantiteAxe;
+	public static Item BrochantitePickaxe;
+	
+	public static Item BrochantiteShard;
+	public static Item BrochantiteSpade;
+	public static Item CrimsonDye;
+	public static Item DoloBlade;
+	public static Item DolomiteAxe;
+	public static Item DolomitePickaxe;
+	public static Item DolomiteShard;
+	public static Item DolomiteSpade;
+	public static Item FoeBlade;
+	public static Item FotiteAxe;
+	
+	public static Item FotitePickaxe;
+	public static Item FotiteShard;
+	public static Item FotiteSpade;
+	public static Item GentiteBlade;
+	public static Item GrayDye;
+	public static Item GreenDye;
+	public static Item HeterogeniteAxe;
+	public static Item HeterogenitePickaxe;
+	public static Item HeterogeniteShard;
+	public static Item HeterogeniteSpade;
+	
+	public static Item KasoBlade;
+	public static Item KasoliteAxe;
+	public static Item KasolitePickaxe;
+	public static Item KasoliteShard;
+	public static Item KasoliteSpade;
+	public static Item LazarusBlade;
+	public static Item LazuriteAxe;
+	public static Item LazuritePickaxe;
+	public static Item LazuriteShard;
+	public static Item LazuriteSpade;
+	
+	public static Item MasterCrystal;
+	public static Item PinkDye;
+	public static Item RedDye;
+	public static Item ScaleBoots;
+	public static Item ScaleChestplate;
+	public static Item ScaleHelmet;
+	public static Item ScaleLeggings;
+	public static Item SlimeCannon;
+	public static Item SlimeClub;
+	public static Item SlimeStabber;
+	
+	public static Item SludgeAxe;
+	public static Item SludgeHammer;
+	public static Item SludgeHoe;
+	public static Item SludgePickaxe;
+	public static Item SludgeSickle;
+	public static Item SludgeSpade;
+	public static Item YellowDye;
+	
 	public static void setupItems() {
-		//Materials
+		//Item Materials
 		EnumToolMaterial InfectedMaterial = EnumHelper.addToolMaterial("Infected Material", 3, 4000, 7.0F, 2, 20);
 		EnumToolMaterial SludgeMaterial = EnumHelper.addToolMaterial("Sludge Material", 3, 4500, 7.5F, 3, 20);
+		EnumToolMaterial ApophylliteMaterial = EnumHelper.addToolMaterial("Apophyllite Material", 3, 4230, 7.2F, 3, 26);
+		EnumToolMaterial AxiniteMaterial = EnumHelper.addToolMaterial("Axinite Material", 3, 4666, 7.3F, 3, 29);
+		EnumToolMaterial BetafiteMaterial = EnumHelper.addToolMaterial("Betafite Material", 3, 4950, 7.4F, 4, 30);
+		EnumToolMaterial BrochantiteMaterial = EnumHelper.addToolMaterial("Brochantite Material", 4, 5000, 7.9F, 4, 60);
+		EnumToolMaterial DolomiteMaterial = EnumHelper.addToolMaterial("Dolomite Material", 3, 4020, 8.0F, 3, 14);
+		EnumToolMaterial FotiteMaterial = EnumHelper.addToolMaterial("Fotite Material", 3, 6000, 8.1F, 3, 2);
+		EnumToolMaterial GentiteMaterial = EnumHelper.addToolMaterial("Gentite Material", 3, 5750, 7.8F, 3, 9);
+		EnumToolMaterial HeterogeniteMaterial = EnumHelper.addToolMaterial("Heterogenite Material", 3, 5100, 7.6F, 3, 8);
+		EnumToolMaterial KasoliteMaterial = EnumHelper.addToolMaterial("Kasolite Material", 3, 5678, 7.7F, 3, 20);
+		EnumToolMaterial LazuriteMaterial = EnumHelper.addToolMaterial("Lazurite Material", 3, 3500, 6.8F, 3, 20);
+		
+		//Armor Materials
 		EnumArmorMaterial InfectedArmorMaterial = EnumHelper.addArmorMaterial("Infected Armor", 33, new int[] {2, 6, 6, 5}, 16);
+		EnumArmorMaterial ScaleArmorMaterial = EnumHelper.addArmorMaterial("Scale Armor", 40, new int[] {3, 7, 7, 6}, 32);
 		
 		//Item Loading
 		ApophylliteCrystal = new ItemCrystal(IDsHelper.ApophylliteCrystalID, "ApophylliteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("ApophylliteCrystal");
@@ -129,6 +215,55 @@ public class ItemsHelper{
 		TaintedInkSack = new ItemMisc(IDsHelper.TaintedInkSackID, "TaintedInkSack").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("TaintedInkSack");
 		TaintedLeather = new ItemMisc(IDsHelper.TaintedLeatherID, "TaintedLeather").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("TaintedLeather");
 		TaintedPage = new ItemMisc(IDsHelper.TaintedPageID, "TaintedPage").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("TaintedPage");
+		
+		//Apophyllite
+		ApophylliBlade = new ItemBlade(IDsHelper.ApophylliBladeID, ApophylliteMaterial, "ApophylliBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("ApophylliBlade");
+		ApophylliteAxe = new ItemCustomAxe(IDsHelper.ApophylliteAxeID, ApophylliteMaterial, "ApophylliteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("ApophylliteAxe");
+		ApophyllitePickaxe = new ItemCustomPickaxe(IDsHelper.ApophyllitePickaxeID, ApophylliteMaterial, "ApophyllitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("ApophyllitePickaxe");
+		ApophylliteSpade = new ItemCustomSpade(IDsHelper.ApophylliteSpadeID, ApophylliteMaterial, "ApophylliteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("ApophylliteSpade");
+		//Axinite
+		AxiBlade = new ItemBlade(IDsHelper.AxiBladeID, AxiniteMaterial, "AxiBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("AxiBlade");
+		AxiniteAxe = new ItemCustomAxe(IDsHelper.AxiniteAxeID, AxiniteMaterial, "AxiniteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("AxiniteAxe");
+		AxinitePickaxe = new ItemCustomPickaxe(IDsHelper.AxinitePickaxeID, AxiniteMaterial, "AxinitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("AxinitePickaxe");
+		AxiniteSpade = new ItemCustomSpade(IDsHelper.AxiniteSpadeID, AxiniteMaterial, "AxiniteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("AxiniteSpade");
+		//Betafite
+		BetaBlade = new ItemBlade(IDsHelper.BetaBladeID, BetafiteMaterial, "BetaBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("BetaBlade");
+		BetafiteAxe = new ItemCustomAxe(IDsHelper.BetafiteAxeID, BetafiteMaterial, "BetafiteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("BetafiteAxe");
+		BetafitePickaxe = new ItemCustomPickaxe(IDsHelper.BetafitePickaxeID, BetafiteMaterial, "BetafitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("BetafitePickaxe");
+		BetafiteSpade = new ItemCustomSpade(IDsHelper.BetafiteSpadeID, BetafiteMaterial, "BetafiteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("BetafiteSpade");
+		//Brochantite
+		BroBlade = new ItemBlade(IDsHelper.BroBladeID, BrochantiteMaterial, "BroBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("BroBlade");
+		BrochantiteAxe = new ItemCustomAxe(IDsHelper.BrochantiteAxeID, BrochantiteMaterial, "BrochantiteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("BrochantiteAxe");
+		BrochantitePickaxe = new ItemCustomPickaxe(IDsHelper.BrochantitePickaxeID, BrochantiteMaterial, "BrochantitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("BrochantitePickaxe");
+		BrochantiteSpade = new ItemCustomSpade(IDsHelper.BrochantiteSpadeID, BrochantiteMaterial, "BrochantiteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("BrochantiteSpade");
+		//Dolomite
+		DoloBlade = new ItemBlade(IDsHelper.DoloBladeID, DolomiteMaterial, "DoloBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("DoloBlade");
+		DolomiteAxe = new ItemCustomAxe(IDsHelper.DolomiteAxeID, DolomiteMaterial, "DolomiteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("DolomiteAxe");
+		DolomitePickaxe = new ItemCustomPickaxe(IDsHelper.DolomitePickaxeID, DolomiteMaterial, "DolomitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("DolomitePickaxe");
+		DolomiteSpade = new ItemCustomSpade(IDsHelper.DolomiteSpadeID, DolomiteMaterial, "DolomiteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("DolomiteSpade");
+		//Fotite
+		FoeBlade = new ItemBlade(IDsHelper.FoeBladeID, FotiteMaterial, "FoeBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("FoeBlade");
+		FotiteAxe = new ItemCustomAxe(IDsHelper.FotiteAxeID, FotiteMaterial, "FotiteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("FotiteAxe");
+		FotitePickaxe = new ItemCustomPickaxe(IDsHelper.FotitePickaxeID, FotiteMaterial, "FotitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("FotitePickaxe");
+		FotiteSpade = new ItemCustomSpade(IDsHelper.FotiteSpadeID, FotiteMaterial, "FotiteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("FotiteSpade");
+		//Heterogenite
+		GentiteBlade = new ItemBlade(IDsHelper.GentiteBladeID, HeterogeniteMaterial, "GentiteBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("GentiteBlade");
+		HeterogeniteAxe = new ItemCustomAxe(IDsHelper.HeterogeniteAxeID, HeterogeniteMaterial, "HeterogeniteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("HeterogeniteAxe");
+		HeterogenitePickaxe = new ItemCustomPickaxe(IDsHelper.HeterogenitePickaxeID, HeterogeniteMaterial, "HeterogenitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("HeterogenitePickaxe");
+		HeterogeniteSpade = new ItemCustomSpade(IDsHelper.HeterogeniteSpadeID, HeterogeniteMaterial, "HeterogeniteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("HeterogeniteSpade");
+		//Kasolite
+		KasoBlade = new ItemBlade(IDsHelper.KasoBladeID, KasoliteMaterial, "KasoBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("KasoBlade");
+		KasoliteAxe = new ItemCustomAxe(IDsHelper.KasoliteAxeID, KasoliteMaterial, "KasoliteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("KasoliteAxe");
+		KasolitePickaxe = new ItemCustomPickaxe(IDsHelper.KasolitePickaxeID, KasoliteMaterial, "KasolitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("KasolitePickaxe");
+		KasoliteSpade = new ItemCustomSpade(IDsHelper.KasoliteSpadeID, KasoliteMaterial, "KasoliteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("KasoliteSpade");
+		//Lazurite
+		LazarusBlade = new ItemBlade(IDsHelper.LazarusBladeID, LazuriteMaterial, "LazarusBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("LazarusBlade");
+		LazuriteAxe = new ItemCustomAxe(IDsHelper.LazuriteAxeID, LazuriteMaterial, "LazuriteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuriteAxe");
+		LazuritePickaxe = new ItemCustomPickaxe(IDsHelper.LazuritePickaxeID, LazuriteMaterial, "LazuritePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuritePickaxe");
+		LazuriteSpade = new ItemCustomSpade(IDsHelper.LazuriteSpadeID, LazuriteMaterial, "LazuriteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuriteSpade");
+		//Scale
+		
+		//Dye
 
 		gameRegisters();
 		languageRegisters();

@@ -206,6 +206,10 @@ public class CraftingTableHandler {
 			"   ", " X ", " X ", 'X', BlocksHelper.PalmLog
 			
 		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ApophylliBlade, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.ApophylliteCrystal, 'X', Item.stick
+			
+		});
 
 
 		

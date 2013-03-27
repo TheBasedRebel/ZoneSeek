@@ -136,6 +136,79 @@ public class IDsHelper {
 	public static int TaintedLeatherID;
 	public static int TaintedPageID;
 	
+	public static int ApophylliBladeID;
+	public static int ApophylliteAxeID;
+	public static int ApophyllitePickaxeID;
+	public static int ApophylliteShardID;
+	public static int ApophylliteSpadeID;
+	public static int AxiBladeID;
+	public static int AxiniteAxeID;
+	public static int AxinitePickaxeID;
+	public static int AxiniteShardID;
+	
+	public static int AxiniteSpadeID;
+	public static int BetaBladeID;
+	public static int BetafiteAxeID;
+	public static int BetafitePickaxeID;
+	public static int BetafiteShardID;
+	public static int BetafiteSpadeID;
+	public static int BlueDyeID;
+	public static int BroBladeID;
+	public static int BrochantiteAxeID;
+	public static int BrochantitePickaxeID;
+	
+	public static int BrochantiteShardID;
+	public static int BrochantiteSpadeID;
+	public static int CrimsonDyeID;
+	public static int DoloBladeID;
+	public static int DolomiteAxeID;
+	public static int DolomitePickaxeID;
+	public static int DolomiteShardID;
+	public static int DolomiteSpadeID;
+	public static int FoeBladeID;
+	public static int FotiteAxeID;
+	
+	public static int FotitePickaxeID;
+	public static int FotiteShardID;
+	public static int FotiteSpadeID;
+	public static int GentiteBladeID;
+	public static int GrayDyeID;
+	public static int GreenDyeID;
+	public static int HeterogeniteAxeID;
+	public static int HeterogenitePickaxeID;
+	public static int HeterogeniteShardID;
+	public static int HeterogeniteSpadeID;
+	
+	public static int KasoBladeID;
+	public static int KasoliteAxeID;
+	public static int KasolitePickaxeID;
+	public static int KasoliteShardID;
+	public static int KasoliteSpadeID;
+	public static int LazarusBladeID;
+	public static int LazuriteAxeID;
+	public static int LazuritePickaxeID;
+	public static int LazuriteShardID;
+	public static int LazuriteSpadeID;
+	
+	public static int MasterCrystalID;
+	public static int PinkDyeID;
+	public static int RedDyeID;
+	public static int ScaleBootsID;
+	public static int ScaleChestplateID;
+	public static int ScaleHelmetID;
+	public static int ScaleLeggingsID;
+	public static int SlimeCannonID;
+	public static int SlimeClubID;
+	public static int SlimeStabberID;
+	
+	public static int SludgeAxeID;
+	public static int SludgeHammerID;
+	public static int SludgeHoeID;
+	public static int SludgePickaxeID;
+	public static int SludgeSickleID;
+	public static int SludgeSpadeID;
+	public static int YellowDyeID;
+	
 	public static void runConfiguration(Configuration config){
 		//Biome IDs
 		LagoonID = config.get(biomeids, "Lagoon ID", 23).getInt();
@@ -257,6 +330,7 @@ public class IDsHelper {
 		TaintedInkSackID = config.get(itemids, "Tainted Ink Sack ID", 1045).getInt();
 		TaintedLeatherID = config.get(itemids, "Tainted Leather ID", 1046).getInt();
 		TaintedPageID = config.get(itemids, "Tainted Page ID", 1047).getInt();
+		SludgeGemID = config.get(itemids, "Sludge Gem ID", 1048).getInt();
 		InfectedLeggingsID = config.get(itemids, "Infected Leggings ID", 1049).getInt();
 		LagoonStickID = config.get(itemids, "Lagoon Stick ID", 1050).getInt();
 		

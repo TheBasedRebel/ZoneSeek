@@ -41,7 +41,7 @@ public class BiomeGenLagoon extends BiomeGenBase
         this.theBiomeDecorator.clayPerChunk = 10;
         this.theBiomeDecorator.waterlilyPerChunk = 4;
         this.waterColorMultiplier = 0x2D5447;
-        this.spawnableCreatureList.add(new SpawnListEntry(LagoonSlug.class, 175, 4, 6));
+        this.spawnableCreatureList.add(new SpawnListEntry(LagoonSlug.class, 210, 1, 3));
     }
 	
     public WorldGenerator getRandomWorldGenForGrass(Random par1Random)
