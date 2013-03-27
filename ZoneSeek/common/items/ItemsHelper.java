@@ -151,6 +151,7 @@ public class ItemsHelper{
 		EnumToolMaterial HeterogeniteMaterial = EnumHelper.addToolMaterial("Heterogenite Material", 3, 5100, 7.6F, 3, 8);
 		EnumToolMaterial KasoliteMaterial = EnumHelper.addToolMaterial("Kasolite Material", 3, 5678, 7.7F, 3, 20);
 		EnumToolMaterial LazuriteMaterial = EnumHelper.addToolMaterial("Lazurite Material", 3, 3500, 6.8F, 3, 20);
+		EnumToolMaterial SlimeMaterial = EnumHelper.addToolMaterial("Slime Material", 3, 5500, 7.5F, 4, 20);
 		
 		//Armor Materials
 		EnumArmorMaterial InfectedArmorMaterial = EnumHelper.addArmorMaterial("Infected Armor", 33, new int[] {2, 6, 6, 5}, 16);
@@ -255,10 +256,21 @@ public class ItemsHelper{
 		LazuritePickaxe = new ItemCustomPickaxe(IDsHelper.LazuritePickaxeID, LazuriteMaterial, "LazuritePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuritePickaxe");
 		LazuriteSpade = new ItemCustomSpade(IDsHelper.LazuriteSpadeID, LazuriteMaterial, "LazuriteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuriteSpade");
 		//Slime
-		
+		SlimeCannon = new ItemBlade(IDsHelper.SlimeCannonID, SlimeMaterial, "SlimeCannon").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeCannon");
+		SlimeClub = new ItemBlade(IDsHelper.SlimeClubID, SlimeMaterial, "SlimeClub").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeClub");
+		SlimeStabber = new ItemBlade(IDsHelper.SlimeStabberID, SlimeMaterial, "SlimeStabber").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeStabber");
 		//Scale
 		
 		//Dye
+		
+		//Shards
+		
+		//Sludge
+		SludgeHammer = new ItemBlade(IDsHelper.SludgeHammerID, LazuriteMaterial, "SludgeHammer").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeHammer");
+		SludgeSickle = new ItemBlade(IDsHelper.SludgeSickleID, LazuriteMaterial, "SludgeSickle").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeSickle");
+		LazuriteAxe = new ItemCustomAxe(IDsHelper.SludgeAxeID, SludgeMaterial, "SludgeAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeAxe");
+		SludgePickaxe = new ItemCustomPickaxe(IDsHelper.SludgePickaxeID, SludgeMaterial, "SludgePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgePickaxe");
+		SludgeSpade = new ItemCustomSpade(IDsHelper.SludgeSpadeID, SludgeMaterial, "SludgeSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeSpade");
 
 		gameRegisters();
 		languageRegisters();
@@ -353,6 +365,9 @@ public class ItemsHelper{
 		GameRegistry.registerItem(LazuriteAxe, "LazuriteAxe");
 		GameRegistry.registerItem(LazuritePickaxe, "LazuritePickaxe");
 		GameRegistry.registerItem(LazuriteSpade, "LazuriteSpade");
+		GameRegistry.registerItem(SlimeCannon, "SlimeCannon");
+		GameRegistry.registerItem(SlimeClub, "SlimeClub");
+		GameRegistry.registerItem(SlimeStabber, "SlimeStabber");
 		
 		
 	}
@@ -447,6 +462,9 @@ public class ItemsHelper{
 		LanguageRegistry.addName(LazuriteAxe, "Lazurite Axe");
 		LanguageRegistry.addName(LazuritePickaxe, "Lazurite Pickaxe");
 		LanguageRegistry.addName(LazuriteSpade, "Lazurite Spade");
+		LanguageRegistry.addName(SlimeCannon, "Slime Cannon");
+		LanguageRegistry.addName(SlimeClub, "Slime Club");
+		LanguageRegistry.addName(SlimeStabber, "Slime Stabber");
 	}
 
 }
