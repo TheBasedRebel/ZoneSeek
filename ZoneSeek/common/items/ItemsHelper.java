@@ -70,7 +70,6 @@ public class ItemsHelper{
 	public static Item TaintedInkSack;
 	public static Item TaintedLeather;
 	public static Item TaintedPage;
-	
 	public static Item ApophylliBlade;
 	public static Item ApophylliteAxe;
 	public static Item ApophyllitePickaxe;
@@ -80,7 +79,6 @@ public class ItemsHelper{
 	public static Item AxiniteAxe;
 	public static Item AxinitePickaxe;
 	public static Item AxiniteShard;
-	
 	public static Item AxiniteSpade;
 	public static Item BetaBlade;
 	public static Item BetafiteAxe;
@@ -91,7 +89,6 @@ public class ItemsHelper{
 	public static Item BroBlade;
 	public static Item BrochantiteAxe;
 	public static Item BrochantitePickaxe;
-	
 	public static Item BrochantiteShard;
 	public static Item BrochantiteSpade;
 	public static Item CrimsonDye;
@@ -102,18 +99,16 @@ public class ItemsHelper{
 	public static Item DolomiteSpade;
 	public static Item FoeBlade;
 	public static Item FotiteAxe;
-	
 	public static Item FotitePickaxe;
 	public static Item FotiteShard;
 	public static Item FotiteSpade;
-	public static Item GentiteBlade;
+	public static Item GeniteBlade;
 	public static Item GrayDye;
 	public static Item GreenDye;
 	public static Item HeterogeniteAxe;
 	public static Item HeterogenitePickaxe;
 	public static Item HeterogeniteShard;
 	public static Item HeterogeniteSpade;
-	
 	public static Item KasoBlade;
 	public static Item KasoliteAxe;
 	public static Item KasolitePickaxe;
@@ -124,7 +119,6 @@ public class ItemsHelper{
 	public static Item LazuritePickaxe;
 	public static Item LazuriteShard;
 	public static Item LazuriteSpade;
-	
 	public static Item MasterCrystal;
 	public static Item PinkDye;
 	public static Item RedDye;
@@ -135,7 +129,6 @@ public class ItemsHelper{
 	public static Item SlimeCannon;
 	public static Item SlimeClub;
 	public static Item SlimeStabber;
-	
 	public static Item SludgeAxe;
 	public static Item SludgeHammer;
 	public static Item SludgeHoe;
@@ -247,7 +240,7 @@ public class ItemsHelper{
 		FotitePickaxe = new ItemCustomPickaxe(IDsHelper.FotitePickaxeID, FotiteMaterial, "FotitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("FotitePickaxe");
 		FotiteSpade = new ItemCustomSpade(IDsHelper.FotiteSpadeID, FotiteMaterial, "FotiteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("FotiteSpade");
 		//Heterogenite
-		GentiteBlade = new ItemBlade(IDsHelper.GentiteBladeID, HeterogeniteMaterial, "GentiteBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("GentiteBlade");
+		GeniteBlade = new ItemBlade(IDsHelper.GeniteBladeID, HeterogeniteMaterial, "GeniteBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("GeniteBlade");
 		HeterogeniteAxe = new ItemCustomAxe(IDsHelper.HeterogeniteAxeID, HeterogeniteMaterial, "HeterogeniteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("HeterogeniteAxe");
 		HeterogenitePickaxe = new ItemCustomPickaxe(IDsHelper.HeterogenitePickaxeID, HeterogeniteMaterial, "HeterogenitePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("HeterogenitePickaxe");
 		HeterogeniteSpade = new ItemCustomSpade(IDsHelper.HeterogeniteSpadeID, HeterogeniteMaterial, "HeterogeniteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("HeterogeniteSpade");
@@ -261,6 +254,8 @@ public class ItemsHelper{
 		LazuriteAxe = new ItemCustomAxe(IDsHelper.LazuriteAxeID, LazuriteMaterial, "LazuriteAxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuriteAxe");
 		LazuritePickaxe = new ItemCustomPickaxe(IDsHelper.LazuritePickaxeID, LazuriteMaterial, "LazuritePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuritePickaxe");
 		LazuriteSpade = new ItemCustomSpade(IDsHelper.LazuriteSpadeID, LazuriteMaterial, "LazuriteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuriteSpade");
+		//Slime
+		
 		//Scale
 		
 		//Dye
@@ -322,6 +317,44 @@ public class ItemsHelper{
 		GameRegistry.registerItem(TaintedPage, "TaintedPage");
 		GameRegistry.registerItem(InfectedGem, "InfectedGem");
 		GameRegistry.registerItem(LagoonStick, "LagoonStick");
+		GameRegistry.registerItem(ApophylliBlade, "ApophylliBlade");
+		GameRegistry.registerItem(ApophylliteAxe, "ApophylliteAxe");
+		GameRegistry.registerItem(ApophyllitePickaxe, "ApophyllitePickaxe");
+		GameRegistry.registerItem(ApophylliteSpade, "ApophylliteSpade");
+		GameRegistry.registerItem(ApophylliteAxe, "ApophylliteAxe");
+		GameRegistry.registerItem(AxiniteAxe, "AxiniteAxe");
+		GameRegistry.registerItem(AxinitePickaxe, "AxinitePickaxe");
+		GameRegistry.registerItem(AxiniteSpade, "AxiniteSpade");
+		GameRegistry.registerItem(BetaBlade, "BetaBlade");
+		GameRegistry.registerItem(BetafiteAxe, "BetafiteAxe");
+		GameRegistry.registerItem(BetafitePickaxe, "BetafitePickaxe");
+		GameRegistry.registerItem(BetafiteSpade, "BetafiteSpade");
+		GameRegistry.registerItem(BroBlade, "BroBlade");
+		GameRegistry.registerItem(BrochantiteAxe, "BrochantiteAxe");
+		GameRegistry.registerItem(BrochantitePickaxe, "BrochantitePickaxe");
+		GameRegistry.registerItem(BrochantiteSpade, "BrochantiteSpade");
+		GameRegistry.registerItem(DoloBlade, "DoloBlade");
+		GameRegistry.registerItem(DolomiteAxe, "DolomiteAxe");
+		GameRegistry.registerItem(DolomitePickaxe, "DolomitePickaxe");
+		GameRegistry.registerItem(DolomiteSpade, "DolomiteSpade");
+		GameRegistry.registerItem(FoeBlade, "FoeBlade");
+		GameRegistry.registerItem(FotiteAxe, "FotiteAxe");
+		GameRegistry.registerItem(FotitePickaxe, "FotitePickaxe");
+		GameRegistry.registerItem(FotiteSpade, "FotiteSpade");
+		GameRegistry.registerItem(GeniteBlade, "GeniteBlade");
+		GameRegistry.registerItem(HeterogeniteAxe, "HeterogeniteAxe");
+		GameRegistry.registerItem(HeterogenitePickaxe, "HeterogenitePickaxe");
+		GameRegistry.registerItem(HeterogeniteSpade, "HeterogeniteSpade");
+		GameRegistry.registerItem(KasoBlade, "KasoBlade");
+		GameRegistry.registerItem(KasoliteAxe, "KasoliteAxe");
+		GameRegistry.registerItem(KasolitePickaxe, "KasolitePickaxe");
+		GameRegistry.registerItem(KasoliteSpade, "KasoliteSpade");
+		GameRegistry.registerItem(LazarusBlade, "LazarusBlade");
+		GameRegistry.registerItem(LazuriteAxe, "LazuriteAxe");
+		GameRegistry.registerItem(LazuritePickaxe, "LazuritePickaxe");
+		GameRegistry.registerItem(LazuriteSpade, "LazuriteSpade");
+		
+		
 	}
 	
 
@@ -378,6 +411,42 @@ public class ItemsHelper{
         LanguageRegistry.addName(TaintedLeather, "Tainted Leather");
         LanguageRegistry.addName(TaintedPage, "Tainted Page");
         LanguageRegistry.addName(LagoonStick, "Lagoon Stick");
+		LanguageRegistry.addName(ApophylliBlade, "Apophylli Blade");
+		LanguageRegistry.addName(ApophylliteAxe, "Apophyllite Axe");
+		LanguageRegistry.addName(ApophyllitePickaxe, "Apophyllite Pickaxe");
+		LanguageRegistry.addName(ApophylliteSpade, "Apophyllite Spade");
+		LanguageRegistry.addName(ApophylliteAxe, "Apophyllite Axe");
+		LanguageRegistry.addName(AxiniteAxe, "Axinite Axe");
+		LanguageRegistry.addName(AxinitePickaxe, "Axinite Pickaxe");
+		LanguageRegistry.addName(AxiniteSpade, "Axinite Spade");
+		LanguageRegistry.addName(BetaBlade, "Beta Blade");
+		LanguageRegistry.addName(BetafiteAxe, "Betafite Axe");
+		LanguageRegistry.addName(BetafitePickaxe, "Betafite Pickaxe");
+		LanguageRegistry.addName(BetafiteSpade, "Betafite Spade");
+		LanguageRegistry.addName(BroBlade, "Bro Blade");
+		LanguageRegistry.addName(BrochantiteAxe, "Brochantite Axe");
+		LanguageRegistry.addName(BrochantitePickaxe, "Brochantite Pickaxe");
+		LanguageRegistry.addName(BrochantiteSpade, "Brochantite Spade");
+		LanguageRegistry.addName(DoloBlade, "Dolo Blade");
+		LanguageRegistry.addName(DolomiteAxe, "Dolomite Axe");
+		LanguageRegistry.addName(DolomitePickaxe, "Dolomite Pickaxe");
+		LanguageRegistry.addName(DolomiteSpade, "Dolomite Spade");
+		LanguageRegistry.addName(FoeBlade, "Foe Blade");
+		LanguageRegistry.addName(FotiteAxe, "Fotite Axe");
+		LanguageRegistry.addName(FotitePickaxe, "Fotite Pickaxe");
+		LanguageRegistry.addName(FotiteSpade, "Fotite Spade");
+		LanguageRegistry.addName(GeniteBlade, "Genite Blade");
+		LanguageRegistry.addName(HeterogeniteAxe, "Heterogenite Axe");
+		LanguageRegistry.addName(HeterogenitePickaxe, "Heterogenite Pickaxe");
+		LanguageRegistry.addName(HeterogeniteSpade, "Heterogenite Spade");
+		LanguageRegistry.addName(KasoBlade, "Kaso Blade");
+		LanguageRegistry.addName(KasoliteAxe, "Kasolite Axe");
+		LanguageRegistry.addName(KasolitePickaxe, "Kasolite Pickaxe");
+		LanguageRegistry.addName(KasoliteSpade, "Kasolite Spade");
+		LanguageRegistry.addName(LazarusBlade, "Lazarus Blade");
+		LanguageRegistry.addName(LazuriteAxe, "Lazurite Axe");
+		LanguageRegistry.addName(LazuritePickaxe, "Lazurite Pickaxe");
+		LanguageRegistry.addName(LazuriteSpade, "Lazurite Spade");
 	}
 
 }
