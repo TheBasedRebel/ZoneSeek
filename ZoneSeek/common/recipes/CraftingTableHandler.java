@@ -125,7 +125,7 @@ public class CraftingTableHandler {
 		
 		//Misc
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.CarpetRed, 4), new Object[] {
-			"TTT", "XXX", "TTT", 'T', Block.cloth, 'X', ItemsHelper.RedDye
+			"TTT", "XXX", "TTT", 'X', Block.cloth, 'T', ItemsHelper.RedDye
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(BlocksHelper.HardWood, 4), new Object[] {
