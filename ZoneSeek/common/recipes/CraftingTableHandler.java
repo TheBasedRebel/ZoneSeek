@@ -110,7 +110,7 @@ public class CraftingTableHandler {
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BookOfInfection, 1), new Object[] {
-			"STS", "TXT", "STS", 'X', ItemsHelper.TaintedPage, 'T', ItemsHelper.TaintedLeather, 'S' ItemsHelper.InfectedStone
+			"STS", "TXT", "STS", 'X', ItemsHelper.TaintedPage, 'T', ItemsHelper.TaintedLeather, 'S', ItemsHelper.InfectedStone
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ObsidianStick, 8), new Object[] {
