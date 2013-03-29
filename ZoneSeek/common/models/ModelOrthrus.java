@@ -1,5 +1,7 @@
 package ZoneSeek.common.models;
 
+import org.lwjgl.opengl.GL11;
+
 import ZoneSeek.common.entities.Orthrus;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
@@ -204,6 +206,45 @@ public class ModelOrthrus extends ModelBase
   {
     super.render(par1Entity, par2, par3, par4, par5, par6, par7);
     setRotationAngles(par2, par3, par4, par5, par6, par7, par1Entity);
+    if (this.isChild)
+    {
+        float f6 = 2.0F;
+        GL11.glPushMatrix();
+        GL11.glTranslatef(0.0F, 5.0F * par7, 2.0F * par7);
+        this.WolfHead.render(par7);
+        this.WolfHead_2.render(par7);
+        this.Ear1.render(par7);
+        this.Ear2.render(par7);
+        this.Ear3.render(par7);
+        this.Ear4.render(par7);
+        this.Nose.render(par7);
+        this.Nose_2.render(par7);
+        GL11.glPopMatrix();
+        GL11.glPushMatrix();
+        GL11.glScalef(1.0F / f6, 1.0F / f6, 1.0F / f6);
+        GL11.glTranslatef(0.0F, 24.0F * par7, 0.0F);
+        this.Body.render(par7);
+        this.Mane.render(par7);
+        this.Leg1.render(par7);
+        this.Leg2.render(par7);
+        this.Leg3.render(par7);
+        this.Leg4.render(par7);
+        this.Tail.render(par7);
+        this.Wing_R_1.render(par7);
+        this.Wing_R_2.render(par7);
+        this.Wing_R_3.render(par7);
+        this.Wing_R_4.render(par7);
+        this.Wing_L_1.render(par7);
+        this.Wing_L_2.render(par7);
+        this.Wing_L_3.render(par7);
+        this.Wing_L_4.render(par7);
+        this.Bone_1.render(par7);
+        this.Bone_2.render(par7);
+        this.Bone_3.render(par7);
+        GL11.glPopMatrix();
+    }
+    else
+    {
     WolfHead.render(par7);
     Body.render(par7);
     Mane.render(par7);
@@ -230,6 +271,7 @@ public class ModelOrthrus extends ModelBase
     Bone_1.render(par7);
     Bone_2.render(par7);
     Bone_3.render(par7);
+    }
   }
   
   private void setRotation(ModelRenderer model, float x, float y, float z)

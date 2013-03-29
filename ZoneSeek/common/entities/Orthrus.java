@@ -479,11 +479,15 @@ public class Orthrus extends EntityTameable
      * Checks if the parameter is an item which this animal can be fed to breed it (wheat, carrots or seeds depending on
      * the animal type)
      */
-    public int isBreedingItem()
-    {
-        return ItemsHelper.FuzzleChop.itemID;
-    }
 
+	@Override
+	public boolean isBreedingItem(ItemStack stack) {
+		if(stack.itemID == ItemsHelper.FuzzleChop.itemID) {
+			return true;
+		} else {
+			return false;
+		}
+	}
     /**
      * Will return how many at most can spawn in a chunk at once.
      */

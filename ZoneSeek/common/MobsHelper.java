@@ -12,6 +12,7 @@ import ZoneSeek.common.entities.Orthrus;
 import ZoneSeek.common.entities.InfectedCow;
 import ZoneSeek.common.entities.InfectedPig;
 import ZoneSeek.common.entities.LagoonSlug;
+import ZoneSeek.common.entities.Pincer;
 import ZoneSeek.common.entities.SludgeMan;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -43,6 +44,10 @@ public class MobsHelper {
 		EntityRegistry.registerModEntity(Deux.class, "Deux", 7, ZoneSeek.instance, 80, 3, true);
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Deux.name", "Deux");
 		
+		EntityRegistry.registerModEntity(Pincer.class, "Pincer", 8, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Pincer.name", "Pincer");
+		EntityRegistry.addSpawn(Pincer.class, 120, 1, 3, EnumCreatureType.creature, BiomesHelper.Sludge);
+		
 		//Mobs Peaceful
 		EntityRegistry.registerModEntity(Orthrus.class, "Orthrus", 4, ZoneSeek.instance, 80, 3, true);
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Orthrus.name", "Orthrus");
@@ -56,6 +61,7 @@ public class MobsHelper {
 		EntityEgg(SludgeMan.class, 0xE01BD3, 0x572B54);
 		EntityEgg(Fuzzle.class, 0x2B3157, 0x36A9BA);
 		EntityEgg(Deux.class, 0x339C37, 0xADC7AE);
+		EntityEgg(Pincer.class, 0xB00E4F, 0x802BC2);
 		
 
 	}
