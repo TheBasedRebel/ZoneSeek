@@ -477,6 +477,7 @@ public class ItemsHelper{
 		LanguageRegistry.addName(ApophyllitePickaxe, "Apophyllite Pickaxe");
 		LanguageRegistry.addName(ApophylliteSpade, "Apophyllite Spade");
 		LanguageRegistry.addName(ApophylliteAxe, "Apophyllite Axe");
+		LanguageRegistry.addName(AxiBlade, "Axi Blade");
 		LanguageRegistry.addName(AxiniteAxe, "Axinite Axe");
 		LanguageRegistry.addName(AxinitePickaxe, "Axinite Pickaxe");
 		LanguageRegistry.addName(AxiniteSpade, "Axinite Spade");
