@@ -29,7 +29,7 @@ public class Pincer extends EntityMob{
 	public Pincer(World par1World) {
 		super(par1World);
 		this.texture = "/mods/zoneseek/textures/models/pincer.png";
-		this.moveSpeed = 0.5F;
+		this.moveSpeed = 0.3F;
         this.getNavigator().setAvoidsWater(true);
         this.tasks.addTask(0, new EntityAISwimming(this));
 		this.tasks.addTask(2, new EntityAIAttackOnCollide(this, EntityPlayer.class, this.moveSpeed, false));

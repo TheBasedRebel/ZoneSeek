@@ -271,14 +271,16 @@ public class ModelPincer extends ModelBase
   
   public void setRotationAngles(float par1, float par2, float par3, float par4, float par5, float par6, Entity par7Entity)
   {
+	 super.setRotationAngles(par1, par2, par3, par4, par5, par6, par7Entity);
+	  
       this.Head.rotateAngleX = par5 / (180F / (float)Math.PI);
       this.Head.rotateAngleY = par4 / (180F / (float)Math.PI);
-      this.Top_Head_Piece.rotateAngleX = par5 / (180F / (float)Math.PI);
-      this.Top_Head_Piece.rotateAngleY = par4 / (180F / (float)Math.PI);
-      this.Rigth_Eye.rotateAngleX = par5 / (180F / (float)Math.PI);
-      this.Rigth_Eye.rotateAngleY = par4 / (180F / (float)Math.PI);
       this.Left_Eye.rotateAngleX = par5 / (180F / (float)Math.PI);
       this.Left_Eye.rotateAngleY = par4 / (180F / (float)Math.PI);
+      this.Rigth_Eye.rotateAngleX = par5 / (180F / (float)Math.PI);
+      this.Rigth_Eye.rotateAngleY = par4 / (180F / (float)Math.PI);
+      this.Top_Head_Piece.rotateAngleX = par5 / (180F / (float)Math.PI);
+      this.Top_Head_Piece.rotateAngleY = par4 / (180F / (float)Math.PI);
       this.Lower_Pincer_1.rotateAngleX = par5 / (180F / (float)Math.PI);
       this.Lower_Pincer_1.rotateAngleY = par4 / (180F / (float)Math.PI);
       this.Lower_Pincer_2.rotateAngleX = par5 / (180F / (float)Math.PI);
@@ -291,30 +293,89 @@ public class ModelPincer extends ModelBase
       this.Upper_Right_Pincer_2.rotateAngleY = par4 / (180F / (float)Math.PI);
       this.Upper_Left_Pincer_2.rotateAngleX = par5 / (180F / (float)Math.PI);
       this.Upper_Left_Pincer_2.rotateAngleY = par4 / (180F / (float)Math.PI);
-      this.Body_L.rotateAngleX = ((float)Math.PI / 2F);
-      this.Body_M.rotateAngleX = ((float)Math.PI / 2F);
-      this.Body_T.rotateAngleX = ((float)Math.PI / 2F);
-      this.Bottom_Chest.rotateAngleX = ((float)Math.PI / 2F);
       
-      this.Right_Arm_Piece_1.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
-      this.Right_Arm_Piece_2.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
-      this.Right_Foot.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
-      this.Right_Toe.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
+      float f6 = ((float)Math.PI / 4F);
+      this.Right_Arm_Piece_1.rotateAngleZ = -f6;
+      this.Right_Arm_Piece_2.rotateAngleZ = -f6;
+      this.Right_Foot.rotateAngleZ = -f6;
+      this.Right_Toe.rotateAngleZ = -f6;
+      this.Left_Arm_Piece_1.rotateAngleZ = f6;
+      this.Left_Arm_Piece_2.rotateAngleZ = f6;
+      this.Left_Foot.rotateAngleZ = f6;
+      this.Left_Toe.rotateAngleZ = f6;
+      this.Back_Right_Arm_Piece_1.rotateAngleZ = -f6 * 0.74F;
+      this.Back_Right_Arm_Piece_2.rotateAngleZ = -f6 * 0.74F;
+      this.Back_Right_Foot.rotateAngleZ = -f6 * 0.74F;
+      this.Back_Right_Toe.rotateAngleZ = -f6 * 0.74F;
+      this.Back_Left_Arm_Piece_1.rotateAngleZ = f6 * 0.74F;
+      this.Back_Left_Arm_Piece_2.rotateAngleZ = f6 * 0.74F;
+      this.Back_Left_Foot.rotateAngleZ = f6 * 0.74F;
+      this.Back_Left_Toe.rotateAngleZ = f6 * 0.74F;
+      float f7 = -0.0F;
+      float f8 = 0.3926991F;
+      this.Right_Arm_Piece_1.rotateAngleY = f8 * 0.0F + f7;
+      this.Right_Arm_Piece_2.rotateAngleY = f8 * 2.0F + f7;
+      this.Right_Foot.rotateAngleY = f8 * 2.0F + f7;
+      this.Right_Toe.rotateAngleY = f8 * 2.0F + f7;
+      this.Left_Arm_Piece_1.rotateAngleY = -f8 * 4.0F - f7;
+      this.Left_Arm_Piece_2.rotateAngleY = -f8 * 2.0F - f7;
+      this.Left_Foot.rotateAngleY = -f8 * 2.0F - f7;
+      this.Left_Toe.rotateAngleY = -f8 * 2.0F - f7;
+      this.Back_Right_Arm_Piece_1.rotateAngleY = f8 * 0.0F + f7;
+      this.Back_Right_Arm_Piece_2.rotateAngleY = f8 * 2.0F + f7;
+      this.Back_Right_Foot.rotateAngleY = f8 * 2.0F + f7;
+      this.Back_Right_Toe.rotateAngleY = f8 * 2.0F + f7;
+      this.Back_Left_Arm_Piece_1.rotateAngleY = -f8 * 4.0F - f7;
+      this.Back_Left_Arm_Piece_2.rotateAngleY = -f8 * 2.0F - f7;
+      this.Back_Left_Foot.rotateAngleY = -f8 * 2.0F - f7;
+      this.Back_Left_Toe.rotateAngleY = -f8 * 2.0F - f7;
+      float f9 = -(MathHelper.cos(par1 * 0.6662F * 2.0F + 0.0F) * 0.7F) * par2;
+      float f10 = -(MathHelper.cos(par1 * 0.6662F * 2.0F + (float)Math.PI) * 0.7F) * par2;
+      float f11 = -(MathHelper.cos(par1 * 0.6662F * 2.0F + ((float)Math.PI / 2F)) * 0.7F) * par2;
+      float f12 = -(MathHelper.cos(par1 * 0.6662F * 2.0F + ((float)Math.PI * 3F / 2F)) * 0.7F) * par2;
+      float f13 = Math.abs(MathHelper.sin(par1 * 0.6662F + 0.0F) * 0.4F) * par2;
+      float f14 = Math.abs(MathHelper.sin(par1 * 0.6662F + (float)Math.PI) * 0.4F) * par2;
+      float f15 = Math.abs(MathHelper.sin(par1 * 0.6662F + ((float)Math.PI / 2F)) * 0.4F) * par2;
+      float f16 = Math.abs(MathHelper.sin(par1 * 0.6662F + ((float)Math.PI * 3F / 2F)) * 0.4F) * par2;
+      this.Right_Arm_Piece_1.rotateAngleY += f9;
+      this.Right_Arm_Piece_2.rotateAngleY += f9;
+      this.Right_Foot.rotateAngleY += f9;
+      this.Right_Toe.rotateAngleY += f9;
+      this.Left_Arm_Piece_1.rotateAngleY += -f9;
+      this.Left_Arm_Piece_2.rotateAngleY += -f9;
+      this.Left_Foot.rotateAngleY += -f9;
+      this.Left_Toe.rotateAngleY += -f9;
+      this.Back_Right_Arm_Piece_1.rotateAngleY += f10;
+      this.Back_Right_Arm_Piece_2.rotateAngleY += f10;
+      this.Back_Right_Foot.rotateAngleY += f10;
+      this.Back_Right_Toe.rotateAngleY += f10;
+      this.Back_Left_Arm_Piece_1.rotateAngleY += -f10;
+      this.Back_Left_Arm_Piece_2.rotateAngleY += -f10;
+      this.Back_Left_Foot.rotateAngleY += -f10;
+      this.Back_Left_Toe.rotateAngleY += -f10;
+   
+
+      this.Right_Arm_Piece_1.rotateAngleZ += f13;
+      this.Right_Arm_Piece_2.rotateAngleZ += f13;
+      this.Right_Foot.rotateAngleZ += f13;
+      this.Right_Toe.rotateAngleZ += f13;
       
-      this.Left_Arm_Piece_1.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
-      this.Left_Arm_Piece_2.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
-      this.Left_Foot.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
-      this.Left_Toe.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
+      this.Left_Arm_Piece_1.rotateAngleZ += -f13;
+      this.Left_Arm_Piece_2.rotateAngleZ += -f13;
+      this.Left_Foot.rotateAngleZ += -f13;
+      this.Left_Toe.rotateAngleZ += -f13;
       
-      this.Back_Right_Arm_Piece_1.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
-      this.Back_Right_Arm_Piece_2.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
-      this.Back_Right_Foot.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
-      this.Back_Right_Toe.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
+      this.Back_Right_Arm_Piece_1.rotateAngleZ += f14;
+      this.Back_Right_Arm_Piece_2.rotateAngleZ += f14;
+      this.Back_Right_Foot.rotateAngleZ += f14;
+      this.Back_Right_Toe.rotateAngleZ += f14;
       
-      this.Back_Left_Arm_Piece_1.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
-      this.Back_Left_Arm_Piece_2.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
-      this.Back_Left_Foot.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
-      this.Back_Left_Toe.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
+      this.Back_Left_Arm_Piece_1.rotateAngleZ += -f14;
+      this.Back_Left_Arm_Piece_2.rotateAngleZ += -f14;
+      this.Back_Left_Foot.rotateAngleZ += -f14;
+      this.Back_Left_Toe.rotateAngleZ += -f14;
+      
+      
 
 
   }
