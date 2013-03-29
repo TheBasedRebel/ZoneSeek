@@ -19,6 +19,7 @@ import ZoneSeek.common.recipes.ShapelessHandler;
 import ZoneSeek.common.worldgen.WorldGeneratorFlowers;
 import ZoneSeek.common.worldgen.WorldGeneratorLagoon;
 import ZoneSeek.common.worldgen.WorldGeneratorSludge;
+import ZoneSeek.event.EventSounds;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Init;
@@ -57,6 +58,10 @@ public class ZoneSeek {
 		IDsHelper.runConfiguration(config);
 
 		config.save();
+		
+		//register sound handler
+		//EventSounds soundHandler = new EventSounds();
+		//MinecraftForge.EVENT_BUS.register(soundHandler);
 	}
 
 	@Init
@@ -66,6 +71,7 @@ public class ZoneSeek {
         ItemsHelper.setupItems();
         BiomesHelper.setupBiomes();
         MobsHelper.setupMobs();
+        ProjectilesHelper.setupProjectiles();
         CraftingTableHandler.setupRecipes();
         FurnaceHandler.setupRecipes();
         ShapelessHandler.setupRecipes();

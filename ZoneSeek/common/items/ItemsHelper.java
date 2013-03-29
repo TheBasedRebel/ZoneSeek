@@ -154,6 +154,7 @@ public class ItemsHelper{
 		EnumToolMaterial SlimeMaterial = EnumHelper.addToolMaterial("Slime Material", 3, 5500, 7.5F, 4, 20);
 		EnumToolMaterial SludgeHammerMaterial = EnumHelper.addToolMaterial("Sludge Hammer Material", 3, 2000, 7F, 5, 70);
 		EnumToolMaterial SludgeSickleMaterial = EnumHelper.addToolMaterial("Sludge Sickle Material", 3, 5500, 7.5F, 4, 20);
+		EnumToolMaterial SlimeCannonMaterial = EnumHelper.addToolMaterial("Slime Cannon Material", 3, 500, 7.5F, 6, 20);
 		
 		//Armor Materials
 		EnumArmorMaterial InfectedArmorMaterial = EnumHelper.addArmorMaterial("Infected Armor", 33, new int[] {2, 6, 6, 5}, 16);
@@ -258,7 +259,7 @@ public class ItemsHelper{
 		LazuritePickaxe = new ItemCustomPickaxe(IDsHelper.LazuritePickaxeID, LazuriteMaterial, "LazuritePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuritePickaxe");
 		LazuriteSpade = new ItemCustomSpade(IDsHelper.LazuriteSpadeID, LazuriteMaterial, "LazuriteSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("LazuriteSpade");
 		//Slime
-		SlimeCannon = new ItemBlade(IDsHelper.SlimeCannonID, SlimeMaterial, "SlimeCannon").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeCannon");
+		SlimeCannon = new ItemSlimeCannon(IDsHelper.SlimeCannonID).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeCannon");
 		SlimeClub = new ItemBlade(IDsHelper.SlimeClubID, SlimeMaterial, "SlimeClub").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeClub");
 		SlimeStabber = new ItemBlade(IDsHelper.SlimeStabberID, SlimeMaterial, "SlimeStabber").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlimeStabber");
 		//Scale
