@@ -482,6 +482,34 @@ public class CraftingTableHandler {
 			" T ", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
 			
 		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.PrimaryBlade, 1), new Object[] {
+			" B ", " A ", "XL ", 'L', ItemsHelper.LazuriteShard, 'A', ItemsHelper.AxiniteShard, 'B', ItemsHelper.BetafiteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.PrimaryBlade, 1), new Object[] {
+			" B ", " A ", " LX", 'L', ItemsHelper.LazuriteShard, 'A', ItemsHelper.AxiniteShard, 'B', ItemsHelper.BetafiteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FoloniteBlade, 1), new Object[] {
+			" B ", " A ", "XL ", 'L', ItemsHelper.FotiteShard, 'A', ItemsHelper.HeterogeniteShard, 'B', ItemsHelper.DolomiteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FoloniteBlade, 1), new Object[] {
+			" B ", " A ", " LX", 'L', ItemsHelper.FotiteShard, 'A', ItemsHelper.HeterogeniteShard, 'B', ItemsHelper.DolomiteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KabrolliBlade, 1), new Object[] {
+			" B ", " A ", "XL ", 'L', ItemsHelper.ApophylliteShard, 'A', ItemsHelper.BrochantiteShard, 'B', ItemsHelper.KasoliteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelperKabrolliBlade, 1), new Object[] {
+			" B ", " A ", " LX", 'L', ItemsHelper.ApophylliteShard, 'A', ItemsHelper.BrochantiteShard, 'B', ItemsHelper.KasoliteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelperCutter, 1), new Object[] {
+			"PXT", "XPX", "TXT", 'T', Item.diamond, 'X', Item.ingotIron, 'P', Item.stick
+
+		});		
 
 
 		//test
