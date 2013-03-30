@@ -484,6 +484,71 @@ public class CraftingTableHandler {
 			" T ", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
 			
 		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.PrimaryBlade, 1), new Object[] {
+			" B ", " A ", "XL ", 'L', ItemsHelper.LazuriteShard, 'A', ItemsHelper.AxiniteShard, 'B', ItemsHelper.BetafiteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.PrimaryBlade, 1), new Object[] {
+			" B ", " A ", " LX", 'L', ItemsHelper.LazuriteShard, 'A', ItemsHelper.AxiniteShard, 'B', ItemsHelper.BetafiteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FoloniteBlade, 1), new Object[] {
+			" B ", " A ", "XL ", 'L', ItemsHelper.FotiteShard, 'A', ItemsHelper.HeterogeniteShard, 'B', ItemsHelper.DolomiteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FoloniteBlade, 1), new Object[] {
+			" B ", " A ", " LX", 'L', ItemsHelper.FotiteShard, 'A', ItemsHelper.HeterogeniteShard, 'B', ItemsHelper.DolomiteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KabrolliBlade, 1), new Object[] {
+			" B ", " A ", "XL ", 'L', ItemsHelper.ApophylliteShard, 'A', ItemsHelper.BrochantiteShard, 'B', ItemsHelper.KasoliteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KabrolliBlade, 1), new Object[] {
+			" B ", " A ", " LX", 'L', ItemsHelper.ApophylliteShard, 'A', ItemsHelper.BrochantiteShard, 'B', ItemsHelper.KasoliteShard, 'X', Item.stick
+
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.LazuriteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.LazuriteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.AxiniteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.AxiniteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ApophylliteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.ApophylliteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BetafiteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.BetafiteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BrochantiteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.BrochantiteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.DolomiteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.DolomiteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.FotiteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.FotiteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.HeterogeniteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.HeterogeniteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KasoliteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.KasoliteCrystal
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.CompactedScalePlate, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.CompactedScaleFragment
+			
+		});
+		
 
 
 		//test
