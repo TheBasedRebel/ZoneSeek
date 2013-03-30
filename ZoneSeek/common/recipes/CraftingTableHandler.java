@@ -546,7 +546,7 @@ public class CraftingTableHandler {
 			"TTT", "TTT", "TTT", 'T', ItemsHelper.KasoliteCrystal
 			
 		});
-		GameRegistry.addRecipe(new ItemStack(ItemsHelper.CompactedScale, 1), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.CompactedScalePlate, 1), new Object[] {
 			"TTT", "TTT", "TTT", 'T', ItemsHelper.CompactedScaleFragment
 			
 		});
