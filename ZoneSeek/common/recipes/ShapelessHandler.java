@@ -31,7 +31,7 @@ public class ShapelessHandler {
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.GreenDye, 2), new Object[] {new ItemStack(BlocksHelper.SpringFlowers)});
 		
-		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.LazuriteShard, 1), new Object[] {new ItemStack(ItemsHelper.LazuriteCrystal), new ItemStack(ItemsHelper.Cutter)});
+		/**GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.LazuriteShard, 1), new Object[] {new ItemStack(ItemsHelper.LazuriteCrystal), new ItemStack(ItemsHelper.Cutter)});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.AxiniteShard, 1), new Object[] {new ItemStack(ItemsHelper.AxiniteCrystal), new ItemStack(ItemsHelper.Cutter)});
 		
@@ -47,7 +47,7 @@ public class ShapelessHandler {
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.HeterogeniteShard, 1), new Object[] {new ItemStack(ItemsHelper.HeterogeniteCrystal), new ItemStack(ItemsHelper.Cutter)});
 		
-		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.KasoliteShard, 1), new Object[] {new ItemStack(ItemsHelper.KasoliteCrystal), new ItemStack(ItemsHelper.Cutter)});
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.KasoliteShard, 1), new Object[] {new ItemStack(ItemsHelper.KasoliteCrystal), new ItemStack(ItemsHelper.Cutter)});**/
 	}
 
 }

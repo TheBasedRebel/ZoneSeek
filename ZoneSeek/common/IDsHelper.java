@@ -215,6 +215,10 @@ public class IDsHelper {
 	public static int SludgeSpadeID;
 	public static int YellowDyeID;
 	
+	public static int FoloniteBladeID;
+	public static int KabrolliBladeID;
+	public static int PrimaryBladeID;
+	
 	public static void runConfiguration(Configuration config){
 		//Biome IDs
 		LagoonID = config.get(biomeids, "Lagoon ID", 23).getInt();
@@ -411,6 +415,9 @@ public class IDsHelper {
 		SludgeSickleID = config.get(itemids, "Sludge Sickle ID", 1114).getInt();
 		SludgeSpadeID = config.get(itemids, "Sludge Spade ID", 1115).getInt();
 		YellowDyeID = config.get(itemids, "Yellow Dye ID", 1116).getInt();
+		FoloniteBladeID = config.get(itemids, "Folonite Blade ID", 1117).getInt();
+		KabrolliBladeID = config.get(itemids, "Kabrolli Blade ID", 1118).getInt();
+		PrimaryBladeID = config.get(itemids, "Primary Blade ID", 1119).getInt();
 		
 		
 	}

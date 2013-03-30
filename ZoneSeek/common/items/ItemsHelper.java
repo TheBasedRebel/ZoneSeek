@@ -136,6 +136,9 @@ public class ItemsHelper{
 	public static Item SludgeSickle;
 	public static Item SludgeSpade;
 	public static Item YellowDye;
+	public static Item FoloniteBlade;
+	public static Item KabrolliBlade;
+	public static Item PrimaryBlade;
 	
 	public static void setupItems() {
 		//Item Materials
@@ -293,7 +296,11 @@ public class ItemsHelper{
 		SludgePickaxe = new ItemCustomPickaxe(IDsHelper.SludgePickaxeID, SludgeMaterial, "SludgePickaxe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgePickaxe");
 		SludgeSpade = new ItemCustomSpade(IDsHelper.SludgeSpadeID, SludgeMaterial, "SludgeSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeSpade");
 		SludgeHoe = new ItemCustomHoe(IDsHelper.SludgeHoeID, SludgeMaterial, "SludgeHoe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeHoe");
-
+		
+		FoloniteBlade = new ItemBlade(IDsHelper.FoloniteBladeID, LazuriteMaterial, "FoloniteBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("FoloniteBlade");
+		KabrolliBlade = new ItemBlade(IDsHelper.KabrolliBladeID, LazuriteMaterial, "KabrolliBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("KabrolliBlade");
+		PrimaryBlade = new ItemBlade(IDsHelper.PrimaryBladeID, LazuriteMaterial, "PrimaryBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("PrimaryBlade");
+		
 		gameRegisters();
 		languageRegisters();
 	}
@@ -417,6 +424,10 @@ public class ItemsHelper{
 		GameRegistry.registerItem(KasoliteShard, "KasoliteShard");
 		GameRegistry.registerItem(LazuriteShard, "LazuriteShard");
 		GameRegistry.registerItem(MasterCrystal, "MasterCrystal");
+		GameRegistry.registerItem(FoloniteBlade, "FoloniteBlade");
+		GameRegistry.registerItem(KabrolliBlade, "KabrolliBlade");
+		GameRegistry.registerItem(PrimaryBlade, "PrimaryBlade");
+		
 	}
 	
 
@@ -540,6 +551,10 @@ public class ItemsHelper{
 		LanguageRegistry.addName(KasoliteShard, "Kasolite Shard");
 		LanguageRegistry.addName(LazuriteShard, "Lazurite Shard");
 		LanguageRegistry.addName(MasterCrystal, "Master Crystal");
+		LanguageRegistry.addName(FoloniteBlade, "Folonite Blade");
+		LanguageRegistry.addName(KabrolliBlade, "Kabrolli Blade");
+		LanguageRegistry.addName(PrimaryBlade, "PrimaryBlade");
+		
 	}
 
 }

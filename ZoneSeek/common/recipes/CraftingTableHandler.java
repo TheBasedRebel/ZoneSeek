@@ -1,10 +1,12 @@
 package ZoneSeek.common.recipes;
 
-import ZoneSeek.common.blocks.BlocksHelper;
-import ZoneSeek.common.items.ItemsHelper;
 import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import ZoneSeek.common.blocks.BlocksHelper;
+import ZoneSeek.common.items.ItemsHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class CraftingTableHandler {
