@@ -104,9 +104,9 @@ public class Pincer extends EntityMob{
 	    	switch(this.rand.nextInt(2))
 	    	{
 	    	case 0:
-	    		this.dropItem(ItemsHelper.CompactedScaleFragment.itemID, 1);
+	    		this.dropItem(ItemsHelper.SludgeGem.itemID, 1);
 	    	case 1:
-	    		this.dropItem(ItemsHelper.CompactedScalePlate.itemID, this.rand.nextInt(5) +1);
+	    		this.dropItem(ItemsHelper.SludgeStone.itemID, this.rand.nextInt(5) +1);
 	    	}
 	    }
 	    
@@ -140,7 +140,7 @@ public class Pincer extends EntityMob{
 
 	                if (var2 > 0)
 	                {
-	                    ((EntityLiving)par1Entity).addPotionEffect(new PotionEffect(Potion.poison.id, var2 * 20, 0));
+	                    ((EntityLiving)par1Entity).addPotionEffect(new PotionEffect(Potion.harm.id, var2 * 5, 0));
 	                }
 	            }
 

@@ -11,6 +11,7 @@ import ZoneSeek.common.entities.InfectedPig;
 import ZoneSeek.common.entities.LagoonSlug;
 import ZoneSeek.common.entities.Pincer;
 import ZoneSeek.common.entities.SludgeMan;
+import ZoneSeek.common.entities.TaintedSquid;
 import ZoneSeek.common.entities.render.RenderDeux;
 import ZoneSeek.common.entities.render.RenderFuzzle;
 import ZoneSeek.common.entities.render.RenderOrthrus;
@@ -21,6 +22,7 @@ import ZoneSeek.common.entities.render.RenderLagoonSlug;
 import ZoneSeek.common.entities.render.RenderPincer;
 import ZoneSeek.common.entities.render.RenderSlimeBullet;
 import ZoneSeek.common.entities.render.RenderSludgeMan;
+import ZoneSeek.common.entities.render.RenderTaintedSquid;
 import ZoneSeek.common.models.ModelDeux;
 import ZoneSeek.common.models.ModelFuzzle;
 import ZoneSeek.common.models.ModelOrthrus;
@@ -30,6 +32,7 @@ import ZoneSeek.common.models.ModelLagoonSlug;
 import ZoneSeek.common.models.ModelPincer;
 import ZoneSeek.common.models.ModelSlimeBullet;
 import ZoneSeek.common.models.ModelSludgeMan;
+import ZoneSeek.common.models.ModelTaintedSquid;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class ClientProxyZoneSeek extends CommonProxyZoneSeek{
@@ -46,6 +49,7 @@ public class ClientProxyZoneSeek extends CommonProxyZoneSeek{
 		RenderingRegistry.registerEntityRenderingHandler(Fuzzle.class, new RenderFuzzle(new ModelFuzzle(), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(Deux.class, new RenderDeux(new ModelDeux(), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(Pincer.class, new RenderPincer(new ModelPincer(), 0.5F));
+		RenderingRegistry.registerEntityRenderingHandler(TaintedSquid.class, new RenderTaintedSquid(new ModelTaintedSquid(), 0.5F));
 	}
 	
 	public int addArmor(String Armor){

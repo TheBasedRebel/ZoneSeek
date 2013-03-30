@@ -139,17 +139,17 @@ public class ItemsHelper{
 	
 	public static void setupItems() {
 		//Item Materials
-		EnumToolMaterial InfectedMaterial = EnumHelper.addToolMaterial("Infected Material", 3, 4000, 7.0F, 2, 20);
-		EnumToolMaterial SludgeMaterial = EnumHelper.addToolMaterial("Sludge Material", 3, 4500, 7.5F, 3, 20);
-		EnumToolMaterial ApophylliteMaterial = EnumHelper.addToolMaterial("Apophyllite Material", 3, 4230, 7.2F, 3, 26);
-		EnumToolMaterial AxiniteMaterial = EnumHelper.addToolMaterial("Axinite Material", 3, 4666, 7.3F, 3, 29);
-		EnumToolMaterial BetafiteMaterial = EnumHelper.addToolMaterial("Betafite Material", 3, 4950, 7.4F, 4, 30);
+		EnumToolMaterial InfectedMaterial = EnumHelper.addToolMaterial("Infected Material", 3, 2000, 7.0F, 2, 20);
+		EnumToolMaterial SludgeMaterial = EnumHelper.addToolMaterial("Sludge Material", 3, 2500, 7.5F, 3, 20);
+		EnumToolMaterial ApophylliteMaterial = EnumHelper.addToolMaterial("Apophyllite Material", 3, 1599, 7.2F, 3, 26);
+		EnumToolMaterial AxiniteMaterial = EnumHelper.addToolMaterial("Axinite Material", 3, 4321, 7.3F, 3, 29);
+		EnumToolMaterial BetafiteMaterial = EnumHelper.addToolMaterial("Betafite Material", 3, 2324, 7.4F, 4, 30);
 		EnumToolMaterial BrochantiteMaterial = EnumHelper.addToolMaterial("Brochantite Material", 4, 5000, 7.9F, 4, 60);
-		EnumToolMaterial DolomiteMaterial = EnumHelper.addToolMaterial("Dolomite Material", 3, 4020, 8.0F, 3, 14);
-		EnumToolMaterial FotiteMaterial = EnumHelper.addToolMaterial("Fotite Material", 3, 6000, 8.1F, 3, 2);
-		EnumToolMaterial GentiteMaterial = EnumHelper.addToolMaterial("Gentite Material", 3, 5750, 7.8F, 3, 9);
+		EnumToolMaterial DolomiteMaterial = EnumHelper.addToolMaterial("Dolomite Material", 3, 2234, 8.0F, 3, 14);
+		EnumToolMaterial FotiteMaterial = EnumHelper.addToolMaterial("Fotite Material", 3, 1234, 8.1F, 3, 2);
+		EnumToolMaterial GentiteMaterial = EnumHelper.addToolMaterial("Gentite Material", 3, 1263, 7.8F, 3, 9);
 		EnumToolMaterial HeterogeniteMaterial = EnumHelper.addToolMaterial("Heterogenite Material", 3, 5100, 7.6F, 3, 8);
-		EnumToolMaterial KasoliteMaterial = EnumHelper.addToolMaterial("Kasolite Material", 3, 5678, 7.7F, 3, 20);
+		EnumToolMaterial KasoliteMaterial = EnumHelper.addToolMaterial("Kasolite Material", 3, 4222, 7.7F, 3, 20);
 		EnumToolMaterial LazuriteMaterial = EnumHelper.addToolMaterial("Lazurite Material", 3, 3500, 6.8F, 3, 20);
 		EnumToolMaterial SlimeMaterial = EnumHelper.addToolMaterial("Slime Material", 3, 5500, 7.5F, 4, 20);
 		EnumToolMaterial SludgeHammerMaterial = EnumHelper.addToolMaterial("Sludge Hammer Material", 3, 2000, 7F, 5, 70);

@@ -1,6 +1,9 @@
 package ZoneSeek.common.items;
 
 import java.awt.List;
+import java.util.Random;
+
+import ZoneSeek.common.IDsHelper;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -24,6 +27,7 @@ public class ItemBlade extends ItemSword{
 		this.textureName = tex;
 		
 	}
+	
 	
 	public int enchantability(int i) {
 		return 30;

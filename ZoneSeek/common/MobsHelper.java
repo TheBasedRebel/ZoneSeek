@@ -14,6 +14,7 @@ import ZoneSeek.common.entities.InfectedPig;
 import ZoneSeek.common.entities.LagoonSlug;
 import ZoneSeek.common.entities.Pincer;
 import ZoneSeek.common.entities.SludgeMan;
+import ZoneSeek.common.entities.TaintedSquid;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -39,7 +40,7 @@ public class MobsHelper {
 		
 		EntityRegistry.registerModEntity(Fuzzle.class, "Fuzzle", 6, ZoneSeek.instance, 80, 3, true);
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Fuzzle.name", "Fuzzle");
-		EntityRegistry.addSpawn(Fuzzle.class, 250, 1, 4, EnumCreatureType.monster, BiomesHelper.Sludge, BiomesHelper.Lagoon, BiomeGenBase.beach, BiomeGenBase.desert, BiomeGenBase.extremeHills, BiomeGenBase.forest, BiomeGenBase.jungle, BiomeGenBase.plains, BiomeGenBase.taiga, BiomeGenBase.taigaHills, BiomeGenBase.icePlains, BiomeGenBase.desertHills, BiomeGenBase.extremeHillsEdge, BiomeGenBase.forestHills, BiomeGenBase.frozenOcean, BiomeGenBase.frozenRiver, BiomeGenBase.jungleHills, BiomeGenBase.swampland);
+		EntityRegistry.addSpawn(Fuzzle.class, 120, 1, 2, EnumCreatureType.monster, BiomesHelper.Sludge, BiomesHelper.Lagoon, BiomeGenBase.beach, BiomeGenBase.desert, BiomeGenBase.extremeHills, BiomeGenBase.forest, BiomeGenBase.jungle, BiomeGenBase.plains, BiomeGenBase.taiga, BiomeGenBase.taigaHills, BiomeGenBase.icePlains, BiomeGenBase.desertHills, BiomeGenBase.extremeHillsEdge, BiomeGenBase.forestHills, BiomeGenBase.frozenOcean, BiomeGenBase.frozenRiver, BiomeGenBase.jungleHills, BiomeGenBase.swampland);
 		
 		EntityRegistry.registerModEntity(Deux.class, "Deux", 7, ZoneSeek.instance, 80, 3, true);
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Deux.name", "Deux");
@@ -53,6 +54,10 @@ public class MobsHelper {
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Orthrus.name", "Orthrus");
 		EntityRegistry.addSpawn(Orthrus.class, 70, 1, 2, EnumCreatureType.creature, BiomesHelper.Sludge);
 		
+		EntityRegistry.registerModEntity(TaintedSquid.class, "TaintedSquid", 9, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.TaintedSquid.name", "Tainted Squid");
+		EntityRegistry.addSpawn(TaintedSquid.class, 70, 1, 2, EnumCreatureType.waterCreature, BiomesHelper.Lagoon);
+		
 		//Spawn Eggs	
 		EntityEgg(InfectedPig.class, 0x25630C, 0xEB46E0);
 		EntityEgg(InfectedCow.class, 0x25630C, 0x8C918E);
@@ -62,6 +67,7 @@ public class MobsHelper {
 		EntityEgg(Fuzzle.class, 0x2B3157, 0x36A9BA);
 		EntityEgg(Deux.class, 0x339C37, 0xADC7AE);
 		EntityEgg(Pincer.class, 0xB00E4F, 0x802BC2);
+		EntityEgg(TaintedSquid.class, 0x1559B3, 0xC0D4ED);
 		
 
 	}
