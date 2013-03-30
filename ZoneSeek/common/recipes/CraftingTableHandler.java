@@ -502,11 +502,11 @@ public class CraftingTableHandler {
 			" B ", " A ", "XL ", 'L', ItemsHelper.ApophylliteShard, 'A', ItemsHelper.BrochantiteShard, 'B', ItemsHelper.KasoliteShard, 'X', Item.stick
 
 		});
-		GameRegistry.addRecipe(new ItemStack(ItemsHelperKabrolliBlade, 1), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.KabrolliBlade, 1), new Object[] {
 			" B ", " A ", " LX", 'L', ItemsHelper.ApophylliteShard, 'A', ItemsHelper.BrochantiteShard, 'B', ItemsHelper.KasoliteShard, 'X', Item.stick
 
 		});
-		GameRegistry.addRecipe(new ItemStack(ItemsHelperCutter, 1), new Object[] {
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.Cutter, 1), new Object[] {
 			"PXT", "XPX", "TXT", 'T', Item.diamond, 'X', Item.ingotIron, 'P', Item.stick
 
 		});		
