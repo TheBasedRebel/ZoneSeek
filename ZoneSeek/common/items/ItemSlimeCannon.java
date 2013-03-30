@@ -54,7 +54,7 @@ public class ItemSlimeCannon extends Item {
 				if (!world.isRemote) { 
 					entityPlayer.setItemInUse(stack, getMaxItemUseDuration());
 					EntitySlimeBullet bulletEntity = new EntitySlimeBullet(world, entityPlayer, 2.0F, 0.2F);
-					bulletEntity.setDamage(0.28);
+					bulletEntity.setDamage(2.0);
 					//world.playSoundAtEntity(entityPlayer, "rifle", 1.0F, 1.0F);
 					world.spawnEntityInWorld(bulletEntity);
 					cooldown = 10;

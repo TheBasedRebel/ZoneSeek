@@ -91,6 +91,7 @@ public class BlocksHelper {
     public static Block WallPaperGrayBottom;
     public static Block WallPaperPink;
     public static Block WallPaperPinkBottom;
+    public static Block PalmStairs;
 
 	public static void setupBlocks() {
 		
@@ -175,6 +176,7 @@ public class BlocksHelper {
 		LagoonStairs = new BlockLagoonStairs(IDsHelper.LagoonStairsID, BlocksHelper.LagoonPlanks, 0).setUnlocalizedName("LagoonStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeStairs = new BlockSludgeStairs(IDsHelper.SludgeStairsID, BlocksHelper.SludgePlanks, 0).setUnlocalizedName("SludgeStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		GraniteStairs = new BlockGraniteStairs(IDsHelper.GraniteStairsID, BlocksHelper.Granite, 0).setUnlocalizedName("GraniteStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PalmStairs = new BlockPalmStairs(IDsHelper.PalmStairsID, BlocksHelper.PalmWoodPlanks, 0).setUnlocalizedName("PalmStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Flowers
 		BloodFlower = new BlockFlowerCustom(IDsHelper.BloodFlowerID, "BloodFlower").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("BloodFlower").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -282,7 +284,7 @@ public class BlocksHelper {
 		GameRegistry.registerBlock(WallPaperGrayBottom, "AdamBahr_WallPaperBottomGray");
 		GameRegistry.registerBlock(WallPaperPink, "AdamBahr_WallPaperPink");
 		GameRegistry.registerBlock(WallPaperPinkBottom, "AdamBahr_WallPaperBottomPink");
-		
+		GameRegistry.registerBlock(PalmStairs, "AdamBahr_PalmStairs");
 	}
 	
 	private static void languageRegisters() {
@@ -358,7 +360,7 @@ public class BlocksHelper {
 		LanguageRegistry.addName(WallPaperGrayBottom, "Wallpaper Bottom Gray");
 		LanguageRegistry.addName(WallPaperPink, "Wallpaper Pink");
 		LanguageRegistry.addName(WallPaperPinkBottom, "Wallpaper Bottom Pink");
-		
+		LanguageRegistry.addName(PalmStairs, "Palm Stairs");
 		
 		
 	}

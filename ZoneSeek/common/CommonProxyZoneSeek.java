@@ -9,5 +9,9 @@ public class CommonProxyZoneSeek {
 	public int addArmor(String Armor) {
 		return 0;
 	}
+	
+	public void initCapes() {
+
+	}
 
 }

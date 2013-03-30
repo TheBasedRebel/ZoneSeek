@@ -2,7 +2,12 @@ package ZoneSeek.common.entities;
 
 import ZoneSeek.common.items.ItemsHelper;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.ai.EntityAIAttackOnCollide;
+import net.minecraft.entity.ai.EntityAIHurtByTarget;
+import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.passive.EntityWaterMob;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MathHelper;
@@ -35,11 +40,30 @@ public class TaintedSquid extends EntityWaterMob
         this.texture = "/mods/zoneseek/textures/models/TaintedSquid.png";
         this.setSize(0.95F, 0.95F);
         this.field_70864_bA = 1.0F / (this.rand.nextFloat() + 1.0F) * 0.2F;
+        this.tasks.addTask(2, new EntityAIAttackOnCollide(this, EntityPlayer.class, this.moveSpeed, false));
+		this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, false));
+		this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 16.0F, 0, true));
     }
 
     public int getMaxHealth()
     {
         return 150;
+    }
+    
+    public int getAttackStrength(Entity var1)
+    {
+        return 25;
+    }
+    
+    protected void entityInit()
+    {
+        super.entityInit();
+        this.dataWatcher.addObject(4, new Byte((byte)0));
+    }
+    protected Entity findPlayerToAttack()
+    {
+        double var1 = 8.0D;
+        return this.worldObj.getClosestVulnerablePlayerToEntity(this, var1);
     }
 
     /**

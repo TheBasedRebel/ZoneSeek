@@ -59,6 +59,8 @@ public class ZoneSeek {
 
 		config.save();
 		
+		proxy.initCapes();
+		
 		//register sound handler
 		//EventSounds soundHandler = new EventSounds();
 		//MinecraftForge.EVENT_BUS.register(soundHandler);

@@ -72,6 +72,7 @@ public class IDsHelper {
     public static int LagoonStairsID;
     public static int SludgeStairsID;
     public static int GraniteStairsID;
+    public static int PalmStairsID;
     public static int BloodFlowerID;
     public static int BlossomsID;
     public static int DaisyID;
@@ -219,6 +220,8 @@ public class IDsHelper {
 	public static int KabrolliBladeID;
 	public static int PrimaryBladeID;
 	
+	public static int FuzzleBoneID;
+	
 	public static void runConfiguration(Configuration config){
 		//Biome IDs
 		LagoonID = config.get(biomeids, "Lagoon ID", 23).getInt();
@@ -296,6 +299,7 @@ public class IDsHelper {
 		WallPaperGrayBottomID = config.get(blockids, "WallPaper Gray Bottom ID", 846).getInt();
 		WallPaperPinkID = config.get(blockids, "WallPaper Pink ID", 847).getInt();
 		WallPaperPinkBottomID = config.get(blockids, "WallPaper Pink Bottom ID", 848).getInt();
+		PalmStairsID = config.get(blockids, "Palm Stairs ID", 849).getInt();
 		
 		//Item IDs
 		ApophylliteCrystalID = config.get(itemids, "Apophyllite Crystal ID", 1000).getInt();
@@ -418,7 +422,7 @@ public class IDsHelper {
 		FoloniteBladeID = config.get(itemids, "Folonite Blade ID", 1117).getInt();
 		KabrolliBladeID = config.get(itemids, "Kabrolli Blade ID", 1118).getInt();
 		PrimaryBladeID = config.get(itemids, "Primary Blade ID", 1119).getInt();
-		
+		FuzzleBoneID = config.get(itemids, "Fuzzle Bone ID", 1120).getInt();
 		
 	}
 	

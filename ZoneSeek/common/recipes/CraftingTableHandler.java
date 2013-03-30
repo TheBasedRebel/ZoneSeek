@@ -53,6 +53,10 @@ public class CraftingTableHandler {
 			"T  ", "TT ", "TTT", 'T', BlocksHelper.Granite
 			
 		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.PalmStairs, 4), new Object[] {
+			"T  ", "TT ", "TTT", 'T', BlocksHelper.PalmWoodPlanks
+			
+		});
 		
 		//Tool Recipe's Infected
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.InfectedPickaxe, 1), new Object[] {

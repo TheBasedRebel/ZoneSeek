@@ -421,7 +421,7 @@ public class Orthrus extends EntityTameable
                 this.setPathToEntity((PathEntity)null);
             }
         }
-        else if (itemstack != null && itemstack.itemID == Item.bone.itemID && !this.isAngry())
+        else if (itemstack != null && itemstack.itemID == ItemsHelper.FuzzleBone.itemID && !this.isAngry())
         {
             if (!par1EntityPlayer.capabilities.isCreativeMode)
             {

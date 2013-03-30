@@ -139,6 +139,7 @@ public class ItemsHelper{
 	public static Item FoloniteBlade;
 	public static Item KabrolliBlade;
 	public static Item PrimaryBlade;
+	public static Item FuzzleBone;
 	
 	public static void setupItems() {
 		//Item Materials
@@ -158,7 +159,7 @@ public class ItemsHelper{
 		EnumToolMaterial SludgeHammerMaterial = EnumHelper.addToolMaterial("Sludge Hammer Material", 3, 2000, 7F, 5, 70);
 		EnumToolMaterial SludgeSickleMaterial = EnumHelper.addToolMaterial("Sludge Sickle Material", 3, 5500, 7.5F, 4, 20);
 		EnumToolMaterial SlimeCannonMaterial = EnumHelper.addToolMaterial("Slime Cannon Material", 3, 500, 7.5F, 6, 20);
-		
+		EnumToolMaterial SpecialBladeMaterial = EnumHelper.addToolMaterial("Special Blade Material", 3, 6000, 7.5F, 12, 100);
 		//Armor Materials
 		EnumArmorMaterial InfectedArmorMaterial = EnumHelper.addArmorMaterial("Infected Armor", 33, new int[] {2, 6, 6, 5}, 16);
 		EnumArmorMaterial ScaleArmorMaterial = EnumHelper.addArmorMaterial("Scale Armor", 40, new int[] {3, 7, 7, 6}, 32);
@@ -297,10 +298,11 @@ public class ItemsHelper{
 		SludgeSpade = new ItemCustomSpade(IDsHelper.SludgeSpadeID, SludgeMaterial, "SludgeSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeSpade");
 		SludgeHoe = new ItemCustomHoe(IDsHelper.SludgeHoeID, SludgeMaterial, "SludgeHoe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeHoe");
 		
-		FoloniteBlade = new ItemBlade(IDsHelper.FoloniteBladeID, LazuriteMaterial, "FoloniteBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("FoloniteBlade");
-		KabrolliBlade = new ItemBlade(IDsHelper.KabrolliBladeID, LazuriteMaterial, "KabrolliBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("KabrolliBlade");
-		PrimaryBlade = new ItemBlade(IDsHelper.PrimaryBladeID, LazuriteMaterial, "PrimaryBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("PrimaryBlade");
+		FoloniteBlade = new ItemBlade(IDsHelper.FoloniteBladeID, SpecialBladeMaterial, "FoloniteBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("FoloniteBlade");
+		KabrolliBlade = new ItemBlade(IDsHelper.KabrolliBladeID, SpecialBladeMaterial, "KabrolliBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("KabrolliBlade");
+		PrimaryBlade = new ItemBlade(IDsHelper.PrimaryBladeID, SpecialBladeMaterial, "PrimaryBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("PrimaryBlade");
 		
+		FuzzleBone = new ItemMisc(IDsHelper.FuzzleBoneID, "FuzzleBone").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("FuzzleBone");
 		gameRegisters();
 		languageRegisters();
 	}
@@ -427,6 +429,7 @@ public class ItemsHelper{
 		GameRegistry.registerItem(FoloniteBlade, "FoloniteBlade");
 		GameRegistry.registerItem(KabrolliBlade, "KabrolliBlade");
 		GameRegistry.registerItem(PrimaryBlade, "PrimaryBlade");
+		GameRegistry.registerItem(FuzzleBone, "FuzzleBone");
 		
 	}
 	
@@ -553,7 +556,8 @@ public class ItemsHelper{
 		LanguageRegistry.addName(MasterCrystal, "Master Crystal");
 		LanguageRegistry.addName(FoloniteBlade, "Folonite Blade");
 		LanguageRegistry.addName(KabrolliBlade, "Kabrolli Blade");
-		LanguageRegistry.addName(PrimaryBlade, "PrimaryBlade");
+		LanguageRegistry.addName(PrimaryBlade, "Primary Blade");
+		LanguageRegistry.addName(FuzzleBone, "Fuzzle Bone");
 		
 	}
 

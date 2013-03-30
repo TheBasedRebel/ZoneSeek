@@ -8,6 +8,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 import ZoneSeek.common.biomes.BiomesHelper;
 import ZoneSeek.common.entities.Deux;
 import ZoneSeek.common.entities.Fuzzle;
+import ZoneSeek.common.entities.LagoonMonster;
 import ZoneSeek.common.entities.Orthrus;
 import ZoneSeek.common.entities.InfectedCow;
 import ZoneSeek.common.entities.InfectedPig;
@@ -49,6 +50,10 @@ public class MobsHelper {
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Pincer.name", "Pincer");
 		EntityRegistry.addSpawn(Pincer.class, 120, 1, 3, EnumCreatureType.creature, BiomesHelper.Sludge);
 		
+		EntityRegistry.registerModEntity(LagoonMonster.class, "LagoonMonster", 10, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.LagoonMonster.name", "Lagoon Monster");
+		EntityRegistry.addSpawn(LagoonMonster.class, 50, 1, 2, EnumCreatureType.creature, BiomesHelper.Lagoon);
+		
 		//Mobs Peaceful
 		EntityRegistry.registerModEntity(Orthrus.class, "Orthrus", 4, ZoneSeek.instance, 80, 3, true);
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Orthrus.name", "Orthrus");
@@ -68,6 +73,7 @@ public class MobsHelper {
 		EntityEgg(Deux.class, 0x339C37, 0xADC7AE);
 		EntityEgg(Pincer.class, 0xB00E4F, 0x802BC2);
 		EntityEgg(TaintedSquid.class, 0x1559B3, 0xC0D4ED);
+		EntityEgg(LagoonMonster.class, 0x4AB025, 0xC2B040);
 		
 
 	}
