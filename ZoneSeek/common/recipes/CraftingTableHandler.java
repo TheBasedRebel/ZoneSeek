@@ -508,10 +508,6 @@ public class CraftingTableHandler {
 			" B ", " A ", " LX", 'L', ItemsHelper.ApophylliteShard, 'A', ItemsHelper.BrochantiteShard, 'B', ItemsHelper.KasoliteShard, 'X', Item.stick
 
 		});
-		GameRegistry.addRecipe(new ItemStack(ItemsHelper.Cutter, 1), new Object[] {
-			"PXT", "XPX", "TXT", 'T', Item.diamond, 'X', Item.ingotIron, 'P', Item.stick
-
-		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.LazuriteShard, 1), new Object[] {
 			"TTT", "TTT", "TTT", 'T', ItemsHelper.LazuriteCrystal
 			
@@ -528,8 +524,8 @@ public class CraftingTableHandler {
 			"TTT", "TTT", "TTT", 'T', ItemsHelper.BetafiteCrystal
 			
 		});
-		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BrocahntiteShard, 1), new Object[] {
-			"TTT", "TTT", "TTT", 'T', ItemsHelper.BrocahntiteCrystal
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BrochantiteShard, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.BrochantiteCrystal
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.DolomiteShard, 1), new Object[] {
