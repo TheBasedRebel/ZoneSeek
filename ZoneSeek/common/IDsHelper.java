@@ -86,6 +86,7 @@ public class IDsHelper {
     public static int WallPaperGrayBottomID;
     public static int WallPaperPinkID;
     public static int WallPaperPinkBottomID;
+    public static int HardWoodStairsID;
     
     
     
@@ -300,6 +301,7 @@ public class IDsHelper {
 		WallPaperPinkID = config.get(blockids, "WallPaper Pink ID", 847).getInt();
 		WallPaperPinkBottomID = config.get(blockids, "WallPaper Pink Bottom ID", 848).getInt();
 		PalmStairsID = config.get(blockids, "Palm Stairs ID", 849).getInt();
+		HardWoodStairsID = config.get(blockids, "Hard Wood Stairs ID", 850).getInt();
 		
 		//Item IDs
 		ApophylliteCrystalID = config.get(itemids, "Apophyllite Crystal ID", 1000).getInt();

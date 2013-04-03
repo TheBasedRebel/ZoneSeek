@@ -114,9 +114,9 @@ public class BlockCounter extends Block
     public void registerIcons(IconRegister par1IconRegister)
     {
         this.blockIcon = par1IconRegister.registerIcon("zoneseek:counterside");
-        this.field_94463_c = par1IconRegister.registerIcon("zoneseek:granite");
+        this.field_94463_c = par1IconRegister.registerIcon("zoneseek:Granite");
         this.field_94462_cO = par1IconRegister.registerIcon("zoneseek:countertop");
-        this.field_96473_e = par1IconRegister.registerIcon("zoneseek:hardwood");
+        this.field_96473_e = par1IconRegister.registerIcon("zoneseek:HardWood");
     }
 
     /**

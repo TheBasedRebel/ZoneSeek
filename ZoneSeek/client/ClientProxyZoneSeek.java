@@ -54,8 +54,8 @@ public class ClientProxyZoneSeek extends CommonProxyZoneSeek{
 		RenderingRegistry.registerEntityRenderingHandler(Fuzzle.class, new RenderFuzzle(new ModelFuzzle(), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(Deux.class, new RenderDeux(new ModelDeux(), 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(Pincer.class, new RenderPincer(new ModelPincer(), 0.5F));
-		RenderingRegistry.registerEntityRenderingHandler(TaintedSquid.class, new RenderTaintedSquid(new ModelTaintedSquid(), 0.5F));
-		RenderingRegistry.registerEntityRenderingHandler(LagoonMonster.class, new RenderLagoonMonster(new ModelLagoonMonster(), 0.5F));
+		RenderingRegistry.registerEntityRenderingHandler(TaintedSquid.class, new RenderTaintedSquid(new ModelTaintedSquid(), 0.7F));
+		RenderingRegistry.registerEntityRenderingHandler(LagoonMonster.class, new RenderLagoonMonster(new ModelLagoonMonster(), 1.0F));
 		
 	}
 	

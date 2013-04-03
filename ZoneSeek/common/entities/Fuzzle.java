@@ -27,7 +27,6 @@ public class Fuzzle extends EntityMob{
 		super(par1World);
 		this.texture = "/mods/zoneseek/textures/models/fuzzle.png";
 		this.moveSpeed = 0.3F;
-        this.getNavigator().setAvoidsWater(true);
         this.tasks.addTask(0, new EntityAISwimming(this));
 		this.tasks.addTask(2, new EntityAIAttackOnCollide(this, EntityPlayer.class, this.moveSpeed, false));
 		this.tasks.addTask(3, new EntityAIAttackOnCollide(this, EntityVillager.class, this.moveSpeed, true));

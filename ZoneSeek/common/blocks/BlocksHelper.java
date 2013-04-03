@@ -92,6 +92,7 @@ public class BlocksHelper {
     public static Block WallPaperPink;
     public static Block WallPaperPinkBottom;
     public static Block PalmStairs;
+    public static Block HardWoodStairs;
 
 	public static void setupBlocks() {
 		
@@ -135,6 +136,7 @@ public class BlocksHelper {
 		WallPaperGrayBottom = new BlockWallPaperGrayB(IDsHelper.WallPaperGrayBottomID).setHardness(2F).setResistance(10F).setUnlocalizedName("WallPaperGrayBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		WallPaperPink = new BlockWallPaperPink(IDsHelper.WallPaperPinkID).setHardness(2F).setResistance(1F).setUnlocalizedName("WallPaperPink").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		WallPaperPinkBottom = new BlockWallPaperPinkB(IDsHelper.WallPaperPinkBottomID).setHardness(2F).setResistance(10F).setUnlocalizedName("WallPaperPinkBottom").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		
 		//Normal Blocks Stone
 		InfectedBlock = new BlockStone(IDsHelper.InfectedBlockID, "InfectedBlock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("InfectedBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		InfectedBrick = new BlockStone(IDsHelper.InfectedBrickID, "InfectedBrick").setHardness(2F).setResistance(0.2F).setUnlocalizedName("InfectedBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -177,15 +179,16 @@ public class BlocksHelper {
 		SludgeStairs = new BlockSludgeStairs(IDsHelper.SludgeStairsID, BlocksHelper.SludgePlanks, 0).setUnlocalizedName("SludgeStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		GraniteStairs = new BlockGraniteStairs(IDsHelper.GraniteStairsID, BlocksHelper.Granite, 0).setUnlocalizedName("GraniteStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		PalmStairs = new BlockPalmStairs(IDsHelper.PalmStairsID, BlocksHelper.PalmWoodPlanks, 0).setUnlocalizedName("PalmStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		HardWoodStairs = new BlockHardWoodStairs(IDsHelper.HardWoodStairsID, BlocksHelper.HardWood, 0).setUnlocalizedName("HardWoodStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Flowers
-		BloodFlower = new BlockFlowerCustom(IDsHelper.BloodFlowerID, "BloodFlower").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("BloodFlower").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		Blossoms = new BlockFlowerCustom(IDsHelper.BlossomsID, "Blossoms").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("Blossoms").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		Daisy = new BlockFlowerCustom(IDsHelper.DaisyID, "Daisy").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("Daisy").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		DeadFlower = new BlockFlowerCustom(IDsHelper.DeadFlowerID, "DeadFlower").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("DeadFlower").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		Iris = new BlockFlowerCustom(IDsHelper.IrisID, "Iris").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("Iris").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SpringFlowers = new BlockFlowerCustom(IDsHelper.SpringFlowersID, "SpringFlowers").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("SpringFlowers").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		Tulip = new BlockFlowerCustom(IDsHelper.TulipID, "Tulip").setHardness(0.1F).setResistance(0.1F).setUnlocalizedName("Tulip").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		BloodFlower = new BlockFlowerCustom(IDsHelper.BloodFlowerID, "BloodFlower").setHardness(0.0F).setResistance(0.0F).setUnlocalizedName("BloodFlower").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Blossoms = new BlockFlowerCustom(IDsHelper.BlossomsID, "Blossoms").setHardness(0.0F).setResistance(0.0F).setUnlocalizedName("Blossoms").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Daisy = new BlockFlowerCustom(IDsHelper.DaisyID, "Daisy").setHardness(0.0F).setResistance(0.0F).setUnlocalizedName("Daisy").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		DeadFlower = new BlockFlowerCustom(IDsHelper.DeadFlowerID, "DeadFlower").setHardness(0.0F).setResistance(0.0F).setUnlocalizedName("DeadFlower").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Iris = new BlockFlowerCustom(IDsHelper.IrisID, "Iris").setHardness(0.0F).setResistance(0.0F).setUnlocalizedName("Iris").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SpringFlowers = new BlockFlowerCustom(IDsHelper.SpringFlowersID, "SpringFlowers").setHardness(0.0F).setResistance(0.0F).setUnlocalizedName("SpringFlowers").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Tulip = new BlockFlowerCustom(IDsHelper.TulipID, "Tulip").setHardness(0.0F).setResistance(0.0F).setUnlocalizedName("Tulip").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Machines
 		//geothermalOven = new BlockLavaFurnace(IDsHelper.lavafurnaceID, "LavaFurnaceFront").setHardness(2.5F).setResistance(22F).setUnlocalizedName("geothermaloven").setStepSound(Block.soundStoneFootstep).setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -285,6 +288,7 @@ public class BlocksHelper {
 		GameRegistry.registerBlock(WallPaperPink, "AdamBahr_WallPaperPink");
 		GameRegistry.registerBlock(WallPaperPinkBottom, "AdamBahr_WallPaperBottomPink");
 		GameRegistry.registerBlock(PalmStairs, "AdamBahr_PalmStairs");
+		GameRegistry.registerBlock(HardWoodStairs, "AdamBahr_HardWoodStairs");
 	}
 	
 	private static void languageRegisters() {
@@ -361,6 +365,7 @@ public class BlocksHelper {
 		LanguageRegistry.addName(WallPaperPink, "Wallpaper Pink");
 		LanguageRegistry.addName(WallPaperPinkBottom, "Wallpaper Bottom Pink");
 		LanguageRegistry.addName(PalmStairs, "Palm Stairs");
+		LanguageRegistry.addName(HardWoodStairs, "Hard Wood Stairs");
 		
 		
 	}

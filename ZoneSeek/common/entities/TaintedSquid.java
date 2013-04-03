@@ -1,31 +1,30 @@
 package ZoneSeek.common.entities;
 
+import java.util.List;
+
 import ZoneSeek.common.items.ItemsHelper;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.ai.EntityAIAttackOnCollide;
-import net.minecraft.entity.ai.EntityAIHurtByTarget;
-import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.passive.EntityWaterMob;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 public class TaintedSquid extends EntityWaterMob
 {
+    private int angerLevel = 0;
+    private int randomSoundDelay = 5;
     public float field_70861_d = 0.0F;
     public float field_70862_e = 0.0F;
     public float field_70859_f = 0.0F;
     public float field_70860_g = 0.0F;
     public float field_70867_h = 0.0F;
     public float field_70868_i = 0.0F;
-
-    /** angle of the tentacles in radians */
     public float tentacleAngle = 0.0F;
-
-    /** the last calculated angle of the tentacles in radians */
     public float lastTentacleAngle = 0.0F;
     private float randomMotionSpeed = 0.0F;
     private float field_70864_bA = 0.0F;
@@ -34,61 +33,49 @@ public class TaintedSquid extends EntityWaterMob
     private float randomMotionVecY = 0.0F;
     private float randomMotionVecZ = 0.0F;
 
-    public TaintedSquid(World par1World)
+    public TaintedSquid(World var1)
     {
-        super(par1World);
+        super(var1);
         this.texture = "/mods/zoneseek/textures/models/TaintedSquid.png";
+        this.moveSpeed = 1.0F;
         this.setSize(0.95F, 0.95F);
         this.field_70864_bA = 1.0F / (this.rand.nextFloat() + 1.0F) * 0.2F;
-        this.tasks.addTask(2, new EntityAIAttackOnCollide(this, EntityPlayer.class, this.moveSpeed, false));
-		this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, false));
-		this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 16.0F, 0, true));
+    }
+
+    public int getAttackStrength(Entity var1)
+    {
+        return 40;
     }
 
     public int getMaxHealth()
     {
-        return 150;
+        return 400;
     }
-    
-    public int getAttackStrength(Entity var1)
+
+    public boolean canBreatheUnderwater()
     {
-        return 25;
+        return true;
     }
-    
-    protected void entityInit()
-    {
-        super.entityInit();
-        this.dataWatcher.addObject(4, new Byte((byte)0));
-    }
-    protected Entity findPlayerToAttack()
-    {
-        double var1 = 8.0D;
-        return this.worldObj.getClosestVulnerablePlayerToEntity(this, var1);
-    }
+
+    /**
+     * Called when the mob's health reaches 0.
+     */
+
 
     /**
      * Returns the sound this mob makes while it's alive.
      */
-    protected String getLivingSound()
-    {
-        return null;
-    }
+
 
     /**
      * Returns the sound this mob makes when it is hurt.
      */
-    protected String getHurtSound()
-    {
-        return null;
-    }
+
 
     /**
      * Returns the sound this mob makes on death.
      */
-    protected String getDeathSound()
-    {
-        return null;
-    }
+
 
     /**
      * Returns the volume for the sounds this mob makes.
@@ -110,13 +97,13 @@ public class TaintedSquid extends EntityWaterMob
      * Drop 0-2 items of this living's type. @param par1 - Whether this entity has recently been hit by a player. @param
      * par2 - Level of Looting used to kill this mob.
      */
-    protected void dropFewItems(boolean par1, int par2)
+    protected void dropFewItems(boolean var1, int var2)
     {
-        int j = this.rand.nextInt(3 + par2) + 1;
+        int var3 = this.rand.nextInt(3 + var2) + 1;
 
-        for (int k = 0; k < j; ++k)
+        for (int var4 = 0; var4 < var3; ++var4)
         {
-            this.entityDropItem(new ItemStack(ItemsHelper.TaintedInkSack, 1, 0), 0.0F);
+            this.entityDropItem(new ItemStack(ItemsHelper.TaintedInkSack), 0.0F);
         }
     }
 
@@ -130,108 +117,78 @@ public class TaintedSquid extends EntityWaterMob
     }
 
     /**
-     * Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons
-     * use this to react to sunlight and start to burn.
+     * (abstract) Protected helper method to write subclass entity data to NBT.
      */
-    public void onLivingUpdate()
+    public void writeEntityToNBT(NBTTagCompound var1)
     {
-        super.onLivingUpdate();
-        this.field_70862_e = this.field_70861_d;
-        this.field_70860_g = this.field_70859_f;
-        this.field_70868_i = this.field_70867_h;
-        this.lastTentacleAngle = this.tentacleAngle;
-        this.field_70867_h += this.field_70864_bA;
-
-        if (this.field_70867_h > ((float)Math.PI * 2F))
-        {
-            this.field_70867_h -= ((float)Math.PI * 2F);
-
-            if (this.rand.nextInt(10) == 0)
-            {
-                this.field_70864_bA = 1.0F / (this.rand.nextFloat() + 1.0F) * 0.2F;
-            }
-        }
-
-        if (this.isInWater())
-        {
-            float f;
-
-            if (this.field_70867_h < (float)Math.PI)
-            {
-                f = this.field_70867_h / (float)Math.PI;
-                this.tentacleAngle = MathHelper.sin(f * f * (float)Math.PI) * (float)Math.PI * 0.25F;
-
-                if ((double)f > 0.75D)
-                {
-                    this.randomMotionSpeed = 1.0F;
-                    this.field_70871_bB = 1.0F;
-                }
-                else
-                {
-                    this.field_70871_bB *= 0.8F;
-                }
-            }
-            else
-            {
-                this.tentacleAngle = 0.0F;
-                this.randomMotionSpeed *= 0.9F;
-                this.field_70871_bB *= 0.99F;
-            }
-
-            if (!this.worldObj.isRemote)
-            {
-                this.motionX = (double)(this.randomMotionVecX * this.randomMotionSpeed);
-                this.motionY = (double)(this.randomMotionVecY * this.randomMotionSpeed);
-                this.motionZ = (double)(this.randomMotionVecZ * this.randomMotionSpeed);
-            }
-
-            f = MathHelper.sqrt_double(this.motionX * this.motionX + this.motionZ * this.motionZ);
-            this.renderYawOffset += (-((float)Math.atan2(this.motionX, this.motionZ)) * 180.0F / (float)Math.PI - this.renderYawOffset) * 0.1F;
-            this.rotationYaw = this.renderYawOffset;
-            this.field_70859_f += (float)Math.PI * this.field_70871_bB * 1.5F;
-            this.field_70861_d += (-((float)Math.atan2((double)f, this.motionY)) * 180.0F / (float)Math.PI - this.field_70861_d) * 0.1F;
-        }
-        else
-        {
-            this.tentacleAngle = MathHelper.abs(MathHelper.sin(this.field_70867_h)) * (float)Math.PI * 0.25F;
-
-            if (!this.worldObj.isRemote)
-            {
-                this.motionX = 0.0D;
-                this.motionY -= 0.08D;
-                this.motionY *= 0.9800000190734863D;
-                this.motionZ = 0.0D;
-            }
-
-            this.field_70861_d = (float)((double)this.field_70861_d + (double)(-90.0F - this.field_70861_d) * 0.02D);
-        }
+        super.writeEntityToNBT(var1);
+        var1.setShort("Anger", (short)this.angerLevel);
     }
 
     /**
-     * Moves the entity based on the specified heading.  Args: strafe, forward
+     * (abstract) Protected helper method to read subclass entity data from NBT.
      */
-    public void moveEntityWithHeading(float par1, float par2)
+    public void readEntityFromNBT(NBTTagCompound var1)
     {
-        this.moveEntity(this.motionX, this.motionY, this.motionZ);
+        super.readEntityFromNBT(var1);
+        this.angerLevel = var1.getShort("Anger");
     }
 
-    protected void updateEntityActionState()
+    /**
+     * Finds the closest player within 16 blocks to attack, or null if this Entity isn't interested in attacking
+     * (Animals, Spiders at day, peaceful PigZombies).
+     */
+    protected Entity findPlayerToAttack()
     {
-        ++this.entityAge;
+        return this.angerLevel == 0 ? null : super.findPlayerToAttack();
+    }
 
-        if (this.entityAge > 100)
+    /**
+     * Gets called every tick from main Entity class
+     */
+    public void onEntityUpdate()
+    {
+        super.onEntityUpdate();
+        this.setAir(300);
+    }
+
+    /**
+     * Called when the mob is falling. Calculates and applies fall damage.
+     */
+    protected void fall(float var1) {}
+
+    /**
+     * Called when the entity is attacked.
+     */
+    public boolean attackEntityFrom(DamageSource var1, int var2)
+    {
+        Entity var3 = var1.getEntity();
+
+        if (var3 instanceof EntityPlayer)
         {
-            this.randomMotionVecX = this.randomMotionVecY = this.randomMotionVecZ = 0.0F;
-        }
-        else if (this.rand.nextInt(50) == 0 || !this.inWater || this.randomMotionVecX == 0.0F && this.randomMotionVecY == 0.0F && this.randomMotionVecZ == 0.0F)
-        {
-            float f = this.rand.nextFloat() * (float)Math.PI * 2.0F;
-            this.randomMotionVecX = MathHelper.cos(f) * 0.2F;
-            this.randomMotionVecY = -0.1F + this.rand.nextFloat() * 0.2F;
-            this.randomMotionVecZ = MathHelper.sin(f) * 0.2F;
+            List var4 = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(32.0D, 32.0D, 32.0D));
+
+            for (int var5 = 0; var5 < var4.size(); ++var5)
+            {
+                Entity var6 = (Entity)var4.get(var5);
+
+                if (var6 instanceof TaintedSquid)
+                {
+                    ((TaintedSquid)var6).becomeAngryAt(var3);
+                }
+            }
+
+            this.becomeAngryAt(var3);
         }
 
-        this.despawnEntity();
+        return super.attackEntityFrom(var1, var2);
+    }
+
+    private void becomeAngryAt(Entity var1)
+    {
+        this.entityToAttack = var1;
+        this.angerLevel = 400 + this.rand.nextInt(400);
+        this.randomSoundDelay = this.rand.nextInt(40);
     }
 
     /**
@@ -239,6 +196,17 @@ public class TaintedSquid extends EntityWaterMob
      */
     public boolean getCanSpawnHere()
     {
-        return this.posY > 45.0D && this.posY < 63.0D && super.getCanSpawnHere();
+        int var1 = MathHelper.floor_double(this.posX);
+        int var2 = MathHelper.floor_double(this.boundingBox.minY);
+        int var3 = MathHelper.floor_double(this.posZ);
+        return this.worldObj.getBlockId(var1, var2 - 1, var3) == Block.waterStill.blockID && this.worldObj.getFullBlockLightValue(var1, var2, var3) > 8 && super.getCanSpawnHere();
+    }
+
+    /**
+     * Called by a player entity when they collide with an entity
+     */
+    public void onCollideWithPlayer(EntityPlayer var1)
+    {
+        var1.attackEntityFrom(DamageSource.causeMobDamage(var1), this.getAttackStrength(var1));
     }
 }

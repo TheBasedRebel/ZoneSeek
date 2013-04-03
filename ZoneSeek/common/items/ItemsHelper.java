@@ -143,23 +143,23 @@ public class ItemsHelper{
 	
 	public static void setupItems() {
 		//Item Materials
-		EnumToolMaterial InfectedMaterial = EnumHelper.addToolMaterial("Infected Material", 3, 2000, 7.0F, 2, 20);
-		EnumToolMaterial SludgeMaterial = EnumHelper.addToolMaterial("Sludge Material", 3, 2500, 7.5F, 3, 20);
-		EnumToolMaterial ApophylliteMaterial = EnumHelper.addToolMaterial("Apophyllite Material", 3, 1599, 7.2F, 3, 26);
-		EnumToolMaterial AxiniteMaterial = EnumHelper.addToolMaterial("Axinite Material", 3, 4321, 7.3F, 3, 29);
-		EnumToolMaterial BetafiteMaterial = EnumHelper.addToolMaterial("Betafite Material", 3, 2324, 7.4F, 4, 30);
-		EnumToolMaterial BrochantiteMaterial = EnumHelper.addToolMaterial("Brochantite Material", 4, 5000, 7.9F, 4, 60);
-		EnumToolMaterial DolomiteMaterial = EnumHelper.addToolMaterial("Dolomite Material", 3, 2234, 8.0F, 3, 14);
-		EnumToolMaterial FotiteMaterial = EnumHelper.addToolMaterial("Fotite Material", 3, 1234, 8.1F, 3, 2);
-		EnumToolMaterial GentiteMaterial = EnumHelper.addToolMaterial("Gentite Material", 3, 1263, 7.8F, 3, 9);
-		EnumToolMaterial HeterogeniteMaterial = EnumHelper.addToolMaterial("Heterogenite Material", 3, 5100, 7.6F, 3, 8);
-		EnumToolMaterial KasoliteMaterial = EnumHelper.addToolMaterial("Kasolite Material", 3, 4222, 7.7F, 3, 20);
-		EnumToolMaterial LazuriteMaterial = EnumHelper.addToolMaterial("Lazurite Material", 3, 3500, 6.8F, 3, 20);
-		EnumToolMaterial SlimeMaterial = EnumHelper.addToolMaterial("Slime Material", 3, 5500, 7.5F, 4, 20);
-		EnumToolMaterial SludgeHammerMaterial = EnumHelper.addToolMaterial("Sludge Hammer Material", 3, 2000, 7F, 5, 70);
-		EnumToolMaterial SludgeSickleMaterial = EnumHelper.addToolMaterial("Sludge Sickle Material", 3, 5500, 7.5F, 4, 20);
-		EnumToolMaterial SlimeCannonMaterial = EnumHelper.addToolMaterial("Slime Cannon Material", 3, 500, 7.5F, 6, 20);
-		EnumToolMaterial SpecialBladeMaterial = EnumHelper.addToolMaterial("Special Blade Material", 3, 6000, 7.5F, 12, 100);
+		EnumToolMaterial InfectedMaterial = EnumHelper.addToolMaterial("Infected Material", 3, 1500, 7.0F, 6, 20);
+		EnumToolMaterial SludgeMaterial = EnumHelper.addToolMaterial("Sludge Material", 3, 1500, 7.5F, 3, 20);
+		EnumToolMaterial ApophylliteMaterial = EnumHelper.addToolMaterial("Apophyllite Material", 3, 1200, 7.2F, 6, 26);
+		EnumToolMaterial AxiniteMaterial = EnumHelper.addToolMaterial("Axinite Material", 3, 1000, 7.3F, 3, 29);
+		EnumToolMaterial BetafiteMaterial = EnumHelper.addToolMaterial("Betafite Material", 3, 1000, 7.4F, 4, 30);
+		EnumToolMaterial BrochantiteMaterial = EnumHelper.addToolMaterial("Brochantite Material", 4, 1800, 7.9F, 6, 60);
+		EnumToolMaterial DolomiteMaterial = EnumHelper.addToolMaterial("Dolomite Material", 3, 1400, 8.0F, 6, 14);
+		EnumToolMaterial FotiteMaterial = EnumHelper.addToolMaterial("Fotite Material", 3, 1300, 8.1F, 4, 2);
+		EnumToolMaterial GentiteMaterial = EnumHelper.addToolMaterial("Gentite Material", 3, 1000, 7.8F, 3, 9);
+		EnumToolMaterial HeterogeniteMaterial = EnumHelper.addToolMaterial("Heterogenite Material", 3, 1000, 7.6F, 3, 8);
+		EnumToolMaterial KasoliteMaterial = EnumHelper.addToolMaterial("Kasolite Material", 3, 1025, 7.7F, 4, 20);
+		EnumToolMaterial LazuriteMaterial = EnumHelper.addToolMaterial("Lazurite Material", 3, 1100, 6.8F, 4, 20);
+		EnumToolMaterial SlimeMaterial = EnumHelper.addToolMaterial("Slime Material", 3, 1500, 7.5F, 5, 20);
+		EnumToolMaterial SludgeHammerMaterial = EnumHelper.addToolMaterial("Sludge Hammer Material", 3, 800, 7F, 8, 70);
+		EnumToolMaterial SludgeSickleMaterial = EnumHelper.addToolMaterial("Sludge Sickle Material", 3, 800, 7.5F, 7, 20);
+		EnumToolMaterial SlimeCannonMaterial = EnumHelper.addToolMaterial("Slime Cannon Material", 3, 250, 7.5F, 6, 20);
+		EnumToolMaterial SpecialBladeMaterial = EnumHelper.addToolMaterial("Special Blade Material", 3, 2000, 7.5F, 12, 100);
 		//Armor Materials
 		EnumArmorMaterial InfectedArmorMaterial = EnumHelper.addArmorMaterial("Infected Armor", 33, new int[] {2, 6, 6, 5}, 16);
 		EnumArmorMaterial ScaleArmorMaterial = EnumHelper.addArmorMaterial("Scale Armor", 40, new int[] {3, 7, 7, 6}, 32);
@@ -167,17 +167,17 @@ public class ItemsHelper{
 		//Item Loading
 		ApophylliteCrystal = new ItemCrystal(IDsHelper.ApophylliteCrystalID, "ApophylliteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("ApophylliteCrystal");
 		AxiniteCrystal = new ItemCrystal(IDsHelper.AxiniteCrystalID, "AxiniteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("AxiniteCrystal");
-		Banana = new ItemBanana(IDsHelper.BananaID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Banana");
+		Banana = new ItemBanana(IDsHelper.BananaID, 4, 6.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Banana");
 		BetafiteCrystal = new ItemCrystal(IDsHelper.BetafiteCrystalID, "BetafiteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("BetafiteCrystal");
 		BookOfInfection = new ItemBookOfInfecteion(IDsHelper.BookOfInfectionID).setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("BookOfInfectione");
 		BrochantiteCrystal = new ItemCrystal(IDsHelper.BrochantiteCrystalID, "BrochantiteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("BrochantiteCrystal");
-		CoconutChunk = new ItemCoconutChunk(IDsHelper.CoconutChunkID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("CoconutChunk");
+		CoconutChunk = new ItemCoconutChunk(IDsHelper.CoconutChunkID, 4, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("CoconutChunk");
 		CompactedScaleFragment = new ItemMisc(IDsHelper.CompactedScaleFragmentID, "CompactedScaleFragment").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("CompactedScaleFragment");
 		CompactedScalePlate = new ItemMisc(IDsHelper.CompactedScalePlateID, "CompactedScalePlate").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("CompactedScalePlate");
 		DolomiteCrystal = new ItemCrystal(IDsHelper.DolomiteCrystalID, "DolomiteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("DolomiteCrystal");
-		DragonFruit = new ItemDragonFruit(IDsHelper.DragonFruitID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("DragonFruit");
+		DragonFruit = new ItemDragonFruit(IDsHelper.DragonFruitID, 4, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("DragonFruit");
 		FotiteCrystal = new ItemCrystal(IDsHelper.FotiteCrystalID, "FotiteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("FotiteCrystal");
-		FuzzleChop = new ItemFuzzleChop(IDsHelper.FuzzleChopID, 2, 5.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("FuzzleChop");
+		FuzzleChop = new ItemFuzzleChop(IDsHelper.FuzzleChopID, 6, 5.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("FuzzleChop");
 		HeterogeniteCrystal = new ItemCrystal(IDsHelper.HeterogeniteCrystalID, "HeterogeniteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("HeterogeniteCrystal");
 		InfectedArrow = new ItemInfectedArrow(IDsHelper.InfectedArrowID).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("InfectedArrow");
 		InfectedAxe = new ItemInfectedAxe(IDsHelper.InfectedAxeID, InfectedMaterial).setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("InfectedAxe");
@@ -203,10 +203,10 @@ public class ItemsHelper{
 		LazuriteCrystal = new ItemCrystal(IDsHelper.LazuriteCrystalID, "LazuriteCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LazuriteCrystal");
 		ObsidianStick = new ItemMisc(IDsHelper.ObsidianStickID, "ObsidianStick").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("ObsidianStick");
 		LagoonStick = new ItemMisc(IDsHelper.LagoonStickID, "LagoonStick").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LagoonStick");
-		Pear = new ItemPear(IDsHelper.PearID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Pear");
+		Pear = new ItemPear(IDsHelper.PearID, 4, 4.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Pear");
 		PincerScale = new ItemMisc(IDsHelper.PincerScaleID, "PincerScale").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("PincerScale");
 		Pineapple = new ItemPineapple(IDsHelper.PineappleID, 2, 3.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Pineapple");
-		Plum = new ItemPlum(IDsHelper.PlumID, 2, 2.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Plum");
+		Plum = new ItemPlum(IDsHelper.PlumID, 4, 4.0F, false).setCreativeTab(ZoneSeek.ZoneSeekFood).setUnlocalizedName("Plum");
 		SludgeGem = new ItemMisc(IDsHelper.SludgeGemID, "SludgeGem").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("SludgeGem");
 		SludgeKatana = new ItemSludgeKatana(IDsHelper.SludgeKatanaID, SludgeMaterial).setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeKatana");
 		SludgeShard = new ItemMisc(IDsHelper.SludgeShardID, "SludgeShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("SludgeShard");

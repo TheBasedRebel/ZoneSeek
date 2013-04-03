@@ -17,6 +17,8 @@ public class ShapelessHandler {
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.TaintedPage, 4), new Object[] {new ItemStack(ItemsHelper.TaintedInkDrop), new ItemStack(Item.paper)});
 		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.InfectedArrow, 4), new Object[] {new ItemStack(ItemsHelper.InfectedStick), new ItemStack(ItemsHelper.InfectedShard)});
+		
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.RedDye, 2), new Object[] {new ItemStack(BlocksHelper.Tulip)});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.CrimsonDye, 2), new Object[] {new ItemStack(BlocksHelper.BloodFlower)});
@@ -30,6 +32,8 @@ public class ShapelessHandler {
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.GrayDye, 2), new Object[] {new ItemStack(BlocksHelper.DeadFlower)});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.GreenDye, 2), new Object[] {new ItemStack(BlocksHelper.SpringFlowers)});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemsHelper.FuzzleBone, 1), new Object[] {new ItemStack(ItemsHelper.FuzzleChop)});
 		
 	}
 }

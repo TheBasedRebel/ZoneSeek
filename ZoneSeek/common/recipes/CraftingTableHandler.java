@@ -16,6 +16,10 @@ public class CraftingTableHandler {
 			"   ", "P P", "P P", 'P', ItemsHelper.InfectedPlate, 'G', ItemsHelper.InfectedGem
 			
 		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.InfectedBoots, 1), new Object[] {
+			"P P", "P P", "   ", 'P', ItemsHelper.InfectedPlate, 'G', ItemsHelper.InfectedGem
+			
+		});
 		
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.InfectedLeggings, 1), new Object[] {
 			"PPP", "P P", "P P", 'P', ItemsHelper.InfectedPlate, 'G', ItemsHelper.InfectedGem
@@ -112,7 +116,7 @@ public class CraftingTableHandler {
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeStone, 1), new Object[] {
-			"TTT", "TTT", "TTT", 'T', ItemsHelper.SludgeStone
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.SludgeGem
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.BookOfInfection, 1), new Object[] {
@@ -224,7 +228,7 @@ public class CraftingTableHandler {
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeKatana, 1), new Object[] {
-			" X ", " T ", " T ", 'T', ItemsHelper.ObsidianStick, 'X', ItemsHelper.SludgeStone
+			" T ", " T ", " X ", 'X', ItemsHelper.ObsidianStick, 'T', ItemsHelper.SludgeStone
 			
 		});
 		//New Recipes
@@ -250,6 +254,10 @@ public class CraftingTableHandler {
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ApophyllitePickaxe, 1), new Object[] {
 			"TTT", " X ", " X ", 'T', ItemsHelper.ApophylliteCrystal, 'X', Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.InfectedBow, 1), new Object[] {
+			" TX", "T X", " TX", 'T', ItemsHelper.InfectedStone, 'X', Item.silk
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.ApophylliteSpade, 1), new Object[] {
