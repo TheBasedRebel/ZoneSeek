@@ -465,35 +465,35 @@ public class CraftingTableHandler {
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeAxe, 1), new Object[] {
-			"TT ", "TX ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			"TT ", "TX ", " X ", 'T', ItemsHelper.SludgeStone, 'X', ItemsHelper.ObsidianStick
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeAxe, 1), new Object[] {
-			" TT", " XT", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			" TT", " XT", " X ", 'T', ItemsHelper.SludgeStone, 'X', ItemsHelper.ObsidianStick
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeHammer, 1), new Object[] {
-			"TTT", "TTT", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			"TTT", "TTT", " X ", 'T', ItemsHelper.SludgeStone, 'X', ItemsHelper.ObsidianStick
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeHoe, 1), new Object[] {
-			"TT ", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			"TT ", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', ItemsHelper.ObsidianStick
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeHoe, 1), new Object[] {
-			" TT", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			" TT", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', ItemsHelper.ObsidianStick
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgePickaxe, 1), new Object[] {
-			"TTT", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			"TTT", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', ItemsHelper.ObsidianStick
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeSickle, 1), new Object[] {
-			"TTT", "X T", "X  ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			"TTT", "X T", "X  ", 'T', ItemsHelper.SludgeStone, 'X', ItemsHelper.ObsidianStick
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SludgeSpade, 1), new Object[] {
-			" T ", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', Item.stick
+			" T ", " X ", " X ", 'T', ItemsHelper.SludgeStone, 'X', ItemsHelper.ObsidianStick
 			
 		});
 		GameRegistry.addRecipe(new ItemStack(ItemsHelper.PrimaryBlade, 1), new Object[] {
