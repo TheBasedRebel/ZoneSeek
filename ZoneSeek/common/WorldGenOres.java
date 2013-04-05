@@ -101,6 +101,12 @@ public class WorldGenOres implements IWorldGenerator{
 			int zCoord = chunkZ + random.nextInt(16);
 			(new WorldGenMinable(BlocksHelper.Lazurite.blockID, 3)).generate(world, random, xCoord, yCoord, zCoord);
 		}
+        for(int i = 0; i < 6; i++){
+			int xCoord = chunkX + random.nextInt(16);
+			int yCoord = random.nextInt(42);
+			int zCoord = chunkZ + random.nextInt(16);
+			(new WorldGenMinable(BlocksHelper.AnthraciteCoalOre.blockID, 5)).generate(world, random, xCoord, yCoord, zCoord);
+		}
 	}
 
 }

@@ -95,7 +95,7 @@ public class ZoneSeek {
 	    //-------------------------------------------------------------
 	    
 	    
-		//GameRegistry.registerFuelHandler(new FuelHandler());
+		GameRegistry.registerFuelHandler(new FuelHandler());
 		
 		//NetworkRegistry.instance().registerGuiHandler(instance, guihandler);
 		

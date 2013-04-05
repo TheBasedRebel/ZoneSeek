@@ -140,6 +140,7 @@ public class ItemsHelper{
 	public static Item KabrolliBlade;
 	public static Item PrimaryBlade;
 	public static Item FuzzleBone;
+	public static Item AnthraciteCoal;
 	
 	public static void setupItems() {
 		//Item Materials
@@ -290,6 +291,7 @@ public class ItemsHelper{
 		KasoliteShard = new ItemCrystal(IDsHelper.KasoliteShardID, "KasoliteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("KasoliteShard");
 		LazuriteShard = new ItemCrystal(IDsHelper.LazuriteShardID, "LazuriteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LazuriteShard");
 		MasterCrystal = new ItemCrystal(IDsHelper.MasterCrystalID, "MasterCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("MasterCrystal");
+		AnthraciteCoal = new ItemCrystal(IDsHelper.AnthraciteCoalID, "AnthraciteCoal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("AnthraciteCoal");
 		//Sludge
 		SludgeHammer = new ItemSludgeHammer(IDsHelper.SludgeHammerID, SludgeHammerMaterial, "SludgeHammer").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeHammer");
 		SludgeSickle = new ItemSludgeSickle(IDsHelper.SludgeSickleID, SludgeSickleMaterial, "SludgeSickle").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeSickle");
@@ -430,7 +432,7 @@ public class ItemsHelper{
 		GameRegistry.registerItem(KabrolliBlade, "KabrolliBlade");
 		GameRegistry.registerItem(PrimaryBlade, "PrimaryBlade");
 		GameRegistry.registerItem(FuzzleBone, "FuzzleBone");
-		
+		GameRegistry.registerItem(AnthraciteCoal, "AnthraciteCoal");
 	}
 	
 
@@ -558,6 +560,7 @@ public class ItemsHelper{
 		LanguageRegistry.addName(KabrolliBlade, "Kabrolli Blade");
 		LanguageRegistry.addName(PrimaryBlade, "Primary Blade");
 		LanguageRegistry.addName(FuzzleBone, "Fuzzle Bone");
+		LanguageRegistry.addName(AnthraciteCoal, "Anthracite Coal");
 		
 	}
 

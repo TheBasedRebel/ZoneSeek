@@ -93,6 +93,7 @@ public class BlocksHelper {
     public static Block WallPaperPinkBottom;
     public static Block PalmStairs;
     public static Block HardWoodStairs;
+    public static Block AnthraciteCoalOre;
 
 	public static void setupBlocks() {
 		
@@ -109,6 +110,7 @@ public class BlocksHelper {
 		Kasolite = new BlockOre(IDsHelper.KasoliteID, "Kasolite").setHardness(10F).setResistance(0.2F).setUnlocalizedName("Kasolite").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		Lazurite = new BlockOre(IDsHelper.LazuriteID, "Lazurite").setHardness(10F).setResistance(0.2F).setUnlocalizedName("Lazurite").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeOre = new BlockOre(IDsHelper.SludgeOreID, "SludgeOre").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeOre").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		AnthraciteCoalOre = new BlockOre(IDsHelper.AnthraciteCoalOreID, "AnthraciteCoalOre").setHardness(7F).setResistance(0.2F).setUnlocalizedName("AnthraciteCoalOre").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 
 		//Normal Blocks Wood
 		CarpetRed = new BlockWood(IDsHelper.CarpetRedID, "CarpetRed").setHardness(2F).setResistance(1F).setUnlocalizedName("CarpetRed").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -209,6 +211,7 @@ public class BlocksHelper {
 		MinecraftForge.setBlockHarvestLevel(Heterogenite, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(Kasolite, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(Lazurite, "pickaxe", 2);
+		MinecraftForge.setBlockHarvestLevel(AnthraciteCoalOre, "pickaxe", 1);
 		
 		gameRegisters();
 		languageRegisters();
@@ -289,6 +292,7 @@ public class BlocksHelper {
 		GameRegistry.registerBlock(WallPaperPinkBottom, "AdamBahr_WallPaperBottomPink");
 		GameRegistry.registerBlock(PalmStairs, "AdamBahr_PalmStairs");
 		GameRegistry.registerBlock(HardWoodStairs, "AdamBahr_HardWoodStairs");
+		GameRegistry.registerBlock(AnthraciteCoalOre, "AdamBahr_AnthraciteCoal");
 	}
 	
 	private static void languageRegisters() {
@@ -366,6 +370,7 @@ public class BlocksHelper {
 		LanguageRegistry.addName(WallPaperPinkBottom, "Wallpaper Bottom Pink");
 		LanguageRegistry.addName(PalmStairs, "Palm Stairs");
 		LanguageRegistry.addName(HardWoodStairs, "Hard Wood Stairs");
+		LanguageRegistry.addName(AnthraciteCoalOre, "Anthracite Coal Ore");
 		
 		
 	}

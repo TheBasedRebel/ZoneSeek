@@ -45,6 +45,8 @@ public class BlockOre extends Block{
 			return ItemsHelper.KasoliteCrystal.itemID;
 		}else if(this.blockID == IDsHelper.LazuriteID){
 			return ItemsHelper.LazuriteCrystal.itemID;
+		}else if(this.blockID == IDsHelper.AnthraciteCoalOreID){
+			return ItemsHelper.AnthraciteCoal.itemID;
 			
 			
 		}else{

@@ -87,6 +87,7 @@ public class IDsHelper {
     public static int WallPaperPinkID;
     public static int WallPaperPinkBottomID;
     public static int HardWoodStairsID;
+    public static int AnthraciteCoalOreID;
     
     
     
@@ -222,6 +223,7 @@ public class IDsHelper {
 	public static int PrimaryBladeID;
 	
 	public static int FuzzleBoneID;
+	public static int AnthraciteCoalID;
 	
 	public static void runConfiguration(Configuration config){
 		//Biome IDs
@@ -302,6 +304,7 @@ public class IDsHelper {
 		WallPaperPinkBottomID = config.get(blockids, "WallPaper Pink Bottom ID", 848).getInt();
 		PalmStairsID = config.get(blockids, "Palm Stairs ID", 849).getInt();
 		HardWoodStairsID = config.get(blockids, "Hard Wood Stairs ID", 850).getInt();
+		AnthraciteCoalOreID = config.get(blockids, "Athracite Coal Ore ID", 851).getInt();
 		
 		//Item IDs
 		ApophylliteCrystalID = config.get(itemids, "Apophyllite Crystal ID", 1000).getInt();
@@ -425,6 +428,7 @@ public class IDsHelper {
 		KabrolliBladeID = config.get(itemids, "Kabrolli Blade ID", 1118).getInt();
 		PrimaryBladeID = config.get(itemids, "Primary Blade ID", 1119).getInt();
 		FuzzleBoneID = config.get(itemids, "Fuzzle Bone ID", 1120).getInt();
+		AnthraciteCoalID = config.get(itemids, "Athracite Coal ID", 1121).getInt();
 		
 	}
 	
