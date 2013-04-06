@@ -94,6 +94,8 @@ public class BlocksHelper {
     public static Block PalmStairs;
     public static Block HardWoodStairs;
     public static Block AnthraciteCoalOre;
+    public static Block SlagBlock;
+    public static BlockPortalPrehistoric portalprehistoric;
 
 	public static void setupBlocks() {
 		
@@ -146,6 +148,7 @@ public class BlocksHelper {
 		SludgeRock = new BlockStone(IDsHelper.SludgeRockID, "SludgeRock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("SludgeRock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeStoneGround = new BlockStone(IDsHelper.SludgeStoneGroundID, "SludgeStoneGround").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeStoneGround").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		Tile = new BlockStone(IDsHelper.TileID, "Tile").setHardness(2F).setResistance(0.2F).setUnlocalizedName("Tile").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SlagBlock = new BlockStone(IDsHelper.SlagBlockID, "SlagBlock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("SlagBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 
 		//Normal Blocks Ground
 		LagoonDirt = new BlockGround(IDsHelper.LagoonDirtID, "LagoonDirt").setHardness(0.8F).setResistance(0.2F).setUnlocalizedName("LagoonDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -159,6 +162,9 @@ public class BlocksHelper {
 		//Special Blocks
 		LagoonLadder = new BlockLagoonLadder(IDsHelper.LagoonLadderID).setHardness(2F).setResistance(1F).setUnlocalizedName("LagoonLadder").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		Counter = new BlockCounter(IDsHelper.CounterID).setHardness(2F).setResistance(0.2F).setUnlocalizedName("Counter").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		
+		//Portals
+		portalprehistoric = (BlockPortalPrehistoric) new BlockPortalPrehistoric(IDsHelper.PrehistoricPortalID, "PrehistoricPortal").setUnlocalizedName("PrehistoricPortal");
 		
 		//Biome Blocks
 		LagoonGrass = new BlockLagoonGrass(IDsHelper.LagoonGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("LagoonGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -293,6 +299,8 @@ public class BlocksHelper {
 		GameRegistry.registerBlock(PalmStairs, "AdamBahr_PalmStairs");
 		GameRegistry.registerBlock(HardWoodStairs, "AdamBahr_HardWoodStairs");
 		GameRegistry.registerBlock(AnthraciteCoalOre, "AdamBahr_AnthraciteCoal");
+		GameRegistry.registerBlock(SlagBlock, "AdamBahr_SlagBlock");
+		GameRegistry.registerBlock(portalprehistoric, "AdamBahr_PrehistoricPortal");
 	}
 	
 	private static void languageRegisters() {
@@ -371,6 +379,8 @@ public class BlocksHelper {
 		LanguageRegistry.addName(PalmStairs, "Palm Stairs");
 		LanguageRegistry.addName(HardWoodStairs, "Hard Wood Stairs");
 		LanguageRegistry.addName(AnthraciteCoalOre, "Anthracite Coal Ore");
+		LanguageRegistry.addName(SlagBlock, "Slag Block");
+		LanguageRegistry.addName(portalprehistoric, "Prehistoric Portal");
 		
 		
 	}

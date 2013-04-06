@@ -8,10 +8,15 @@ public class IDsHelper {
 	public static String blockids = "Block IDs";
 	public static String itemids = "Item IDs";
 	public static String biomeids = "Biome IDs";
+	public static String dimensionids = "Dimension IDs";
+	
+	//Dimension IDs
+	public static int PrehistoricAgeID;
 	
 	//Biome IDs
 	public static int LagoonID;
 	public static int SludgeID;
+	public static int PrehistoricID;
 
 	//Block IDs
 	public static int ApophylliteID;
@@ -89,8 +94,12 @@ public class IDsHelper {
     public static int HardWoodStairsID;
     public static int AnthraciteCoalOreID;
     
+    public static int SlagBlockID;
     
+    //PortalBlocks
+    public static int PrehistoricPortalID;
     
+
 
 	//Item IDs
 	public static int ApophylliteCrystalID;
@@ -225,10 +234,17 @@ public class IDsHelper {
 	public static int FuzzleBoneID;
 	public static int AnthraciteCoalID;
 	
+	public static int AncientBoneID;
+	
 	public static void runConfiguration(Configuration config){
+		
+		//Dimension IDs
+		PrehistoricAgeID = config.get(biomeids, "Prehistoric Age ID", 50).getInt();
+		
 		//Biome IDs
 		LagoonID = config.get(biomeids, "Lagoon ID", 23).getInt();
 		SludgeID = config.get(biomeids, "Sludge ID", 22).getInt();
+		PrehistoricID = config.get(biomeids, "Prehistoric ID", 24).getInt();
 		
 		//Block IDs
 		ApophylliteID = config.get(blockids, "Apophyllite ID", 700).getInt();
@@ -305,6 +321,10 @@ public class IDsHelper {
 		PalmStairsID = config.get(blockids, "Palm Stairs ID", 849).getInt();
 		HardWoodStairsID = config.get(blockids, "Hard Wood Stairs ID", 850).getInt();
 		AnthraciteCoalOreID = config.get(blockids, "Athracite Coal Ore ID", 851).getInt();
+		SlagBlockID = config.get(blockids, "Slag Block ID", 853).getInt();
+		
+		//Portal
+		PrehistoricPortalID = config.get(blockids, "Prehistoric Portal ID", 852).getInt();
 		
 		//Item IDs
 		ApophylliteCrystalID = config.get(itemids, "Apophyllite Crystal ID", 1000).getInt();
@@ -429,6 +449,7 @@ public class IDsHelper {
 		PrimaryBladeID = config.get(itemids, "Primary Blade ID", 1119).getInt();
 		FuzzleBoneID = config.get(itemids, "Fuzzle Bone ID", 1120).getInt();
 		AnthraciteCoalID = config.get(itemids, "Athracite Coal ID", 1121).getInt();
+		AncientBoneID = config.get(itemids, "Ancient Bone ID", 1122).getInt();
 		
 	}
 	

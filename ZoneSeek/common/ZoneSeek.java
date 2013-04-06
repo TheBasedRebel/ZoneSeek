@@ -69,6 +69,7 @@ public class ZoneSeek {
 	@Init
 	public void load(FMLInitializationEvent event){
 		proxy.registerRenders();
+		DimensionHelper.setupDimensions();
         BlocksHelper.setupBlocks();
         ItemsHelper.setupItems();
         BiomesHelper.setupBiomes();

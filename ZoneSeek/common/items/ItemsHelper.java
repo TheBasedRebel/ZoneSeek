@@ -141,6 +141,7 @@ public class ItemsHelper{
 	public static Item PrimaryBlade;
 	public static Item FuzzleBone;
 	public static Item AnthraciteCoal;
+	public static Item AncientBone;
 	
 	public static void setupItems() {
 		//Item Materials
@@ -305,6 +306,8 @@ public class ItemsHelper{
 		PrimaryBlade = new ItemBlade(IDsHelper.PrimaryBladeID, SpecialBladeMaterial, "PrimaryBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("PrimaryBlade");
 		
 		FuzzleBone = new ItemMisc(IDsHelper.FuzzleBoneID, "FuzzleBone").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("FuzzleBone");
+		
+		AncientBone = new ItemAncientBone(IDsHelper.AncientBoneID, "AncientBone").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("AncientBone");
 		gameRegisters();
 		languageRegisters();
 	}
@@ -433,6 +436,7 @@ public class ItemsHelper{
 		GameRegistry.registerItem(PrimaryBlade, "PrimaryBlade");
 		GameRegistry.registerItem(FuzzleBone, "FuzzleBone");
 		GameRegistry.registerItem(AnthraciteCoal, "AnthraciteCoal");
+		GameRegistry.registerItem(AncientBone, "AncientBone");
 	}
 	
 
@@ -561,6 +565,7 @@ public class ItemsHelper{
 		LanguageRegistry.addName(PrimaryBlade, "Primary Blade");
 		LanguageRegistry.addName(FuzzleBone, "Fuzzle Bone");
 		LanguageRegistry.addName(AnthraciteCoal, "Anthracite Coal");
+		LanguageRegistry.addName(AncientBone, "Ancient Bone");
 		
 	}
 
