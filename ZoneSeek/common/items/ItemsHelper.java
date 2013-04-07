@@ -142,6 +142,12 @@ public class ItemsHelper{
 	public static Item FuzzleBone;
 	public static Item AnthraciteCoal;
 	public static Item AncientBone;
+	public static Item Fossil;
+	public static Item Slag;
+	public static Item SlagClub;
+	public static Item SlagIngot;
+	public static Item SlagSpear;
+	public static Item SlagSword;
 	
 	public static void setupItems() {
 		//Item Materials
@@ -162,6 +168,7 @@ public class ItemsHelper{
 		EnumToolMaterial SludgeSickleMaterial = EnumHelper.addToolMaterial("Sludge Sickle Material", 3, 800, 7.5F, 7, 20);
 		EnumToolMaterial SlimeCannonMaterial = EnumHelper.addToolMaterial("Slime Cannon Material", 3, 250, 7.5F, 6, 20);
 		EnumToolMaterial SpecialBladeMaterial = EnumHelper.addToolMaterial("Special Blade Material", 3, 2000, 7.5F, 12, 100);
+		EnumToolMaterial SlagMaterial = EnumHelper.addToolMaterial("Slag Material", 3, 4000, 7.0F, 11, 100);
 		//Armor Materials
 		EnumArmorMaterial InfectedArmorMaterial = EnumHelper.addArmorMaterial("Infected Armor", 33, new int[] {2, 6, 6, 5}, 16);
 		EnumArmorMaterial ScaleArmorMaterial = EnumHelper.addArmorMaterial("Scale Armor", 40, new int[] {3, 7, 7, 6}, 32);
@@ -293,6 +300,7 @@ public class ItemsHelper{
 		LazuriteShard = new ItemCrystal(IDsHelper.LazuriteShardID, "LazuriteShard").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("LazuriteShard");
 		MasterCrystal = new ItemCrystal(IDsHelper.MasterCrystalID, "MasterCrystal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("MasterCrystal");
 		AnthraciteCoal = new ItemCrystal(IDsHelper.AnthraciteCoalID, "AnthraciteCoal").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("AnthraciteCoal");
+		Fossil = new ItemCrystal(IDsHelper.FossilID, "Fossil").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("Fossil");
 		//Sludge
 		SludgeHammer = new ItemSludgeHammer(IDsHelper.SludgeHammerID, SludgeHammerMaterial, "SludgeHammer").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeHammer");
 		SludgeSickle = new ItemSludgeSickle(IDsHelper.SludgeSickleID, SludgeSickleMaterial, "SludgeSickle").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SludgeSickle");
@@ -301,11 +309,18 @@ public class ItemsHelper{
 		SludgeSpade = new ItemCustomSpade(IDsHelper.SludgeSpadeID, SludgeMaterial, "SludgeSpade").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeSpade");
 		SludgeHoe = new ItemCustomHoe(IDsHelper.SludgeHoeID, SludgeMaterial, "SludgeHoe").setCreativeTab(ZoneSeek.ZoneSeekTools).setUnlocalizedName("SludgeHoe");
 		
+		//Slag
+		SlagClub = new ItemBlade(IDsHelper.SlagClubID, LazuriteMaterial, "SlagClub").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlagClub");
+		SlagSpear = new ItemBlade(IDsHelper.SlagSpearID, LazuriteMaterial, "SlagSpear").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlagSpear");
+		SlagSword = new ItemBlade(IDsHelper.SlagSwordID, LazuriteMaterial, "SlagSword").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("SlagSword");
+		
 		FoloniteBlade = new ItemBlade(IDsHelper.FoloniteBladeID, SpecialBladeMaterial, "FoloniteBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("FoloniteBlade");
 		KabrolliBlade = new ItemBlade(IDsHelper.KabrolliBladeID, SpecialBladeMaterial, "KabrolliBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("KabrolliBlade");
 		PrimaryBlade = new ItemBlade(IDsHelper.PrimaryBladeID, SpecialBladeMaterial, "PrimaryBlade").setCreativeTab(ZoneSeek.ZoneSeekWeapons).setUnlocalizedName("PrimaryBlade");
 		
 		FuzzleBone = new ItemMisc(IDsHelper.FuzzleBoneID, "FuzzleBone").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("FuzzleBone");
+		Slag = new ItemMisc(IDsHelper.SlagID, "Slag").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("Slag");
+		SlagIngot = new ItemMisc(IDsHelper.SlagIngotID, "SlagIngot").setCreativeTab(ZoneSeek.ZoneSeekMaterials).setUnlocalizedName("SlagIngot");
 		
 		AncientBone = new ItemAncientBone(IDsHelper.AncientBoneID, "AncientBone").setCreativeTab(ZoneSeek.ZoneSeekItems).setUnlocalizedName("AncientBone");
 		gameRegisters();
@@ -436,7 +451,13 @@ public class ItemsHelper{
 		GameRegistry.registerItem(PrimaryBlade, "PrimaryBlade");
 		GameRegistry.registerItem(FuzzleBone, "FuzzleBone");
 		GameRegistry.registerItem(AnthraciteCoal, "AnthraciteCoal");
-		GameRegistry.registerItem(AncientBone, "AncientBone");
+		GameRegistry.registerItem(AncientBone, "AncientBone");	
+		GameRegistry.registerItem(Fossil, "Fossil");
+		GameRegistry.registerItem(Slag, "Slag");
+		GameRegistry.registerItem(SlagClub, "SlagClub");
+		GameRegistry.registerItem(SlagIngot, "SlagIngot");
+		GameRegistry.registerItem(SlagSpear, "SlagSpear");
+		GameRegistry.registerItem(SlagSword, "SlagSword");
 	}
 	
 
@@ -566,6 +587,12 @@ public class ItemsHelper{
 		LanguageRegistry.addName(FuzzleBone, "Fuzzle Bone");
 		LanguageRegistry.addName(AnthraciteCoal, "Anthracite Coal");
 		LanguageRegistry.addName(AncientBone, "Ancient Bone");
+		LanguageRegistry.addName(Fossil, "Fossil");
+		LanguageRegistry.addName(Slag, "Slag");
+		LanguageRegistry.addName(SlagClub, "Slag Club");
+		LanguageRegistry.addName(SlagIngot, "Slag Ingot");
+		LanguageRegistry.addName(SlagSpear, "Slag Spear");
+		LanguageRegistry.addName(SlagSword, "Slag Sword");
 		
 	}
 

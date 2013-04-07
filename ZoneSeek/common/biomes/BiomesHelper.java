@@ -20,7 +20,7 @@ public class BiomesHelper {
         GameRegistry.addBiome(Sludge);
         
         Prehistoric = (new BiomeGenPrehistoric(IDsHelper.PrehistoricID)).setBiomeName("Prehistoric");
-        GameRegistry.addBiome(Prehistoric);
+       // GameRegistry.addBiome(Prehistoric);
         
     
     	

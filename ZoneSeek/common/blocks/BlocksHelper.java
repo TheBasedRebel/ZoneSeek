@@ -96,6 +96,16 @@ public class BlocksHelper {
     public static Block AnthraciteCoalOre;
     public static Block SlagBlock;
     public static BlockPortalPrehistoric portalprehistoric;
+    public static Block Condensor;
+    public static Block Extractor;
+    public static Block FossilRock;
+    public static Block PrehistoricDirt;
+    public static Block PrehistoricGrass;
+    public static Block PrehistoricLeaf;
+    public static Block PrehistoricLog;
+    public static Block PrehistoricSand;
+    public static Block PrehistoricStone;
+    public static Block PrehistoricTallGrass;
 
 	public static void setupBlocks() {
 		
@@ -113,7 +123,12 @@ public class BlocksHelper {
 		Lazurite = new BlockOre(IDsHelper.LazuriteID, "Lazurite").setHardness(10F).setResistance(0.2F).setUnlocalizedName("Lazurite").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeOre = new BlockOre(IDsHelper.SludgeOreID, "SludgeOre").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeOre").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		AnthraciteCoalOre = new BlockOre(IDsHelper.AnthraciteCoalOreID, "AnthraciteCoalOre").setHardness(7F).setResistance(0.2F).setUnlocalizedName("AnthraciteCoalOre").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-
+		FossilRock = new BlockOre(IDsHelper.FossilRockID, "FossilRock").setHardness(15F).setResistance(0.2F).setUnlocalizedName("FossilRock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		
+		//Machines
+		Condensor = new BlockStone(IDsHelper.CondensorID, "Condesor").setHardness(2F).setResistance(0.2F).setUnlocalizedName("Condensor").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		Extractor = new BlockStone(IDsHelper.ExtractorID, "Extractor").setHardness(2F).setResistance(0.2F).setUnlocalizedName("Extractor").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		
 		//Normal Blocks Wood
 		CarpetRed = new BlockWood(IDsHelper.CarpetRedID, "CarpetRed").setHardness(2F).setResistance(1F).setUnlocalizedName("CarpetRed").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		CoconutBlock = new BlockWood(IDsHelper.CoconutBlockID, "CoconutBlock").setHardness(2F).setResistance(1F).setUnlocalizedName("CoconutBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -146,14 +161,18 @@ public class BlocksHelper {
 		InfectedBrick = new BlockStone(IDsHelper.InfectedBrickID, "InfectedBrick").setHardness(2F).setResistance(0.2F).setUnlocalizedName("InfectedBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeBrick = new BlockStone(IDsHelper.SludgeBrickID, "SludgeBrick").setHardness(2F).setResistance(0.2F).setUnlocalizedName("SludgeBrick").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeRock = new BlockStone(IDsHelper.SludgeRockID, "SludgeRock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("SludgeRock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		SludgeStoneGround = new BlockStone(IDsHelper.SludgeStoneGroundID, "SludgeStoneGround").setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeStoneGround").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		SludgeStoneGround = new BlockStone(IDsHelper.SludgeStoneGroundID, "SludgeStoneGround").setLightValue(0.5F).setHardness(10F).setResistance(0.2F).setUnlocalizedName("SludgeStoneGround").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		Tile = new BlockStone(IDsHelper.TileID, "Tile").setHardness(2F).setResistance(0.2F).setUnlocalizedName("Tile").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SlagBlock = new BlockStone(IDsHelper.SlagBlockID, "SlagBlock").setHardness(2F).setResistance(0.2F).setUnlocalizedName("SlagBlock").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PrehistoricStone = new BlockStone(IDsHelper.PrehistoricStoneID, "PrehistoricStone").setHardness(2F).setResistance(0.2F).setUnlocalizedName("PrehistoricStone").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 
+		
 		//Normal Blocks Ground
-		LagoonDirt = new BlockGround(IDsHelper.LagoonDirtID, "LagoonDirt").setHardness(0.8F).setResistance(0.2F).setUnlocalizedName("LagoonDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonDirt = new BlockGround(IDsHelper.LagoonDirtID, "LagoonDirt").setHardness(0.8F).setLightValue(0.5F).setResistance(0.2F).setUnlocalizedName("LagoonDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		SludgeDirt = new BlockGround(IDsHelper.SludgeDirtID, "SludgeDirt").setHardness(0.8F).setResistance(0.2F).setUnlocalizedName("SludgeDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		TropicalDirt = new BlockGround(IDsHelper.TropicalDirtID, "TropicalDirt").setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("TropicalDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PrehistoricDirt = new BlockGround(IDsHelper.PrehistoricDirtID, "PrehistoricDirt").setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("PrehistoricDirt").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PrehistoricSand = new BlockGround(IDsHelper.PrehistoricSandID, "PrehistoricSand").setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("PrehistoricSand").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Normal Blocks Lamp
 		InfectedLamp = new BlockLamp(IDsHelper.InfectedLampID, "InfectedLamp").setHardness(0.2F).setResistance(0.1F).setUnlocalizedName("InfectedLamp").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -167,9 +186,9 @@ public class BlocksHelper {
 		portalprehistoric = (BlockPortalPrehistoric) new BlockPortalPrehistoric(IDsHelper.PrehistoricPortalID, "PrehistoricPortal").setUnlocalizedName("PrehistoricPortal");
 		
 		//Biome Blocks
-		LagoonGrass = new BlockLagoonGrass(IDsHelper.LagoonGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("LagoonGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		LagoonLeaf = new BlockLagoonLeaf(IDsHelper.LagoonLeafID).setHardness(0.5F).setResistance(0.2F).setUnlocalizedName("LagoonLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
-		LagoonLog = new BlockLagoonLog(IDsHelper.LagoonLogID).setHardness(2F).setResistance(0.2F).setUnlocalizedName("LagoonLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonGrass = new BlockLagoonGrass(IDsHelper.LagoonGrassID).setHardness(0.7F).setLightValue(0.5F).setResistance(0.2F).setUnlocalizedName("LagoonGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonLeaf = new BlockLagoonLeaf(IDsHelper.LagoonLeafID).setHardness(0.5F).setLightValue(0.5F).setResistance(0.2F).setUnlocalizedName("LagoonLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		LagoonLog = new BlockLagoonLog(IDsHelper.LagoonLogID).setLightValue(0.5F).setHardness(2F).setResistance(0.2F).setUnlocalizedName("LagoonLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		LagoonSapling = new BlockLagoonSapling(IDsHelper.LagoonSaplingID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("LagoonSapling").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		LagoonTallGrass = new BlockLagoonTallGrass(IDsHelper.LagoonTallGrassID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("LagoonTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		LagoonVines = new BlockLagoonVines(IDsHelper.LagoonVinesID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("LagoonVines").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -181,6 +200,10 @@ public class BlocksHelper {
 		SludgeTallGrass = new BlockSludgeTallGrass(IDsHelper.SludgeTallGrassID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("SludgeTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		TropicalGrass = new BlockTropicalGrass(IDsHelper.TropicalGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("TropicalGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		TropicalTallGrass = new BlockTropicalTallGrass(IDsHelper.TropicalTallGrassID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("TropicalTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PrehistoricGrass = new BlockPrehistoricGrass(IDsHelper.PrehistoricGrassID).setHardness(0.7F).setResistance(0.2F).setUnlocalizedName("PrehistoricGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PrehistoricTallGrass = new BlockPrehistoricTallGrass(IDsHelper.PrehistoricTallGrassID).setHardness(0.1F).setResistance(0.2F).setUnlocalizedName("PrehistoricTallGrass").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PrehistoricLog = new BlockPrehistoricLog(IDsHelper.PrehistoricLogID).setHardness(2F).setResistance(0.2F).setUnlocalizedName("PrehistoricLog").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
+		PrehistoricLeaf = new BlockPrehistoricLeaf(IDsHelper.PrehistoricLeafID).setHardness(0.5F).setResistance(0.2F).setUnlocalizedName("PrehistoricLeaf").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
 		
 		//Stairs
 		LagoonStairs = new BlockLagoonStairs(IDsHelper.LagoonStairsID, BlocksHelper.LagoonPlanks, 0).setUnlocalizedName("LagoonStairs").setCreativeTab(ZoneSeek.ZoneSeekBlocks);
@@ -218,6 +241,7 @@ public class BlocksHelper {
 		MinecraftForge.setBlockHarvestLevel(Kasolite, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(Lazurite, "pickaxe", 2);
 		MinecraftForge.setBlockHarvestLevel(AnthraciteCoalOre, "pickaxe", 1);
+		MinecraftForge.setBlockHarvestLevel(FossilRock, "pickaxe", 3);
 		
 		gameRegisters();
 		languageRegisters();
@@ -301,6 +325,16 @@ public class BlocksHelper {
 		GameRegistry.registerBlock(AnthraciteCoalOre, "AdamBahr_AnthraciteCoal");
 		GameRegistry.registerBlock(SlagBlock, "AdamBahr_SlagBlock");
 		GameRegistry.registerBlock(portalprehistoric, "AdamBahr_PrehistoricPortal");
+		GameRegistry.registerBlock(FossilRock, "AdamBahr_FossilRock");		
+		GameRegistry.registerBlock(Condensor, "AdamBahr_Condensor");
+		GameRegistry.registerBlock(Extractor, "AdamBahr_Extractor");
+		GameRegistry.registerBlock(PrehistoricDirt, "AdamBahr_PrehistoricDirt");
+		GameRegistry.registerBlock(PrehistoricGrass, "AdamBahr_PrehistoricGrass");
+		GameRegistry.registerBlock(PrehistoricLeaf, "AdamBahr_PrehistoricLeaf");
+		GameRegistry.registerBlock(PrehistoricLog, "AdamBahr_PrehistoricLog");
+		GameRegistry.registerBlock(PrehistoricStone, "AdamBahr_PrehistoricStone");
+		GameRegistry.registerBlock(PrehistoricTallGrass, "AdamBahr_PrehistoricTallGrass");
+		GameRegistry.registerBlock(PrehistoricSand, "AdamBahr_PrehistoricSand");
 	}
 	
 	private static void languageRegisters() {
@@ -381,7 +415,16 @@ public class BlocksHelper {
 		LanguageRegistry.addName(AnthraciteCoalOre, "Anthracite Coal Ore");
 		LanguageRegistry.addName(SlagBlock, "Slag Block");
 		LanguageRegistry.addName(portalprehistoric, "Prehistoric Portal");
-		
+		LanguageRegistry.addName(FossilRock, "Fossil Rock");
+		LanguageRegistry.addName(Condensor, "Condensor");
+		LanguageRegistry.addName(Extractor, "Extractor");
+		LanguageRegistry.addName(PrehistoricDirt, "Prehistoric Dirt");
+		LanguageRegistry.addName(PrehistoricGrass, "Prehistoric Grass");
+		LanguageRegistry.addName(PrehistoricLeaf, "Prehistoric Leaf");
+		LanguageRegistry.addName(PrehistoricLog, "Prehistoric Log");
+		LanguageRegistry.addName(PrehistoricStone, "Prehistoric Stone");
+		LanguageRegistry.addName(PrehistoricTallGrass, "Prehistoric Tall Grass");
+		LanguageRegistry.addName(PrehistoricSand, "Prehistoric Sand");
 		
 	}
 

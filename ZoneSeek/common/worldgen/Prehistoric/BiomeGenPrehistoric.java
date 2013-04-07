@@ -3,58 +3,37 @@ package ZoneSeek.common.worldgen.Prehistoric;
 import java.util.Random;
 
 import ZoneSeek.common.blocks.BlocksHelper;
-
+import ZoneSeek.common.worldgen.WorldGenLagoonTallGrass;
+import ZoneSeek.common.worldgen.WorldGenLagoonTree;
+import ZoneSeek.common.worldgen.WorldGenPrehistoricTallGrass;
+import ZoneSeek.common.worldgen.WorldGenPrehistoricTree;
 import net.minecraft.block.Block;
-import net.minecraft.entity.monster.EntityEnderman;
-import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.biome.SpawnListEntry;
 import net.minecraft.world.gen.feature.WorldGenerator;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
-public class BiomeGenPrehistoric extends BiomeGenBase{
-
-	//public WorldGenerator treeGenerator;
-	public short sTopBlock;
-	public short sFillerBlock;
-	public BiomeGenPrehistoric(int par1)
+public class BiomeGenPrehistoric extends BiomeGenBase // implements IWorldGenerator {
+{
+	public BiomeGenPrehistoric(int par1) {
+		super(par1);
+		this.spawnableCreatureList.clear();
+		this.spawnableMonsterList.clear();
+		this.spawnableWaterCreatureList.clear();
+		this.topBlock = (byte) BlocksHelper.PrehistoricGrass.blockID;
+		this.fillerBlock = (byte) BlocksHelper.PrehistoricDirt.blockID;
+		this.theBiomeDecorator.treesPerChunk = 3;
+		this.minHeight = -0.4F;
+		this.maxHeight = 2F;
+		this.waterColorMultiplier = 0xDEDE2F;
+	}
+	
+    public WorldGenerator getRandomWorldGenForGrass(Random par1Random)
     {
-        super(par1);
-        this.spawnableMonsterList.clear();
-        this.spawnableCreatureList.clear();
-        this.spawnableWaterCreatureList.clear();
-        this.spawnableCaveCreatureList.clear();
-        this.spawnableMonsterList.add(new SpawnListEntry(EntityEnderman.class, 10, 4, 4));
-        this.sTopBlock = (short)BlocksHelper.TropicalGrass.blockID;
-        this.sFillerBlock = (short)BlocksHelper.TropicalDirt.blockID;
-        //this.theBiomeDecorator = new BiomeDecoratorDreamLand(this);
-        //this.theBiomeDecorator.treesPerChunk = 10;
-        //this.theBiomeDecorator.grassPerChunk = 2;
-    }
-
-	/**
-     * Allocate a new BiomeDecorator for this BiomeGenBase
-     */
-    @Override
-    public BiomeDecorator createBiomeDecorator()
-    {   
-    	System.out.println("Biome Decorator created");
-        return new BiomeDecoratorPrehistoric(this);
-       
-    }
-    /**
-     * Gets a WorldGen appropriate for this biome.
-     */
-   
-    @SideOnly(Side.CLIENT)
-
-    /**
-     * takes temperature, returns color
-     */
-    public int getSkyColorByTemp(float par1)
-    {
-        return 0;
+        return par1Random.nextInt(20) == 0 ? new WorldGenPrehistoricTallGrass(BlocksHelper.PrehistoricTallGrass.blockID, topBlock) : new WorldGenLagoonTallGrass(BlocksHelper.PrehistoricTallGrass.blockID, fillerBlock);
     }
     
+   public WorldGenerator getRandomWorldGenForTrees(Random par1Random)
+    {
+        return (WorldGenerator)(par1Random.nextInt(10) == 0 ? new WorldGenPrehistoricTree(false, 40, 0, 0) : new WorldGenPrehistoricTree(false, 40, 0, 0));
+    }
+
 }

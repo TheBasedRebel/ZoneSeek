@@ -13,7 +13,7 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockSludgeGrass extends Block
+public class BlockPrehistoricGrass extends Block
 {
     @SideOnly(Side.CLIENT)
     private Icon iconGrassTop;
@@ -22,7 +22,7 @@ public class BlockSludgeGrass extends Block
     @SideOnly(Side.CLIENT)
     private Icon iconGrassSideOverlay;
 
-    protected BlockSludgeGrass(int par1)
+    protected BlockPrehistoricGrass(int par1)
     {
         super(par1, Material.grass);
         this.setTickRandomly(true);
@@ -37,7 +37,7 @@ public class BlockSludgeGrass extends Block
      */
     public Icon getBlockTextureFromSideAndMetadata(int par1, int par2)
     {
-        return par1 == 1 ? this.iconGrassTop : (par1 == 0 ? BlocksHelper.SludgeDirt.getBlockTextureFromSide(par1) : this.blockIcon);
+        return par1 == 1 ? this.iconGrassTop : (par1 == 0 ? BlocksHelper.PrehistoricDirt.getBlockTextureFromSide(par1) : this.blockIcon);
     }
 
     /**
@@ -49,7 +49,7 @@ public class BlockSludgeGrass extends Block
         {
             if (par1World.getBlockLightValue(par2, par3 + 1, par4) < 4 && par1World.getBlockLightOpacity(par2, par3 + 1, par4) > 2)
             {
-                par1World.setBlock(par2, par3, par4, BlocksHelper.SludgeDirt.blockID);
+                par1World.setBlock(par2, par3, par4, BlocksHelper.PrehistoricDirt.blockID);
             }
             else if (par1World.getBlockLightValue(par2, par3 + 1, par4) >= 9)
             {
@@ -60,9 +60,9 @@ public class BlockSludgeGrass extends Block
                     int k1 = par4 + par5Random.nextInt(3) - 1;
                     int l1 = par1World.getBlockId(i1, j1 + 1, k1);
 
-                    if (par1World.getBlockId(i1, j1, k1) == BlocksHelper.SludgeDirt.blockID && par1World.getBlockLightValue(i1, j1 + 1, k1) >= 4 && par1World.getBlockLightOpacity(i1, j1 + 1, k1) <= 2)
+                    if (par1World.getBlockId(i1, j1, k1) == BlocksHelper.PrehistoricDirt.blockID && par1World.getBlockLightValue(i1, j1 + 1, k1) >= 4 && par1World.getBlockLightOpacity(i1, j1 + 1, k1) <= 2)
                     {
-                        par1World.setBlock(i1, j1, k1, BlocksHelper.SludgeGrass.blockID);
+                        par1World.setBlock(i1, j1, k1, BlocksHelper.PrehistoricGrass.blockID);
                     }
                 }
             }
@@ -74,7 +74,7 @@ public class BlockSludgeGrass extends Block
      */
     public int idDropped(int par1, Random par2Random, int par3)
     {
-        return BlocksHelper.SludgeDirt.idDropped(0, par2Random, par3);
+        return BlocksHelper.PrehistoricDirt.idDropped(0, par2Random, par3);
     }
 
     @SideOnly(Side.CLIENT)
@@ -90,7 +90,7 @@ public class BlockSludgeGrass extends Block
         }
         else if (par5 == 0)
         {
-            return BlocksHelper.SludgeDirt.getBlockTextureFromSide(par5);
+            return BlocksHelper.PrehistoricDirt.getBlockTextureFromSide(par5);
         }
         else
         {
@@ -102,20 +102,20 @@ public class BlockSludgeGrass extends Block
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister par1IconRegister)
     {
-        this.blockIcon = par1IconRegister.registerIcon("zoneseek:sludgegrassside");
-        this.iconGrassTop = par1IconRegister.registerIcon("zoneseek:sludgegrasstop");
-        this.iconSnowSide = par1IconRegister.registerIcon("zoneseek:sludgegrassside");
-        this.iconGrassSideOverlay = par1IconRegister.registerIcon("zoneseek:sludgegrassside");
+        this.blockIcon = par1IconRegister.registerIcon("zoneseek:Prehistoricgrassside");
+        this.iconGrassTop = par1IconRegister.registerIcon("zoneseek:Prehistoricgrasstop");
+        this.iconSnowSide = par1IconRegister.registerIcon("zoneseek:Prehistoricgrassside");
+        this.iconGrassSideOverlay = par1IconRegister.registerIcon("zoneseek:Prehistoricgrassside");
     }
 
-   // @SideOnly(Side.CLIENT)
-   // public int getBlockColor()
-   // {
-     //   double d0 = 0.5D;
-       // double d1 = 1.0D;
-        //return ColorizerGrass.getGrassColor(d0, d1);
-    //}
-
+   /** @SideOnly(Side.CLIENT)
+    public int getBlockColor()
+    {
+        double d0 = 0.5D;
+        double d1 = 1.0D;
+        return ColorizerGrass.getGrassColor(d0, d1);
+    }
+**/
     @SideOnly(Side.CLIENT)
 
     /**
@@ -126,14 +126,14 @@ public class BlockSludgeGrass extends Block
         return this.getBlockColor();
     }
 
-   // @SideOnly(Side.CLIENT)
+    //@SideOnly(Side.CLIENT)
 
     /**
      * Returns a integer with hex for 0xrrggbb with this color multiplied against the blocks color. Note only called
      * when first determining what to render.
      */
-   /** public int colorMultiplier(IBlockAccess par1IBlockAccess, int par2, int par3, int par4)
-   {
+    /**public int colorMultiplier(IBlockAccess par1IBlockAccess, int par2, int par3, int par4)
+    {
         int l = 0;
         int i1 = 0;
         int j1 = 0;
@@ -150,11 +150,12 @@ public class BlockSludgeGrass extends Block
         }
 
         return (l / 9 & 255) << 16 | (i1 / 9 & 255) << 8 | j1 / 9 & 255;
-   **/ //}
-
-    //@SideOnly(Side.CLIENT)
+    }
+**/
+   // @SideOnly(Side.CLIENT)
     //public static Icon func_94434_o()
     //{
-       // return BlocksHelper.SGrass.field_94436_c;
-   // }
+        //return BlocksHelper.LGrass.field_94436_c;
+    //}
+    
 }

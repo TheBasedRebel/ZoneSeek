@@ -17,7 +17,7 @@ public class IDsHelper {
 	public static int LagoonID;
 	public static int SludgeID;
 	public static int PrehistoricID;
-
+	
 	//Block IDs
 	public static int ApophylliteID;
 	public static int AxiniteID;
@@ -95,6 +95,17 @@ public class IDsHelper {
     public static int AnthraciteCoalOreID;
     
     public static int SlagBlockID;
+    public static int CondensorID;
+    public static int ExtractorID;
+    public static int FossilRockID;
+    public static int PrehistoricDirtID;
+    public static int PrehistoricGrassID;
+    public static int PrehistoricLeafID;
+    public static int PrehistoricLogID;
+    public static int PrehistoricSandID;
+    public static int PrehistoricStoneID;
+    public static int PrehistoricTallGrassID;
+    
     
     //PortalBlocks
     public static int PrehistoricPortalID;
@@ -235,6 +246,12 @@ public class IDsHelper {
 	public static int AnthraciteCoalID;
 	
 	public static int AncientBoneID;
+	public static int FossilID;
+	public static int SlagID;
+	public static int SlagClubID;
+	public static int SlagIngotID;
+	public static int SlagSpearID;
+	public static int SlagSwordID;
 	
 	public static void runConfiguration(Configuration config){
 		
@@ -323,8 +340,20 @@ public class IDsHelper {
 		AnthraciteCoalOreID = config.get(blockids, "Athracite Coal Ore ID", 851).getInt();
 		SlagBlockID = config.get(blockids, "Slag Block ID", 853).getInt();
 		
-		//Portal
+		//Prehistoric
 		PrehistoricPortalID = config.get(blockids, "Prehistoric Portal ID", 852).getInt();
+		
+		CondensorID = config.get(blockids, "Condensor ID", 854).getInt();
+		ExtractorID = config.get(blockids, "Extractor ID", 855).getInt();
+		FossilRockID = config.get(blockids, "Fossil Rock ID", 856).getInt();
+		PrehistoricDirtID = config.get(blockids, "Prehistoric Dirt ID", 180).getInt();
+		PrehistoricGrassID = config.get(blockids, "Prehistoric Grass ID", 181).getInt();
+		PrehistoricLeafID = config.get(blockids, "Prehistoric Leaf ID", 182).getInt();
+		PrehistoricLogID = config.get(blockids, "Prehistoric Log ID", 183).getInt();
+		PrehistoricSandID = config.get(blockids, "Prehistoric Sand ID", 857).getInt();
+		PrehistoricStoneID = config.get(blockids, "Prehistoric Stone ID", 858).getInt();
+		PrehistoricTallGrassID = config.get(blockids, "Prehistoric Tall Grass ID", 184).getInt();
+	
 		
 		//Item IDs
 		ApophylliteCrystalID = config.get(itemids, "Apophyllite Crystal ID", 1000).getInt();
@@ -450,6 +479,12 @@ public class IDsHelper {
 		FuzzleBoneID = config.get(itemids, "Fuzzle Bone ID", 1120).getInt();
 		AnthraciteCoalID = config.get(itemids, "Athracite Coal ID", 1121).getInt();
 		AncientBoneID = config.get(itemids, "Ancient Bone ID", 1122).getInt();
+		FossilID = config.get(itemids, "Fossil ID", 1123).getInt();
+		SlagID = config.get(itemids, "Slag ID", 1124).getInt();
+		SlagClubID = config.get(itemids, "Slag Club ID", 1125).getInt();
+		SlagIngotID = config.get(itemids, "Slag Ingot ID", 1126).getInt();
+		SlagSpearID = config.get(itemids, "Slag Spear ID", 1127).getInt();
+		SlagSwordID = config.get(itemids, "Slag Sword ID", 1128).getInt();
 		
 	}
 	

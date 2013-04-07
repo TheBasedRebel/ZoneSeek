@@ -27,6 +27,7 @@ public class BlockLagoonGrass extends Block
         super(par1, Material.grass);
         this.setTickRandomly(true);
         this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setStepSound(Block.soundGrassFootstep);
     }
 
     @SideOnly(Side.CLIENT)
