@@ -10,6 +10,7 @@ public class BlockStone extends Block{
 
 	public BlockStone(int par1, String tex) {
 		super(par1, Material.rock);
+		this.setLightValue(0.2F);
 		this.textureName = tex;
 	}
 

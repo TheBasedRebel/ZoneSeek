@@ -1,9 +1,21 @@
 package ZoneSeek.common.worldgen.Prehistoric;
 
+import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.CAVE;
+import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.MINESHAFT;
+import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.RAVINE;
+import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.SCATTERED_FEATURE;
+import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.STRONGHOLD;
+import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.VILLAGE;
+import static net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType.DUNGEON;
+import static net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType.ICE;
+import static net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType.LAVA;
+
 import java.util.List;
 import java.util.Random;
 
 import ZoneSeek.common.blocks.BlocksHelper;
+import ZoneSeek.common.worldgen.WorldGenPrehistoricTallGrass;
+import ZoneSeek.common.worldgen.WorldGenPrehistoricTree;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSand;
@@ -26,6 +38,7 @@ import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.structure.MapGenMineshaft;
 import net.minecraft.world.gen.structure.MapGenStronghold;
 import net.minecraft.world.gen.structure.MapGenVillage;
+import net.minecraftforge.event.terraingen.TerrainGen;
 
 public class ChunkProviderPrehistoric implements IChunkProvider {
 	/** RNG. */
@@ -97,6 +110,16 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 	 */
 	float[] parabolicField;
 	int[][] field_73219_j = new int[32][32];
+	
+    {
+        caveGenerator = TerrainGen.getModdedMapGen(caveGenerator, CAVE);
+        strongholdGenerator = (MapGenStronghold) TerrainGen.getModdedMapGen(strongholdGenerator, STRONGHOLD);
+        villageGenerator = (MapGenVillage) TerrainGen.getModdedMapGen(villageGenerator, VILLAGE);
+        mineshaftGenerator = (MapGenMineshaft) TerrainGen.getModdedMapGen(mineshaftGenerator, MINESHAFT);
+        scatteredFeatureGenerator = (MapGenScatteredFeature) TerrainGen.getModdedMapGen(scatteredFeatureGenerator, SCATTERED_FEATURE);
+        WorldGenPrehistoricTree treeGenerator = new WorldGenPrehistoricTree(false, 40, 0, 0);
+        //WorldGenPrehistoricTallGrass grassGenerator = new WorldGenPrehistoricTallGrass(BlocksHelper.PrehistoricTallGrass.blockID, BlocksHelper.PrehistoricGrass.blockID);
+    }
 
 	public ChunkProviderPrehistoric(World par1World, long par2, boolean par4) {
 		this.worldObj = par1World;
@@ -114,7 +137,7 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 	/**
 	 * Generates the shape of the terrain for the chunk though its all stone though the water is frozen if the temperature is low enough
 	 */
-	public void generateTerrain(int par1, int par2, short[] par3ArrayOfByte) {
+	public void generateTerrain(int par1, int par2, byte[] par3ArrayOfByte) {
 		byte var4 = 4;
 		byte var5 = 16;
 		byte var6 = 63;
@@ -137,35 +160,37 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 					double var27 = (this.noiseArray[((var10 + 1) * var9 + var11 + 0) * var8 + var12 + 1] - var19) * var13;
 					double var29 = (this.noiseArray[((var10 + 1) * var9 + var11 + 1) * var8 + var12 + 1] - var21) * var13;
 
-					for (int abyte1 = 0; abyte1 < 8; ++abyte1) {
-						double abyte2 = 0.25D;
-						double abyte4 = var15;
-						double abyte6 = var17;
-						double abyte8 = (var19 - var15) * abyte2;
-						double var40 = (var21 - var17) * abyte2;
+					for (int var31 = 0; var31 < 8; ++var31) {
+						double var32 = 0.25D;
+						double var34 = var15;
+						double var36 = var17;
+						double var38 = (var19 - var15) * var32;
+						double var40 = (var21 - var17) * var32;
 
 						for (int var42 = 0; var42 < 4; ++var42) {
-							int var43 = var42 + var10 * 4 << 11 | 0 + var11 * 4 << 7 | var12 * 8 + abyte1;
-							short var44 = 128;
+							int var43 = var42 + var10 * 4 << 11 | 0 + var11 * 4 << 7 | var12 * 8 + var31;
+							int var44 = 128;
 							var43 -= var44;
 							double var45 = 0.25D;
-							double var49 = (abyte6 - abyte4) * var45;
-							double var47 = abyte4 - var49;
+							double var49 = (var36 - var34) * var45;
+							double var47 = var34 - var49;
 
 							for (int var51 = 0; var51 < 4; ++var51) {
 								if ((var47 += var49) > 0.0D) {
 									if(var43 + var44 >= par3ArrayOfByte.length)
 										continue;
-									par3ArrayOfByte[var43 += var44] = (short) BlocksHelper.PrehistoricStone.blockID;
-								} else if (var12 * 8 + abyte1 < var6) {
+									par3ArrayOfByte[var43 += var44] = (byte) BlocksHelper.PrehistoricStone.blockID;
+								} else if (var12 * 8 + var31 < var6) {
+									if(var43 + var44 >= par3ArrayOfByte.length)
+										continue;
 									par3ArrayOfByte[var43 += var44] = (byte) Block.waterStill.blockID;
 								} else {
 									par3ArrayOfByte[var43 += var44] = 0;
 								}
 							}
 
-							abyte4 += abyte8;
-							abyte6 += var40;
+							var34 += var38;
+							var36 += var40;
 						}
 
 						var15 += var23;
@@ -181,7 +206,7 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 	/**
 	 * Replaces the stone that was placed in with blocks that match the biome
 	 */
-	public void replaceBlocksForBiome(int par1, int par2, short[] par3ArrayOfByte, BiomeGenBase[] par4ArrayOfBiomeGenBase) {
+	public void replaceBlocksForBiome(int par1, int par2, byte[] par3ArrayOfByte, BiomeGenBase[] par4ArrayOfBiomeGenBase) {
 		byte var5 = 63;
 		double var6 = 0.03125D;
 		this.stoneNoise = this.noiseGen4.generateNoiseOctaves(this.stoneNoise, par1 * 16, par2 * 16, 0, 16, 16, 1, var6 * 2.0D, var6 * 2.0D, var6 * 2.0D);
@@ -192,8 +217,8 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 				float var11 = var10.getFloatTemperature();
 				int var12 = (int) (this.stoneNoise[var8 + var9 * 16] / 3.0D + 3.0D + this.rand.nextDouble() * 0.25D);
 				int var13 = -1;
-				short var14 = var10.topBlock;
-				short var15 = var10.fillerBlock;
+				byte var14 = var10.topBlock;
+				byte var15 = var10.fillerBlock;
 
 				for (int var16 = 127; var16 >= 0; --var16) {
 					int var17 = (var9 * 16 + var8) * 128 + var16;
@@ -201,15 +226,15 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 					if (var16 <= 0 + this.rand.nextInt(5)) {
 						par3ArrayOfByte[var17] = (byte) Block.bedrock.blockID;
 					} else {
-						short var18 = par3ArrayOfByte[var17];
+						byte var18 = par3ArrayOfByte[var17];
 
 						if (var18 == 0) {
 							var13 = -1;
-						} else if (var18 == BlocksHelper.PrehistoricStone.blockID) {
+						} else if (var18 == (byte) BlocksHelper.PrehistoricStone.blockID) {
 							if (var13 == -1) {
 								if (var12 <= 0) {
 									var14 = 0;
-									var15 = (short) BlocksHelper.PrehistoricStone.blockID;
+									var15 = (byte) BlocksHelper.PrehistoricStone.blockID;
 								} else if (var16 >= var5 - 4 && var16 <= var5 + 1) {
 									var14 = var10.topBlock;
 									var15 = var10.fillerBlock;
@@ -234,9 +259,9 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 								--var13;
 								par3ArrayOfByte[var17] = var15;
 
-								if (var13 == 0 && var15 == BlocksHelper.PrehistoricSand.blockID) {
+								if (var13 == 0 && var15 == (byte) BlocksHelper.PrehistoricSand.blockID) {
 									var13 = this.rand.nextInt(4);
-									var15 = (short) BlocksHelper.PrehistoricStone.blockID;
+									var15 = (byte) BlocksHelper.PrehistoricStone.blockID;
 								}
 							}
 						}
@@ -258,21 +283,21 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 	 */
 	public Chunk provideChunk(int par1, int par2) {
 		this.rand.setSeed((long) par1 * 341873128712L + (long) par2 * 132897987541L);
-		short[] abyte = new short[32768];
-		this.generateTerrain(par1, par2, abyte);
+		byte[] var3 = new byte[32768];
+		this.generateTerrain(par1, par2, var3);
 		this.biomesForGeneration = this.worldObj.getWorldChunkManager().loadBlockGeneratorData(this.biomesForGeneration, par1 * 16, par2 * 16, 16, 16);
-		this.replaceBlocksForBiome(par1, par2, abyte, this.biomesForGeneration);
-		//this.caveGenerator.generate(this, this.worldObj, par1, par2, abyte);
-		//this.ravineGenerator.generate(this, this.worldObj, par1, par2, abyte);
+		this.replaceBlocksForBiome(par1, par2, var3, this.biomesForGeneration);
+		//this.caveGenerator.generate(this, this.worldObj, par1, par2, var3);
+		//this.ravineGenerator.generate(this, this.worldObj, par1, par2, var3);
 
 		if (this.mapFeaturesEnabled) {
-			//this.mineshaftGenerator.generate(this, this.worldObj, par1, par2, abyte);
-			//this.villageGenerator.generate(this, this.worldObj, par1, par2, abyte);
-			//this.strongholdGenerator.generate(this, this.worldObj, par1, par2, abyte);
-			//this.scatteredFeatureGenerator.generate(this, this.worldObj, par1, par2, abyte);
+			//this.mineshaftGenerator.generate(this, this.worldObj, par1, par2, var3);
+			//this.villageGenerator.generate(this, this.worldObj, par1, par2, var3);
+			//this.strongholdGenerator.generate(this, this.worldObj, par1, par2, var3);
+			//this.scatteredFeatureGenerator.generate(this, this.worldObj, par1, par2, var3);
 		}
 
-		Chunk var4 = new Chunk(this.worldObj, abyte, new byte[32768], par1, par2);
+		Chunk var4 = new Chunk(this.worldObj, var3, par1, par2);
 		byte[] var5 = var4.getBiomeArray();
 
 		for (int var6 = 0; var6 < var5.length; ++var6) {
@@ -374,33 +399,33 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 					var48 += var47 * 0.2D;
 					var48 = var48 * (double) par6 / 16.0D;
 					double var28 = (double) par6 / 2.0D + var48 * 4.0D;
-					double abyte0 = 0.0D;
-					double abyte2 = ((double) var46 - var28) * 12.0D * 128.0D / 128.0D / var26;
+					double var30 = 0.0D;
+					double var32 = ((double) var46 - var28) * 12.0D * 128.0D / 128.0D / var26;
 
-					if (abyte2 < 0.0D) {
-						abyte2 *= 4.0D;
+					if (var32 < 0.0D) {
+						var32 *= 4.0D;
 					}
 
-					double abyte4 = this.noise1[var12] / 512.0D;
-					double abyte6 = this.noise2[var12] / 512.0D;
-					double abyte8 = (this.noise3[var12] / 10.0D + 1.0D) / 2.0D;
+					double var34 = this.noise1[var12] / 512.0D;
+					double var36 = this.noise2[var12] / 512.0D;
+					double var38 = (this.noise3[var12] / 10.0D + 1.0D) / 2.0D;
 
-					if (abyte8 < 0.0D) {
-						abyte0 = abyte4;
-					} else if (abyte8 > 1.0D) {
-						abyte0 = abyte6;
+					if (var38 < 0.0D) {
+						var30 = var34;
+					} else if (var38 > 1.0D) {
+						var30 = var36;
 					} else {
-						abyte0 = abyte4 + (abyte6 - abyte4) * abyte8;
+						var30 = var34 + (var36 - var34) * var38;
 					}
 
-					abyte0 -= abyte2;
+					var30 -= var32;
 
 					if (var46 > par6 - 4) {
 						double var40 = (double) ((float) (var46 - (par6 - 4)) / 3.0F);
-						abyte0 = abyte0 * (1.0D - var40) + -10.0D * var40;
+						var30 = var30 * (1.0D - var40) + -10.0D * var40;
 					}
 
-					par1ArrayOfDouble[var12] = abyte0;
+					par1ArrayOfDouble[var12] = var30;
 					++var12;
 				}
 			}
@@ -431,10 +456,10 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 		boolean var11 = false;
 
 		if (this.mapFeaturesEnabled) {
-			this.mineshaftGenerator.generateStructuresInChunk(this.worldObj, this.rand, par2, par3);
-			var11 = this.villageGenerator.generateStructuresInChunk(this.worldObj, this.rand, par2, par3);
-			this.strongholdGenerator.generateStructuresInChunk(this.worldObj, this.rand, par2, par3);
-			this.scatteredFeatureGenerator.generateStructuresInChunk(this.worldObj, this.rand, par2, par3);
+			//this.mineshaftGenerator.generateStructuresInChunk(this.worldObj, this.rand, par2, par3);
+			//var11 = this.villageGenerator.generateStructuresInChunk(this.worldObj, this.rand, par2, par3);
+			//this.strongholdGenerator.generateStructuresInChunk(this.worldObj, this.rand, par2, par3);
+			//this.scatteredFeatureGenerator.generateStructuresInChunk(this.worldObj, this.rand, par2, par3);
 		}
 
 		int var12;
@@ -540,10 +565,10 @@ public class ChunkProviderPrehistoric implements IChunkProvider {
 
 	public void func_82695_e(int par1, int par2) {
 		if (this.mapFeaturesEnabled) {
-			this.mineshaftGenerator.generate(this, this.worldObj, par1, par2, (byte[]) null);
-			this.villageGenerator.generate(this, this.worldObj, par1, par2, (byte[]) null);
-			this.strongholdGenerator.generate(this, this.worldObj, par1, par2, (byte[]) null);
-			this.scatteredFeatureGenerator.generate(this, this.worldObj, par1, par2, (byte[]) null);
+			//this.mineshaftGenerator.generate(this, this.worldObj, par1, par2, (byte[]) null);
+			//this.villageGenerator.generate(this, this.worldObj, par1, par2, (byte[]) null);
+			//this.strongholdGenerator.generate(this, this.worldObj, par1, par2, (byte[]) null);
+			//this.scatteredFeatureGenerator.generate(this, this.worldObj, par1, par2, (byte[]) null);
 		}
 	}
 

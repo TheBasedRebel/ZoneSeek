@@ -30,6 +30,7 @@ public class BlockPrehistoricLeaf extends BlockLeavesBase implements IShearable
 		super(blockId, Material.leaves, true);
 		this.setHardness(0.2F);
 		this.setLightOpacity(1);
+		this.setLightValue(0.2F);
 		this.setStepSound(soundGrassFootstep);
 		this.setTickRandomly(true);
 	}

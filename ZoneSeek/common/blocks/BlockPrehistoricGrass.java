@@ -28,6 +28,7 @@ public class BlockPrehistoricGrass extends Block
         this.setTickRandomly(true);
         this.setCreativeTab(CreativeTabs.tabBlock);
         this.setStepSound(Block.soundGrassFootstep);
+        this.setLightValue(0.2F);
     }
 
     @SideOnly(Side.CLIENT)

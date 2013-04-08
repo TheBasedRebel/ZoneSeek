@@ -350,8 +350,8 @@ public class IDsHelper {
 		PrehistoricGrassID = config.get(blockids, "Prehistoric Grass ID", 181).getInt();
 		PrehistoricLeafID = config.get(blockids, "Prehistoric Leaf ID", 182).getInt();
 		PrehistoricLogID = config.get(blockids, "Prehistoric Log ID", 183).getInt();
-		PrehistoricSandID = config.get(blockids, "Prehistoric Sand ID", 857).getInt();
-		PrehistoricStoneID = config.get(blockids, "Prehistoric Stone ID", 858).getInt();
+		PrehistoricSandID = config.get(blockids, "Prehistoric Sand ID", 186).getInt();
+		PrehistoricStoneID = config.get(blockids, "Prehistoric Stone ID", 185).getInt();
 		PrehistoricTallGrassID = config.get(blockids, "Prehistoric Tall Grass ID", 184).getInt();
 	
 		

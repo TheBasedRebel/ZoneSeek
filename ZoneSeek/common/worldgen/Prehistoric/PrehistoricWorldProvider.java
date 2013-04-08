@@ -7,6 +7,7 @@ import net.minecraft.util.ChunkCoordinates;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.WorldProvider;
+import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,7 +17,7 @@ public class PrehistoricWorldProvider extends WorldProvider {
 	 * creates a new world chunk manager for WorldProvider
 	 */
 	public void registerWorldChunkManager() {
-		this.worldChunkMgr = new WorldChunkManagerPrehistoric(BiomesHelper.Prehistoric, 0.5F, 0.0F);
+		this.worldChunkMgr = new WorldChunkManagerHell(BiomesHelper.Prehistoric, 0.5F, 0.0F);
 		this.dimensionId = IDsHelper.PrehistoricAgeID;
 		this.hasNoSky = false;
 	}
@@ -24,9 +25,14 @@ public class PrehistoricWorldProvider extends WorldProvider {
 	/**
 	 * Returns the chunk provider back for the world provider
 	 */
-	public IChunkProvider getChunkProvider() {
-		return new ChunkProviderPrehistoric(this.worldObj, this.worldObj.getSeed(), false);
+	//public IChunkProvider getChunkProvider() {
+		//return new ChunkProviderPrehistoric(this.worldObj, this.worldObj.getSeed(), false);
+	//}
+	
+	public IChunkProvider createChunkGenerator() {
+		return new ChunkProviderPrehistoric(this.worldObj, this.worldObj.getSeed(), true);
 	}
+
 
 	/**
 	 * Calculates the angle of sun and moon in the sky relative to a specified time (usually worldTime)
@@ -60,7 +66,7 @@ public class PrehistoricWorldProvider extends WorldProvider {
 	 * the y level at which clouds are rendered.
 	 */
 	public float getCloudHeight() {
-		return 400.0F;
+		return 130.0F;
 	}
 
 	/**

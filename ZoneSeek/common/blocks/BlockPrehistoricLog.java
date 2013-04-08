@@ -20,6 +20,7 @@ public class BlockPrehistoricLog extends Block
 	{
 		super(blockId, Material.wood);
 		this.setHardness(3.0F);
+		this.setLightValue(0.2F);
 		this.setStepSound(soundWoodFootstep);
 	}
 

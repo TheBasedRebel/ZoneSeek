@@ -11,6 +11,7 @@ public class BlockGround extends Block{
 	public BlockGround(int par1, String tex) {
 		super(par1, Material.grass);
 		this.textureName = tex;
+		this.setLightValue(0.2F);
 		this.setStepSound(Block.soundGrassFootstep);
 	}
 

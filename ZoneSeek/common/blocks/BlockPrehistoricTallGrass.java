@@ -17,6 +17,7 @@ public BlockPrehistoricTallGrass(int id)
      super(id, Material.grass);
 this.setCreativeTab(CreativeTabs.tabMisc);
 this.setHardness(0F);
+this.setLightValue(0.2F);
 this.setStepSound(Block.soundGrassFootstep);
         float var3 = 0.2F;
         this.setBlockBounds(0.5F - var3, 0.0F, 0.5F - var3, 0.5F + var3, 0.8F, 0.5F + var3);
