@@ -560,6 +560,26 @@ public class CraftingTableHandler {
 			"TTT", "TTT", "TTT", 'T', ItemsHelper.CompactedScaleFragment
 			
 		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.AncientBone, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.Fossil
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(BlocksHelper.SlagBlock, 1), new Object[] {
+			"TTT", "TTT", "TTT", 'T', ItemsHelper.SlagIngot
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SlagClub, 1), new Object[] {
+			"TTT", "TXT", " X ", 'T', ItemsHelper.SlagIngot, "X", Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SlagSpear, 1), new Object[] {
+			"  T", " X ", "X  ", 'T', ItemsHelper.SlagIngot, "X", Item.stick
+			
+		});
+		GameRegistry.addRecipe(new ItemStack(ItemsHelper.SlagSword, 1), new Object[] {
+			" T ", " T ", " X ", 'T', ItemsHelper.SlagIngot, "X", Item.stick
+			
+		});
 		
 
 
