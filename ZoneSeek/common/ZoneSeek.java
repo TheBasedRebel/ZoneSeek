@@ -61,6 +61,8 @@ public class ZoneSeek {
 		
 		proxy.initCapes();
 		
+		DimensionHelper.setupDimensions();
+		
 		//register sound handler
 		//EventSounds soundHandler = new EventSounds();
 		//MinecraftForge.EVENT_BUS.register(soundHandler);
@@ -69,7 +71,6 @@ public class ZoneSeek {
 	@Init
 	public void load(FMLInitializationEvent event){
 		proxy.registerRenders();
-		DimensionHelper.setupDimensions();
         BlocksHelper.setupBlocks();
         ItemsHelper.setupItems();
         BiomesHelper.setupBiomes();
