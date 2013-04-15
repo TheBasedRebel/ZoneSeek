@@ -11,7 +11,7 @@ public class PrehistoricWorldProvider extends WorldProvider
      */
     public void registerWorldChunkManager()
     {
-        this.worldChunkMgr = new WorldChunkManagerPrehistoric(BiomesHelper.Prehistoric);
+        this.worldChunkMgr = new WorldChunkManagerPrehistoric(BiomeGenBasePrehistoric.PrehistoricBiome);
     }
     
     protected void generateLightBrightnessTable()

@@ -39,8 +39,8 @@ public class ChunkProviderPrehistoric implements IChunkProvider
     public NoiseGeneratorOctaves noiseGen5;
     public NoiseGeneratorOctaves noiseGen6;
     public NoiseGeneratorOctaves mobSpawnerNoise;
-    private final WorldGenerator PrehistoricTree;
-    private final WorldGenerator PrehistoricTree2;
+    //private final WorldGenerator PrehistoricTree;
+    //private final WorldGenerator PrehistoricTree2;
     private final WorldGenerator PrehistoricGrass;
     private World worldObj;
     private double[] noiseArray;
@@ -68,8 +68,8 @@ public class ChunkProviderPrehistoric implements IChunkProvider
         this.noiseGen6 = new NoiseGeneratorOctaves(this.rand, 16);
         this.mobSpawnerNoise = new NoiseGeneratorOctaves(this.rand, 8);
         this.PrehistoricGrass = new WorldGenPrehistoricTallGrass(BlocksHelper.PrehistoricGrass.blockID, BlocksHelper.PrehistoricDirt.blockID);
-        this.PrehistoricTree = new WorldGenPrehistoricTree(false, 30, 0, 0, false);
-        this.PrehistoricTree2 = new WorldGenPrehistoricTree2();
+        //this.PrehistoricTree = new WorldGenPrehistoricTree(false, 30, 0, 0, false);
+        //this.PrehistoricTree2 = new WorldGenPrehistoricTree2();
 
     }
 	public void generateTerrain(int par1, int par2, byte[] par3ArrayOfByte) {
@@ -419,14 +419,6 @@ public class ChunkProviderPrehistoric implements IChunkProvider
         int var15;
         int var12;
         
-        for (var15 = 0; var15 < 1; ++var15)
-        {
-            var12 = var4 + this.rand.nextInt(40) + 20;
-            var13 = 70;
-            var14 = var5 + this.rand.nextInt(40) + 20;
-            (new WorldGenPrehistoricTree2()).generate(this.worldObj, this.rand, var12, var13, var14);
-        }
-        
         if (this.rand.nextInt(5) == 0)
         {
             var12 = var4 + this.rand.nextInt(16) + 8;
@@ -437,21 +429,7 @@ public class ChunkProviderPrehistoric implements IChunkProvider
         
         
       
-       
-        WorldGenPrehistoricTree var17 = new WorldGenPrehistoricTree(false, 30, 0, 0, false);
-        //WorldGenPrehistoricTree2 var151 = new WorldGenPrehistoricTree2();
-        
-        int var21;
-        int var20;
-
-        for (int var19 = 0; var19 < 1; ++var19)
-        {
-            int var18 = var4 + this.rand.nextInt(16);
-            var21 = var5 + this.rand.nextInt(16);
-            var20 = this.worldObj.getHeightValue(var18, var21);
-            var17.generate(this.worldObj, this.rand, var18, var20, var21);
-            //var151.generate(this.worldObj, this.rand, var18, var20, var21);
-        }
+   
 
     
 

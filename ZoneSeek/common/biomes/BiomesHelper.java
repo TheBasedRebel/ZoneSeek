@@ -1,7 +1,7 @@
 package ZoneSeek.common.biomes;
 
 import ZoneSeek.common.IDsHelper;
-import ZoneSeek.common.worldgen.Prehistoric.BiomeGenPrehistoric;
+import ZoneSeek.common.worldgen.Prehistoric.BiomeGenBasePrehistoric;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.world.biome.BiomeGenBase;
 
@@ -19,7 +19,7 @@ public class BiomesHelper {
         Sludge = (new BiomeGenSludge(IDsHelper.SludgeID).setBiomeName("Sludge Biome").setMinMaxHeight(0.4F,0.5F).setTemperatureRainfall(0.2F, 0.4F));
         GameRegistry.addBiome(Sludge);
         
-        Prehistoric = (new BiomeGenPrehistoric(IDsHelper.PrehistoricID)).setBiomeName("Prehistoric");
+        Prehistoric = (new BiomeGenBasePrehistoric(IDsHelper.PrehistoricID)).setBiomeName("Prehistoric");
        // GameRegistry.addBiome(Prehistoric);
         
     

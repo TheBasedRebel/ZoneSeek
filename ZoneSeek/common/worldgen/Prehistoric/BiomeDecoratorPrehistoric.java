@@ -74,9 +74,9 @@ public class BiomeDecoratorPrehistoric extends BiomeDecorator
 //        this.cactusGen = new WorldGenCactus();
 //        this.waterlilyGen = new WorldGenWaterlily();
 //        this.waterlilyPerChunk = 0;
-        this.treesPerChunk = 0;
+        //this.treesPerChunk = 0;
 //        this.flowersPerChunk = 2;
-        this.grassPerChunk = 1;
+        //this.grassPerChunk = 1;
 //        this.deadBushPerChunk = 1;
 //        this.shrubChance = 0.3F;
 //        this.mushroomsPerChunk = 0;
@@ -182,48 +182,8 @@ public class BiomeDecoratorPrehistoric extends BiomeDecorator
             WorldGenerator worldgenerator1 = this.biome.getRandomWorldGenForGrass(this.randomGenerator);
             worldgenerator1.generate(this.currentWorld, this.randomGenerator, k, l, i1);
         }
-        
-        /**
-        if(randomGenerator.nextFloat() < shrubChance)
-        {
-            k = this.chunk_X + this.randomGenerator.nextInt(16) + 8;
-            l = this.randomGenerator.nextInt(128);
-            i1 = this.chunk_Z + this.randomGenerator.nextInt(16) + 8;
-            time = System.nanoTime();
-            (new WorldGenShrub(Atum.atumShrub.blockID, 8)).generate(this.currentWorld, this.randomGenerator, k, l, i1);
-            //System.out.println("Gen Shrub: " + (System.nanoTime() - time));
-        }
-
-        if(randomGenerator.nextFloat() < shrubChance)
-        {
-            k = this.chunk_X + this.randomGenerator.nextInt(16) + 8;
-            l = this.randomGenerator.nextInt(128);
-            i1 = this.chunk_Z + this.randomGenerator.nextInt(16) + 8;
-            time = System.nanoTime();
-            (new WorldGenShrub(Atum.atumWeed.blockID, 8)).generate(this.currentWorld, this.randomGenerator, k, l, i1);
-            //System.out.println("Gen Weeds: " + (System.nanoTime() - time));
-        }
-	
-		**/
-        
-        /*
-        doGen = TerrainGen.decorate(currentWorld, randomGenerator, chunk_X, chunk_Z, REED);
-        for (j = 0; doGen && j < this.reedsPerChunk; ++j)
-        {
-            k = this.chunk_X + this.randomGenerator.nextInt(16) + 8;
-            l = this.chunk_Z + this.randomGenerator.nextInt(16) + 8;
-            i1 = this.randomGenerator.nextInt(128);
-            this.reedGen.generate(this.currentWorld, this.randomGenerator, k, i1, l);
-        }
-        */
-
-        /*for (j = 0; doGen && j < 10; ++j)
-        {
-            k = this.chunk_X + this.randomGenerator.nextInt(16) + 8;
-            l = this.randomGenerator.nextInt(128);
-            i1 = this.chunk_Z + this.randomGenerator.nextInt(16) + 8;
-            this.reedGen.generate(this.currentWorld, this.randomGenerator, k, l, i1);
-        }*/
+   
+       
 
         doGen = TerrainGen.decorate(currentWorld, randomGenerator, chunk_X, chunk_Z, LAKE);
         if (doGen && this.generateLakes)
