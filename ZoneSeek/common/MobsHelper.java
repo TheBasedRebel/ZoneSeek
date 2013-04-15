@@ -6,16 +6,22 @@ import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;
 import ZoneSeek.common.biomes.BiomesHelper;
+import ZoneSeek.common.entities.Apatosaurus;
 import ZoneSeek.common.entities.Deux;
 import ZoneSeek.common.entities.Fuzzle;
-import ZoneSeek.common.entities.LagoonMonster;
-import ZoneSeek.common.entities.Orthrus;
 import ZoneSeek.common.entities.InfectedCow;
 import ZoneSeek.common.entities.InfectedPig;
+import ZoneSeek.common.entities.LagoonMonster;
 import ZoneSeek.common.entities.LagoonSlug;
+import ZoneSeek.common.entities.Obamadon;
+import ZoneSeek.common.entities.Orthrus;
 import ZoneSeek.common.entities.Pincer;
+import ZoneSeek.common.entities.Pterodactyl;
+import ZoneSeek.common.entities.Raptor;
 import ZoneSeek.common.entities.SludgeMan;
+import ZoneSeek.common.entities.Eotyrannus;
 import ZoneSeek.common.entities.TaintedSquid;
+import ZoneSeek.common.entities.Triceratops;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -54,6 +60,32 @@ public class MobsHelper {
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.LagoonMonster.name", "Lagoon Monster");
 		EntityRegistry.addSpawn(LagoonMonster.class, 400, 1, 2, EnumCreatureType.creature, BiomesHelper.Lagoon);
 		
+		//Prehistoric
+		EntityRegistry.registerModEntity(Pterodactyl.class, "Pterodactyl", 11, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Pterodactyl.name", "Pterodactyl");
+		//EntityRegistry.addSpawn(Pterodactyl.class, 400, 1, 4, EnumCreatureType.creature, new BiomeGenBase[] {BiomesHelper.Prehistoric});
+		
+		EntityRegistry.registerModEntity(Raptor.class, "Raptor", 12, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Raptor.name", "Raptor");
+		//EntityRegistry.addSpawn(Raptor.class, 1, 1, 1, EnumCreatureType.monster, new BiomeGenBase[] {BiomesHelper.Prehistoric});
+		
+		EntityRegistry.registerModEntity(Eotyrannus.class, "Eotyrannus", 13, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Eotyrannus.name", "Eotyrannus");
+		//EntityRegistry.addSpawn(Eotyrannus.class, 1, 1, 1, EnumCreatureType.monster, new BiomeGenBase[] {BiomesHelper.Prehistoric});
+		
+		EntityRegistry.registerModEntity(Triceratops.class, "Triceratops", 14, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Triceratops.name", "Triceratops");
+		//EntityRegistry.addSpawn(Triceratops.class, 1, 1, 1, EnumCreatureType.monster, new BiomeGenBase[] {BiomesHelper.Prehistoric});
+		
+		EntityRegistry.registerModEntity(Apatosaurus.class, "Apatosaurus", 15, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Apatosaurus.name", "Apatosaurus");
+		//EntityRegistry.addSpawn(Apatosaurus.class, 1, 1, 1, EnumCreatureType.monster, new BiomeGenBase[] {BiomesHelper.Prehistoric});
+		
+		EntityRegistry.registerModEntity(Obamadon.class, "Obamadon", 16, ZoneSeek.instance, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Obamadon.name", "Obamadon");
+		//EntityRegistry.addSpawn(Obamadon.class, 1, 1, 1, EnumCreatureType.monster, new BiomeGenBase[] {BiomesHelper.Prehistoric});
+		
+		
 		//Mobs Peaceful
 		EntityRegistry.registerModEntity(Orthrus.class, "Orthrus", 4, ZoneSeek.instance, 80, 3, true);
 		LanguageRegistry.instance().addStringLocalization("entity.ZoneSeek.Orthrus.name", "Orthrus");
@@ -75,6 +107,12 @@ public class MobsHelper {
 		EntityEgg(TaintedSquid.class, 0x1559B3, 0xC0D4ED);
 		EntityEgg(LagoonMonster.class, 0x4AB025, 0xC2B040);
 		
+		EntityEgg(Pterodactyl.class, 0xC9BB1C, 0x4A493A);
+		EntityEgg(Raptor.class, 0xD1A728, 0xE32F0B);
+		EntityEgg(Eotyrannus.class, 0xE39309, 0x211515);
+		EntityEgg(Triceratops.class, 0x47851E, 0xA36C1F);
+		EntityEgg(Apatosaurus.class, 0x66481F, 0xCCA670);
+		EntityEgg(Obamadon.class, 0x19329E, 0x28B4C7);
 
 	}
 	

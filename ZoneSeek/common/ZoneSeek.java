@@ -61,7 +61,7 @@ public class ZoneSeek {
 		
 		proxy.initCapes();
 		
-		DimensionHelper.setupDimensions();
+		
 		
 		//register sound handler
 		//EventSounds soundHandler = new EventSounds();
@@ -71,6 +71,7 @@ public class ZoneSeek {
 	@Init
 	public void load(FMLInitializationEvent event){
 		proxy.registerRenders();
+		DimensionHelper.setupDimensions();
         BlocksHelper.setupBlocks();
         ItemsHelper.setupItems();
         BiomesHelper.setupBiomes();

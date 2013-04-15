@@ -7,6 +7,7 @@ import java.util.Random;
 import ZoneSeek.common.blocks.BlocksHelper;
 import ZoneSeek.common.worldgen.WorldGenPrehistoricTallGrass;
 import ZoneSeek.common.worldgen.WorldGenPrehistoricTree;
+import ZoneSeek.common.worldgen.WorldGenPrehistoricTree2;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSand;
 import net.minecraft.entity.EnumCreatureType;
@@ -18,6 +19,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.MapGenBase;
+import net.minecraft.world.gen.MapGenCaves;
 import net.minecraft.world.gen.NoiseGeneratorOctaves;
 import net.minecraft.world.gen.feature.WorldGenLakes;
 import net.minecraft.world.gen.feature.WorldGenerator;
@@ -37,11 +39,15 @@ public class ChunkProviderPrehistoric implements IChunkProvider
     public NoiseGeneratorOctaves noiseGen5;
     public NoiseGeneratorOctaves noiseGen6;
     public NoiseGeneratorOctaves mobSpawnerNoise;
+    private final WorldGenerator PrehistoricTree;
+    private final WorldGenerator PrehistoricTree2;
+    private final WorldGenerator PrehistoricGrass;
     private World worldObj;
     private double[] noiseArray;
     private double[] stoneNoise = new double[256];
-    //private MapGenBase caveGenerator = new IceikaGenCaves();
+    private MapGenBase caveGenerator = new MapGenCaves();
     private BiomeGenBase[] biomesForGeneration;
+    
     double[] noise3;
     double[] noise1;
     double[] noise2;
@@ -49,9 +55,6 @@ public class ChunkProviderPrehistoric implements IChunkProvider
     double[] noise6;
     float[] field_35388_l;
     int[][] field_914_i = new int[32][32];
-    //private ArrayList rooms;
-    //private ArrayList lights;
-    //WorldGenPrehistoricTallGrass grassGenerator = new WorldGenPrehistoricTallGrass(BlocksHelper.PrehistoricTallGrass.blockID, BlocksHelper.PrehistoricGrass.blockID);
 
     public ChunkProviderPrehistoric(World var1, long var2)
     {
@@ -64,22 +67,10 @@ public class ChunkProviderPrehistoric implements IChunkProvider
         this.noiseGen5 = new NoiseGeneratorOctaves(this.rand, 10);
         this.noiseGen6 = new NoiseGeneratorOctaves(this.rand, 16);
         this.mobSpawnerNoise = new NoiseGeneratorOctaves(this.rand, 8);
-        /**
-        this.rooms = new ArrayList(8);
-        this.lights = new ArrayList(6);
-        this.lights.add(new LightPost1());
-        this.lights.add(new LightPost2());
-        this.lights.add(new LightPost3());
-        this.lights.add(new LightPost4());
-        this.lights.add(new LightPost5());
-        this.rooms.add(new SnowyVillage1());
-        this.rooms.add(new SnowyVillage2());
-        this.rooms.add(new SnowyVillage3());
-        this.rooms.add(new SnowyVillage4());
-        this.rooms.add(new SnowyVillage5());
-        this.rooms.add(new SnowyVillage6());
-        this.rooms.add(new SnowyVillage7());
-        **/
+        this.PrehistoricGrass = new WorldGenPrehistoricTallGrass(BlocksHelper.PrehistoricGrass.blockID, BlocksHelper.PrehistoricDirt.blockID);
+        this.PrehistoricTree = new WorldGenPrehistoricTree(false, 30, 0, 0, false);
+        this.PrehistoricTree2 = new WorldGenPrehistoricTree2();
+
     }
 	public void generateTerrain(int par1, int par2, byte[] par3ArrayOfByte) {
 		byte var4 = 4;
@@ -231,7 +222,7 @@ public class ChunkProviderPrehistoric implements IChunkProvider
         this.generateTerrain(var1, var2, var3);
         this.biomesForGeneration = this.worldObj.getWorldChunkManager().loadBlockGeneratorData(this.biomesForGeneration, var1 * 16, var2 * 16, 16, 16);
         this.replaceBlocksForBiome(var1, var2, var3, this.biomesForGeneration);
-        //this.caveGenerator.generate(this, this.worldObj, var1, var2, var3);
+        this.caveGenerator.generate(this, this.worldObj, var1, var2, var3);
         Chunk var4 = new Chunk(this.worldObj, var3, var1, var2);
         byte[] var5 = var4.getBiomeArray();
 
@@ -426,82 +417,43 @@ public class ChunkProviderPrehistoric implements IChunkProvider
         }
 
         int var15;
-
-        /**
-        if (this.rand.nextInt(5) == 0)
-        {
-            var13 = var4 + this.rand.nextInt(16) + 8;
-            var14 = this.rand.nextInt(40);
-            var15 = var5 + this.rand.nextInt(16) + 8;
-            (new WorldGenIceikaDungeon()).generate(this.worldObj, this.rand, var13, var14, var15);
-        }
-
-        if (this.rand.nextInt(5) == 0)
-        {
-            var13 = var4 + this.rand.nextInt(16) + 8;
-            var14 = this.rand.nextInt(40);
-            var15 = var5 + this.rand.nextInt(16) + 8;
-            (new WorldGenDungeon2()).generate(this.worldObj, this.rand, var13, var14, var15);
-        }
-        **/
-
+        int var12;
         
-        WorldGenPrehistoricTree var17 = new WorldGenPrehistoricTree(false, 40, 0, 0);
+        for (var15 = 0; var15 < 1; ++var15)
+        {
+            var12 = var4 + this.rand.nextInt(40) + 20;
+            var13 = 70;
+            var14 = var5 + this.rand.nextInt(40) + 20;
+            (new WorldGenPrehistoricTree2()).generate(this.worldObj, this.rand, var12, var13, var14);
+        }
+        
+        if (this.rand.nextInt(5) == 0)
+        {
+            var12 = var4 + this.rand.nextInt(16) + 8;
+            var13 = 212;
+            var14 = var5 + this.rand.nextInt(16) + 8;
+            this.PrehistoricGrass.generate(this.worldObj, this.rand, var12, var13, var14);
+        }
+        
+        
+      
+       
+        WorldGenPrehistoricTree var17 = new WorldGenPrehistoricTree(false, 30, 0, 0, false);
+        //WorldGenPrehistoricTree2 var151 = new WorldGenPrehistoricTree2();
+        
         int var21;
         int var20;
 
-        for (int var19 = 0; var19 < 7; ++var19)
+        for (int var19 = 0; var19 < 1; ++var19)
         {
             int var18 = var4 + this.rand.nextInt(16);
             var21 = var5 + this.rand.nextInt(16);
             var20 = this.worldObj.getHeightValue(var18, var21);
             var17.generate(this.worldObj, this.rand, var18, var20, var21);
-        }
-        
-
-        /**
-        var6.decorate(this.worldObj, this.rand, var4, var5);
-        Random var23 = this.rand;
-        World var24 = this.worldObj;
-        ArrayList var25 = this.rooms;
-        ArrayList var26 = this.lights;
-        int var21;
-        int var20;
-        int var27;
-        int var28;
-
-        for (var27 = 1; var27 < 10; ++var27)
-        {
-            var20 = var23.nextInt(7);
-            var21 = var23.nextInt(5);
-
-            if (var20 > 0 && var21 != 0)
-            {
-                var20 = var23.nextInt(7);
-            }
-
-            var13 = var4 + this.rand.nextInt(16) + 8;
-            var14 = this.rand.nextInt(128);
-            var28 = var5 + this.rand.nextInt(16) + 8;
-            ((WorldGenerator)((WorldGenerator)var25.get(var20))).generate(var24, var23, var13, var14, var28);
+            //var151.generate(this.worldObj, this.rand, var18, var20, var21);
         }
 
-        for (var27 = 1; var27 < 10; ++var27)
-        {
-            var20 = var23.nextInt(5);
-            var21 = var23.nextInt(5);
-
-            if (var20 > 18 && var21 != 0)
-            {
-                var20 = var23.nextInt(5);
-            }
-
-            var13 = var4 + this.rand.nextInt(16) + 8;
-            var14 = this.rand.nextInt(128);
-            var28 = var5 + this.rand.nextInt(16) + 8;
-            ((WorldGenerator)((WorldGenerator)var26.get(var20))).generate(var24, var23, var13, var14, var28);
-        }
-        **/
+    
 
         MinecraftForge.EVENT_BUS.post(new Post(var1, this.worldObj, this.rand, var2, var3, var11));
         BlockSand.fallInstantly = false;
@@ -560,7 +512,7 @@ public class ChunkProviderPrehistoric implements IChunkProvider
 
     public int getLoadedChunkCount()
     {
-        return 0;
+        return 20;
     }
 
     public void recreateStructures(int var1, int var2) {}

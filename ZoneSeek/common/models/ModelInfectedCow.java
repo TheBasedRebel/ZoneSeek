@@ -201,8 +201,11 @@ public class ModelInfectedCow extends ModelBase
   {
       this.head.rotateAngleX = par5 / (180F / (float)Math.PI);
       this.head.rotateAngleY = par4 / (180F / (float)Math.PI);
+      this.Shape4.rotateAngleX = par5 / (180F / (float)Math.PI);
       this.Shape4.rotateAngleY = par4 / (180F / (float)Math.PI);
+      this.horn1.rotateAngleX = par5 / (180F / (float)Math.PI);
       this.horn1.rotateAngleY = par4 / (180F / (float)Math.PI);
+      this.horn2.rotateAngleX = par5 / (180F / (float)Math.PI);
       this.horn2.rotateAngleY = par4 / (180F / (float)Math.PI);
       this.leg1.rotateAngleX = MathHelper.cos(par1 * 0.6662F) * 1.4F * par2;
       this.leg2.rotateAngleX = MathHelper.cos(par1 * 0.6662F + (float)Math.PI) * 1.4F * par2;
