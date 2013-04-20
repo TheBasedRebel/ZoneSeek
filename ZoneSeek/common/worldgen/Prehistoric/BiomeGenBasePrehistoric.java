@@ -32,7 +32,7 @@ public class BiomeGenBasePrehistoric extends BiomeGenBase // implements
 	// public WorldGenerator grassGenerator;
 
 	protected WorldGenPrehistoricTree genPrehistoricTrees;
-	//protected WorldGenPrehistoricTree2 genPrehistoricTrees2;
+	protected WorldGenPrehistoricTree2 genPrehistoricTrees2;
 	 public static final BiomeGenBasePrehistoric PrehistoricBiome;
 
 	public BiomeGenBasePrehistoric(int par1) {
@@ -63,8 +63,8 @@ public class BiomeGenBasePrehistoric extends BiomeGenBase // implements
 				3, 5));
 		this.spawnableCreatureList.add(new SpawnListEntry(Obamadon.class, 5, 3,
 				5));
-		this.genPrehistoricTrees = new WorldGenPrehistoricTree(false, 40, 0, 0);
-		//this.genPrehistoricTrees2 = new WorldGenPrehistoricTree2(false);//change
+		this.genPrehistoricTrees = new WorldGenPrehistoricTree(false);
+		this.genPrehistoricTrees2 = new WorldGenPrehistoricTree2();//change
 	}
 
 

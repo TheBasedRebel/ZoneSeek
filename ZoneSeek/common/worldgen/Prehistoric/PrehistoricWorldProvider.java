@@ -38,7 +38,7 @@ public class PrehistoricWorldProvider extends WorldProvider
      */
     public IChunkProvider createChunkGenerator()
     {
-        return new ChunkProviderPrehistoric(this.worldObj, this.worldObj.getSeed());
+        return new ChunkProviderPrehistoric(this.worldObj, this.worldObj.getSeed(), true);
     }
 
     /**

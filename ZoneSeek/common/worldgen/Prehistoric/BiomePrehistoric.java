@@ -25,6 +25,6 @@ public class BiomePrehistoric extends BiomeGenBasePrehistoric {
 	}
 
 	public WorldGenerator getRandomWorldGenForTrees(Random par1Random) {
-		return (WorldGenerator) (par1Random.nextInt(5) == 0 ? this.genPrehistoricTrees: this.genPrehistoricTrees);// change these
+		return (WorldGenerator) (par1Random.nextInt(5) == 0 ? this.genPrehistoricTrees: this.genPrehistoricTrees2);// change these
 	}
 }
